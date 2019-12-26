@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>Find + xargs = powerful combo - Plouf</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="/favicon.ico" rel="icon">
+
+<link rel="canonical" href="/find-xargs-powerful-combo/">
+
+        <meta name="author" content="Pierre" />
+        <meta name="keywords" content="en,Tips'n tricks,Unix/Linux" />
+        <meta name="description" content="With the Unix commands find and xargs you have the ability to find any files on your hard drive while being able to manipulate them individually. Here are few examples: find ./ -type f -name &#34;*.php&#34; | xargs -r rename &#34;s/php/html/&#34; Find all files (-type f) with extension .php -name …" />
+
+        <meta property="og:site_name" content="Plouf" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Find + xargs = powerful combo"/>
+        <meta property="og:url" content="/find-xargs-powerful-combo/"/>
+        <meta property="og:description" content="With the Unix commands find and xargs you have the ability to find any files on your hard drive while being able to manipulate them individually. Here are few examples: find ./ -type f -name &#34;*.php&#34; | xargs -r rename &#34;s/php/html/&#34; Find all files (-type f) with extension .php -name …"/>
+        <meta property="article:published_time" content="2012-01-20" />
+            <meta property="article:section" content="blog" />
+            <meta property="article:tag" content="en" />
+            <meta property="article:tag" content="Tips'n tricks" />
+            <meta property="article:tag" content="Unix/Linux" />
+            <meta property="article:author" content="Pierre" />
+
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="/theme/css/bootstrap.simplex.min.css" type="text/css"/>
+    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="/theme/css/pygments/default.css" rel="stylesheet">
+    <link href="/theme/tipuesearch/tipuesearch.css" rel="stylesheet">
+    <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+        <link href="/static/custom.css" rel="stylesheet">
+
+
+        <link href="/feeds/all.rss.xml" type="application/rss+xml" rel="alternate"
+              title="Plouf RSS Feed"/>
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">
+Plouf            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/research/">Research</a></li>
+                    <li><a href="/python/">Python</a></li>
+                    <li><a href="/tags.html">Tags</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><span>
+                <form class="navbar-search" action="/search.html">
+                  <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input" required>
+                </form></span>
+              </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+
+<!-- Banner -->
+<!-- End Banner -->
+
+<!-- Content Container -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="/find-xargs-powerful-combo/"
+                       rel="bookmark"
+                       title="Permalink to Find + xargs = powerful combo">
+                        Find + xargs = powerful combo
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2012-01-20T09:16:00+01:00"> ven. 20 janvier 2012</time>
+    </span>
+
+
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="/tag/en/">en</a>
+        /
+	<a href="/tag/tipsn-tricks/">Tips'n tricks</a>
+        /
+	<a href="/tag/unixlinux/">Unix/Linux</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p>With the Unix commands find and xargs you have the ability to find any
+files on your hard drive while being able to manipulate them
+individually. Here are few examples:</p>
+<div class="highlight"><pre><span></span>find ./ -type f -name <span class="s2">&quot;*.php&quot;</span>  <span class="p">|</span> xargs -r rename <span class="s2">&quot;s/php/html/&quot;</span>
+</pre></div>
+
+
+<p>Find all files (<code>-type f</code>) with extension .php <code>-name "*.php"</code> and
+replace php by html in their names (<code>rename "s/php/html/"</code>). The option <code>-r</code>
+for xargs prevents xargs to execute the following command if the ouput
+provided by find is empty.</p>
+<div class="highlight"><pre><span></span>find ./ -type f -name *<span class="s2">&quot;.html&quot;</span> <span class="p">|</span> xargs sed -i <span class="s2">&quot;s/php/html/g&quot;</span>
+</pre></div>
+
+
+<p>Find all file (<code>-type f</code>) with extension .html (<code>-name "*.html"</code>) and
+replace all occurences of php by html inside these files.</p>
+<div class="highlight"><pre><span></span>find ./work/ -type f -name <span class="s2">&quot;*.sh&quot;</span> -mtime -20 <span class="p">|</span> xargs -r ls -l
+</pre></div>
+
+
+<p>Find all files (<code>-type f</code>) in the ./work/ directory with extension .sh
+(<code>-name *.sh</code>) and modified less than 20 days ago and print details of
+these files (<code>ls -l</code>).</p>
+<div class="highlight"><pre><span></span>find ./ -size +5M -type f <span class="p">|</span> xargs -r ls -Ssh
+</pre></div>
+
+
+<p>Find all files (<code>-type f</code>) with size bigger than 5 Mb (<code>-size +5M</code>) and sort
+them by size (<code>ls -Ssh</code>)</p>
+<div class="highlight"><pre><span></span>find ./work/ -type f -name <span class="s2">&quot;*.pdf&quot;</span> -mtime +5 -size +2M  <span class="p">|</span> xargs -r cp -t ./backup/
+</pre></div>
+
+
+<p>Find all .pdf files (<code>-type f -name "*.pdf"</code>) from the ./work/ directory
+with size bigger then 2 Mb (<code>-size +2M</code>) and modified more than 5 days ago
+and copy them into the ./backup/ directory.</p>
+            </div>
+            <!-- /.entry-content -->
+<section class="well" id="related-posts">
+    <h4>Related Posts:</h4>
+    <ul>
+        <li><a href="/reduce-pdf-size/">Reduce PDF size</a></li>
+        <li><a href="/clean-gromacs-backups/">Clean Gromacs backup files</a></li>
+        <li><a href="/pdb2fasta/">pdb to fasta conversion with Bash</a></li>
+        <li><a href="/backup-twitter/">Backup Twitter</a></li>
+        <li><a href="/transparent-background-for-twenty-twelve-wordpress-theme/">Transparent background for Twenty Twelve Wordpress theme</a></li>
+    </ul>
+</section>
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+<!-- Sidebar -->
+<section class="well well-sm">
+  <ul class="list-group list-group-flush">
+
+<!-- Sidebar/Social -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+  <ul class="list-group" id="social">
+    <li class="list-group-item"><a href="https://twitter.com/pierrepo"><i class="fa fa-twitter-square fa-lg"></i> Twitter</a></li>
+    <li class="list-group-item"><a href="http://fr.linkedin.com/in/pierrepo"><i class="fa fa-linkedin-square fa-lg"></i> LinkedIn</a></li>
+    <li class="list-group-item"><a href="https://github.com/pierrepo"><i class="fa fa-github-square fa-lg"></i> github</a></li>
+    <li class="list-group-item"><a href="http://cupnet.net/feed/all.rss.xml"><i class="fa fa-rss-square fa-lg"></i> rss</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Social -->
+  </ul>
+</section>
+<!-- End Sidebar -->            </aside>
+        </div>
+    </div>
+</div>
+<!-- End Content Container -->
+
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2017 Pierre Poulain
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>                <p><small>  <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.en"><img alt="Creative Commons License" style="border-width:0" src="//i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+    Content
+  licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.en">Creative Commons Attribution 4.0 International License</a>, except where indicated otherwise.
+</small></p>
+         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="/theme/js/respond.min.js"></script>
+
+
+
+
+</body>
+</html>

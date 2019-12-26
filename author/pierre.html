@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>Articles by Pierre - Plouf</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="/favicon.ico" rel="icon">
+
+
+        <meta name="author" content="Pierre Poulain" />
+
+    <!-- Open Graph tags -->
+        <meta property="og:site_name" content="Plouf" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Plouf"/>
+        <meta property="og:url" content=""/>
+        <meta property="og:description" content="Plouf"/>
+
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="/theme/css/bootstrap.simplex.min.css" type="text/css"/>
+    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="/theme/css/pygments/default.css" rel="stylesheet">
+    <link href="/theme/tipuesearch/tipuesearch.css" rel="stylesheet">
+    <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+        <link href="/static/custom.css" rel="stylesheet">
+
+
+        <link href="/feeds/all.rss.xml" type="application/rss+xml" rel="alternate"
+              title="Plouf RSS Feed"/>
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">
+Plouf            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/research/">Research</a></li>
+                    <li><a href="/python/">Python</a></li>
+                    <li><a href="/tags.html">Tags</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><span>
+                <form class="navbar-search" action="/search.html">
+                  <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input" required>
+                </form></span>
+              </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+
+<!-- Banner -->
+<!-- End Banner -->
+
+<!-- Content Container -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+            <article>
+                <h2><a href="/vrac/">En vrac</a></h2>
+                <div class="summary"><h2>Markdown</h2>
+<ul>
+<li>La syntaxe <a href="http://daringfireball.net/projects/markdown/syntax">de référence (John Gruber)</a> ; celle de <a href="https://guides.github.com/features/mastering-markdown/">GitHub</a> ; et un <a href="http://commonmark.org/help/">mémo (CommonMark)</a></li>
+<li>Tutoriel interactif : <a href="http://commonmark.org/help/tutorial/">10 minutes Markdown Tutorial (CommonMark)</a></li>
+<li>Un éditeur en ligne : <a href="https://monod.lelab.tailordev.fr/">Monod, the Markdown Editor</a>, développé par <a href="https://tailordev.fr/">TailorDev</a></li>
+</ul>
+<p>Conversion de document avec <a href="http://pandoc.org/demos.html">pandoc</a> :</p>
+<div class="highlight"><pre><span></span><span class="err">pandoc -s text.md -o text.html</span>
+<span class="err">pandoc -s text.md --mathjax -o …</span></pre></div>
+                    <a class="btn btn-default btn-xs" href="/vrac/">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="/dev-resources/">Ressources pour le développement</a></h2>
+                <div class="summary"><h3><a href="https://tailordev.fr/blog/2017/02/03/on-code-reviews/">On Code Reviews</a></h3>
+<p>par TailorDev (<a href="https://tailordev.fr/">web</a> / <a href="https://twitter.com/_TailorDev">Twitter</a>). Quelques conseils sur la manière de faire des reviews de code avant un pull request sur GitHub : être positive, constructif, bienveillant et factuel ; se concentrer sur les aspects les plus importants ; le faire régulièrement et par petits morceaux à chaque fois.</p>
+<h3><a href="https://rubberduckdebugging.com/">Rubber Duck …</a></h3>
+                    <a class="btn btn-default btn-xs" href="/dev-resources/">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="/reproductibility/">Reproductibilité en science</a></h2>
+                <div class="summary"><p>Quelques ressources pour améliorer la reproductibilité en recherche et plus particulièrement en bioinformatique :</p>
+<p><a href="http://blog.khinsen.net/posts/2017/01/24/reproducibility-does-not-imply-reproduction/">Reproducibility does not imply reproduction</a> -- Blog de Konrad Hinsen -- 2017<br>
+La reproductibilité d'une expérience est la capacité d'évaluer si cette expérienence est refaisable et donne des résultats similaires, sans nécessairement refaire cette même expérience. </p>
+<p><a href="https://help.github.com/articles/about-archiving-content-and-data-on-github/">Archiving content and …</a></p>
+                    <a class="btn btn-default btn-xs" href="/reproductibility/">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="/cours-interactif-directpoll/">Cours interactif avec DirectPoll</a></h2>
+                <div class="summary"><p>Je trouve intéressant le concept du <em>Bring Your On Device</em> (<a href="https://en.wikipedia.org/wiki/Bring_your_own_device">BYOD</a>), c'est-à-dire que les étudiants utilisent leur propre matériel (smartphones, tablettes, PC portables) dans leur apprentissage en amphi ou en TD.</p>
+<p>Pour rendre un peu plus interactif un cours d'amphi de L1, je voulais que les étudiants utilisent les smartphones …</p>
+                    <a class="btn btn-default btn-xs" href="/cours-interactif-directpoll/">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="/git-github/">Git et GitHub</a></h2>
+                <div class="summary"><p>Git et un GitHub sont deux supers outils pour le travail collaboratif, que ce soit pour de la programmation ou d'autres projets.</p>
+<p>Git est un gestionnaire de version, qui va garder une mémoire, un historique, des modifications d'un ou plusieurs fichiers.</p>
+<p><a href="https://github.com/">GitHub</a> est un site web qui rend l'utilisation de …</p>
+                    <a class="btn btn-default btn-xs" href="/git-github/">more ...</a>
+                </div>
+            </article>
+            <hr/>
+
+        <ul class="pagination">
+                <li class="prev disabled"><a href="#">&laquo;</a></li>
+                    <li class="active"><a
+                            href="/author/pierre.html">1</a></li>
+                    <li class=""><a
+                            href="/author/pierre2.html">2</a></li>
+                    <li class=""><a
+                            href="/author/pierre3.html">3</a></li>
+                    <li class=""><a
+                            href="/author/pierre4.html">4</a></li>
+                    <li class=""><a
+                            href="/author/pierre5.html">5</a></li>
+                    <li class=""><a
+                            href="/author/pierre6.html">6</a></li>
+                    <li class=""><a
+                            href="/author/pierre7.html">7</a></li>
+                    <li class=""><a
+                            href="/author/pierre8.html">8</a></li>
+                    <li class=""><a
+                            href="/author/pierre9.html">9</a></li>
+                <li class="next"><a
+                        href="/author/pierre2.html">&raquo;</a></li>
+        </ul>
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+<!-- Sidebar -->
+<section class="well well-sm">
+  <ul class="list-group list-group-flush">
+
+<!-- Sidebar/Social -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+  <ul class="list-group" id="social">
+    <li class="list-group-item"><a href="https://twitter.com/pierrepo"><i class="fa fa-twitter-square fa-lg"></i> Twitter</a></li>
+    <li class="list-group-item"><a href="http://fr.linkedin.com/in/pierrepo"><i class="fa fa-linkedin-square fa-lg"></i> LinkedIn</a></li>
+    <li class="list-group-item"><a href="https://github.com/pierrepo"><i class="fa fa-github-square fa-lg"></i> github</a></li>
+    <li class="list-group-item"><a href="http://cupnet.net/feed/all.rss.xml"><i class="fa fa-rss-square fa-lg"></i> rss</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Social -->
+  </ul>
+</section>
+<!-- End Sidebar -->            </aside>
+        </div>
+    </div>
+</div>
+<!-- End Content Container -->
+
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2017 Pierre Poulain
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>                <p><small>  <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.en"><img alt="Creative Commons License" style="border-width:0" src="//i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+    Content
+  licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.en">Creative Commons Attribution 4.0 International License</a>, except where indicated otherwise.
+</small></p>
+         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="/theme/js/respond.min.js"></script>
+
+
+
+
+</body>
+</html>

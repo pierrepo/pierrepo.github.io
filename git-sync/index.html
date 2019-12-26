@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>Garder synchronisées les branches master et gh-pages - Plouf</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="/favicon.ico" rel="icon">
+
+<link rel="canonical" href="/git-sync/">
+
+        <meta name="author" content="Pierre" />
+        <meta name="keywords" content="git,gh-pages,github" />
+        <meta name="description" content="Dans le cadre d&#39;un projet d&#39;application web, j&#39;utilise la possibilité qu&#39;offre GitHub de pouvoir visualiser les fichiers contenus dans la branche gh-pages comme des pages web. Cela signifie concrètement que le contenu de la branche https://github.com/pierrepo/DensiPara/tree/gh-pages sera visible à l&#39;adresse http://pierrepo.github …" />
+
+        <meta property="og:site_name" content="Plouf" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Garder synchronisées les branches master et gh-pages"/>
+        <meta property="og:url" content="/git-sync/"/>
+        <meta property="og:description" content="Dans le cadre d&#39;un projet d&#39;application web, j&#39;utilise la possibilité qu&#39;offre GitHub de pouvoir visualiser les fichiers contenus dans la branche gh-pages comme des pages web. Cela signifie concrètement que le contenu de la branche https://github.com/pierrepo/DensiPara/tree/gh-pages sera visible à l&#39;adresse http://pierrepo.github …"/>
+        <meta property="article:published_time" content="2016-04-05" />
+            <meta property="article:section" content="blog" />
+            <meta property="article:tag" content="git" />
+            <meta property="article:tag" content="gh-pages" />
+            <meta property="article:tag" content="github" />
+            <meta property="article:author" content="Pierre" />
+
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="/theme/css/bootstrap.simplex.min.css" type="text/css"/>
+    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="/theme/css/pygments/default.css" rel="stylesheet">
+    <link href="/theme/tipuesearch/tipuesearch.css" rel="stylesheet">
+    <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+        <link href="/static/custom.css" rel="stylesheet">
+
+
+        <link href="/feeds/all.rss.xml" type="application/rss+xml" rel="alternate"
+              title="Plouf RSS Feed"/>
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">
+Plouf            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/research/">Research</a></li>
+                    <li><a href="/python/">Python</a></li>
+                    <li><a href="/tags.html">Tags</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><span>
+                <form class="navbar-search" action="/search.html">
+                  <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input" required>
+                </form></span>
+              </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+
+<!-- Banner -->
+<!-- End Banner -->
+
+<!-- Content Container -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="/git-sync/"
+                       rel="bookmark"
+                       title="Permalink to Garder synchronisées les branches master et gh-pages">
+                        Garder synchronisées les branches master et gh-pages
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2016-04-05T17:38:00+02:00"> mar. 05 avril 2016</time>
+    </span>
+
+
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="/tag/git/">git</a>
+        /
+	<a href="/tag/gh-pages/">gh-pages</a>
+        /
+	<a href="/tag/github/">github</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p>Dans le cadre d'un projet d'<a href="https://github.com/pierrepo/DensiPara">application web</a>, j'utilise la possibilité  qu'offre GitHub de pouvoir visualiser les fichiers contenus dans la branche <code>gh-pages</code> comme des <a href="https://help.github.com/articles/user-organization-and-project-pages/">pages web</a>. Cela signifie concrètement que le contenu de la branche <a href="https://github.com/pierrepo/DensiPara/tree/gh-pages">https://github.com/pierrepo/DensiPara/tree/gh-pages</a> sera visible à l'adresse <a href="http://pierrepo.github.io/DensiPara/">http://pierrepo.github.io/DensiPara/</a>.</p>
+<p>Comme <code>master</code> est la branche principale de mon projet, j'étais amené en permanence à resynchroniser ma branche <code>gh-pages</code> avec <code>master</code> :</p>
+<div class="highlight"><pre><span></span>git checkout gh-pages
+git rebase master
+git push
+git checkout master
+</pre></div>
+
+
+<p>Pour automatiser cela, j'ai appliqué :</p>
+<ul>
+<li>un hook <code>post-commit</code> qui après chaque nouveau commit sur la branche <code>master</code> va synchroniser la branche <code>gh-pages</code> avec <code>master</code></li>
+<li>une modification du fichier <code>.git/config</code> pour faire un push simultané des branches <code>master</code> et <code>gh-pages</code></li>
+</ul>
+<h2>Hook post-commit</h2>
+<p>Créer le fichier <code>.git/hooks/post-commit</code> :</p>
+<div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
+
+<span class="nb">set</span> -eu
+
+<span class="c1"># sync &#39;gh-pages&#39; branch with &#39;master&#39; branch&#39; </span>
+
+<span class="nv">currentbranch</span><span class="o">=</span><span class="k">$(</span>git symbolic-ref --short HEAD<span class="k">)</span>
+
+<span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;</span><span class="nv">$currentbranch</span><span class="s2">&quot;</span> <span class="o">==</span> <span class="s2">&quot;master&quot;</span> <span class="o">]</span>
+<span class="k">then</span>
+    <span class="nb">echo</span> <span class="s2">&quot;post-commit hook: sync &#39;gh-pages&#39; branch with master.&quot;</span>
+    git checkout gh-pages
+    git rebase master
+    git checkout master
+<span class="k">else</span>
+    <span class="nb">echo</span> <span class="s2">&quot;post-commit hook: not in master branch (</span><span class="nv">$currentbranch</span><span class="s2">). Nothing to do.&quot;</span>
+<span class="k">fi</span>
+
+<span class="nb">exit</span> <span class="m">0</span>
+</pre></div>
+
+
+<p>puis le rendre exécutable :</p>
+<div class="highlight"><pre><span></span>chmod +x .git/hooks/post-commit
+</pre></div>
+
+
+<p>Je souhaite que ce hook ne fonctionne que dans la branche <code>master</code> d'où le test dans le script.</p>
+<h2>Push master et gh-pages</h2>
+<p>Dans le fichier <code>.git/config</code>, ajouter les lignes :</p>
+<div class="highlight"><pre><span></span><span class="nv">push</span> <span class="o">=</span> refs/heads/master:refs/heads/master
+<span class="nv">push</span> <span class="o">=</span> refs/heads/gh-pages:refs/heads/gh-pages
+</pre></div>
+
+
+<p>à la fin de la section <code>[remote "origin"]</code>. Ce qui donne au final :</p>
+<div class="highlight"><pre><span></span><span class="o">[</span>core<span class="o">]</span>
+    <span class="nv">repositoryformatversion</span> <span class="o">=</span> <span class="m">0</span>
+    <span class="nv">filemode</span> <span class="o">=</span> <span class="nb">true</span>
+    <span class="nv">bare</span> <span class="o">=</span> <span class="nb">false</span>
+    <span class="nv">logallrefupdates</span> <span class="o">=</span> <span class="nb">true</span>
+<span class="o">[</span>remote <span class="s2">&quot;origin&quot;</span><span class="o">]</span>
+    <span class="nv">url</span> <span class="o">=</span> git@github.com:pierrepo/DensiPara.git
+    <span class="nv">fetch</span> <span class="o">=</span> +refs/heads/*:refs/remotes/origin/*
+    <span class="nv">push</span> <span class="o">=</span> refs/heads/master:refs/heads/master
+    <span class="nv">push</span> <span class="o">=</span> refs/heads/gh-pages:refs/heads/gh-pages
+<span class="o">[</span>branch <span class="s2">&quot;master&quot;</span><span class="o">]</span>
+    <span class="nv">remote</span> <span class="o">=</span> origin
+    <span class="nv">merge</span> <span class="o">=</span> refs/heads/master
+<span class="o">[</span>branch <span class="s2">&quot;gh-pages&quot;</span><span class="o">]</span>
+    <span class="nv">remote</span> <span class="o">=</span> origin
+    <span class="nv">merge</span> <span class="o">=</span> refs/heads/gh-pages
+</pre></div>
+
+
+<p>Dès lors, dès que je réalise un commit dans la branche <code>master</code>, celui-ci est automatiquement reporté dans la branche <code>gh-pages</code>. Et dès que je fais un <code>push</code>, ce sont les deux branches <code>master</code> et <code>gh-pages</code> qui sont envoyées sur GitHub.</p>
+<p>PS : il est parfaitement possible de rendre la branche <code>gh-pages</code> la branche par défaut sur GitHub, mais je souhaitais conserver <code>master</code> comme branche principale par homogénéité avec mes autres projets.</p>
+            </div>
+            <!-- /.entry-content -->
+<section class="well" id="related-posts">
+    <h4>Related Posts:</h4>
+    <ul>
+        <li><a href="/reproductibility/">Reproductibilité en science</a></li>
+        <li><a href="/git-github/">Git et GitHub</a></li>
+    </ul>
+</section>
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+<!-- Sidebar -->
+<section class="well well-sm">
+  <ul class="list-group list-group-flush">
+
+<!-- Sidebar/Social -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+  <ul class="list-group" id="social">
+    <li class="list-group-item"><a href="https://twitter.com/pierrepo"><i class="fa fa-twitter-square fa-lg"></i> Twitter</a></li>
+    <li class="list-group-item"><a href="http://fr.linkedin.com/in/pierrepo"><i class="fa fa-linkedin-square fa-lg"></i> LinkedIn</a></li>
+    <li class="list-group-item"><a href="https://github.com/pierrepo"><i class="fa fa-github-square fa-lg"></i> github</a></li>
+    <li class="list-group-item"><a href="http://cupnet.net/feed/all.rss.xml"><i class="fa fa-rss-square fa-lg"></i> rss</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Social -->
+  </ul>
+</section>
+<!-- End Sidebar -->            </aside>
+        </div>
+    </div>
+</div>
+<!-- End Content Container -->
+
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2017 Pierre Poulain
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>                <p><small>  <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.en"><img alt="Creative Commons License" style="border-width:0" src="//i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+    Content
+  licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.en">Creative Commons Attribution 4.0 International License</a>, except where indicated otherwise.
+</small></p>
+         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="/theme/js/respond.min.js"></script>
+
+
+
+
+</body>
+</html>

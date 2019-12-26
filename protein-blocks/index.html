@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>Protein blocks - Plouf</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="/favicon.ico" rel="icon">
+
+<link rel="canonical" href="/protein-blocks/">
+
+        <meta name="author" content="Pierre" />
+        <meta name="keywords" content="en,research,visualization,protein blocks" />
+        <meta name="description" content="Protein blocks are structural prototypes defined by de Brevern et al. [1] (see also references [2] &amp; [3]). Their main interest is to modelize a 3-dimension local structure into a 1-dimension sequence. In principle, any conformation of any amino acid could be represented by one of the sixteen available protein blocks …" />
+
+        <meta property="og:site_name" content="Plouf" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Protein blocks"/>
+        <meta property="og:url" content="/protein-blocks/"/>
+        <meta property="og:description" content="Protein blocks are structural prototypes defined by de Brevern et al. [1] (see also references [2] &amp; [3]). Their main interest is to modelize a 3-dimension local structure into a 1-dimension sequence. In principle, any conformation of any amino acid could be represented by one of the sixteen available protein blocks …"/>
+        <meta property="article:published_time" content="2011-09-23" />
+            <meta property="article:section" content="blog" />
+            <meta property="article:tag" content="en" />
+            <meta property="article:tag" content="research" />
+            <meta property="article:tag" content="visualization" />
+            <meta property="article:tag" content="protein blocks" />
+            <meta property="article:author" content="Pierre" />
+
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="/theme/css/bootstrap.simplex.min.css" type="text/css"/>
+    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="/theme/css/pygments/default.css" rel="stylesheet">
+    <link href="/theme/tipuesearch/tipuesearch.css" rel="stylesheet">
+    <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+        <link href="/static/custom.css" rel="stylesheet">
+
+
+        <link href="/feeds/all.rss.xml" type="application/rss+xml" rel="alternate"
+              title="Plouf RSS Feed"/>
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">
+Plouf            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/research/">Research</a></li>
+                    <li><a href="/python/">Python</a></li>
+                    <li><a href="/tags.html">Tags</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><span>
+                <form class="navbar-search" action="/search.html">
+                  <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input" required>
+                </form></span>
+              </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+
+<!-- Banner -->
+<!-- End Banner -->
+
+<!-- Content Container -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="/protein-blocks/"
+                       rel="bookmark"
+                       title="Permalink to Protein blocks">
+                        Protein blocks
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2011-09-23T23:24:00+02:00"> ven. 23 septembre 2011</time>
+    </span>
+          <span class="label label-default">Modified</span>
+            <span class="modified">
+                <i class="fa fa-calendar"></i><time datetime="2014-12-30T16:30:00+01:00"> mar. 30 décembre 2014</time>
+            </span>
+
+
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="/tag/en/">en</a>
+        /
+	<a href="/tag/research/">research</a>
+        /
+	<a href="/tag/visualization/">visualization</a>
+        /
+	<a href="/tag/protein-blocks/">protein blocks</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p>Protein blocks are structural prototypes defined by <em>de Brevern et al.</em>
+[1] (see also references [2] &amp; [3]). Their main interest is to modelize a
+3-dimension local structure into a 1-dimension sequence. In principle,
+any conformation of any amino acid could be represented by one of the
+sixteen available protein blocks (Figure 1).</p>
+<p><img alt="Protein blocks" src="/images/PBs_500.jpg" title="Protein blocks"></p>
+<p><em>Figure 1. Schematic representation of the sixteen protein blocks,
+labeled from a to p. (Creative commons CC BY). Larger picture available <a href="/images/PBs.jpg">here</a></em></p>
+<p>In the following example, the 3D structure of the barstar protein in
+Figure 2 is expressed in term of protein blocks:</p>
+<div class="highlight"><pre><span></span><span class="err">ZZdddfklpcbfklmmmmmmmmnopafklgoiaklmmmmmmmmpacddddddehkllmmmmnnomm</span>
+<span class="err">mmmmmmmmmmmmnopacddddZZ</span>
+</pre></div>
+
+
+<p>The conformations of the 89 residues are translated into a sequence of
+89 protein blocks. Note that "Z" is a default name given to amino acid
+for which a protein block cannot be assigned. Indeed, the assignation
+procedure for a given residue also requires the conformation of the two
+residues placed before and the two residues placed after the residue
+under consideration. Therefore, a protein block cannot be assigned to
+the two first (N-termini) and two last (C-termini) residues of a
+polypeptide chain.</p>
+<p><img alt="Barstar protein" src="/images/1AY7_B.png" title="Barstar protein"></p>
+<p><em>Figure 2. 3D representation of the barstar protein (PDB ID 1AY7, chain
+B) (Creative commons CC BY)</em></p>
+<p><strong>References:</strong></p>
+<p>[1] A. G. de Brevern, C. Etchebest and S. Hazout <em>Bayesian probabilistic
+approach for predicting backbone structures in terms of protein
+blocks</em> Proteins <strong>41</strong>: 271-287 (2000).
+<a href="http://hal.archives-ouvertes.fr/inserm-00132821">HAL</a></p>
+<p>[2] A. G. de Brevern <em>New assessment of a structural alphabet</em> In Silico
+Biology <strong>5</strong>: 283-289 (2005).
+<a href="http://www.hal.inserm.fr/inserm-00132875">HAL</a>
+<a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2001288/">NCBI</a></p>
+<p>[3] A. P. Joseph et al. <em>A short survey on protein blocks</em> Biophysical
+Review <strong>2</strong>: 137-145 (2010).
+<a href="http://www.hal.inserm.fr/inserm-00512823">HAL</a>
+<a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3124139/">NCBI</a></p>
+            </div>
+            <!-- /.entry-content -->
+<section class="well" id="related-posts">
+    <h4>Related Posts:</h4>
+    <ul>
+        <li><a href="/unexpected-use-of-protein-blocks/">Unexpected use of protein blocks</a></li>
+        <li><a href="/give-cookie-cite-paper/">I'll give you a cookie if you cite my paper</a></li>
+        <li><a href="/pdb-format/">PDB format</a></li>
+        <li><a href="/clean-gromacs-backups/">Clean Gromacs backup files</a></li>
+        <li><a href="/ambient-occlusion-pymol/">Ambient occlusion-like with PyMOL</a></li>
+    </ul>
+</section>
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+<!-- Sidebar -->
+<section class="well well-sm">
+  <ul class="list-group list-group-flush">
+
+<!-- Sidebar/Social -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+  <ul class="list-group" id="social">
+    <li class="list-group-item"><a href="https://twitter.com/pierrepo"><i class="fa fa-twitter-square fa-lg"></i> Twitter</a></li>
+    <li class="list-group-item"><a href="http://fr.linkedin.com/in/pierrepo"><i class="fa fa-linkedin-square fa-lg"></i> LinkedIn</a></li>
+    <li class="list-group-item"><a href="https://github.com/pierrepo"><i class="fa fa-github-square fa-lg"></i> github</a></li>
+    <li class="list-group-item"><a href="http://cupnet.net/feed/all.rss.xml"><i class="fa fa-rss-square fa-lg"></i> rss</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Social -->
+  </ul>
+</section>
+<!-- End Sidebar -->            </aside>
+        </div>
+    </div>
+</div>
+<!-- End Content Container -->
+
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2017 Pierre Poulain
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>                <p><small>  <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.en"><img alt="Creative Commons License" style="border-width:0" src="//i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+    Content
+  licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.en">Creative Commons Attribution 4.0 International License</a>, except where indicated otherwise.
+</small></p>
+         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="/theme/js/respond.min.js"></script>
+
+
+
+
+</body>
+</html>

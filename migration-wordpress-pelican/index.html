@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>Migration de Wordpress vers Pelican - Plouf</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="/favicon.ico" rel="icon">
+
+<link rel="canonical" href="/migration-wordpress-pelican/">
+
+        <meta name="author" content="Pierre" />
+        <meta name="keywords" content="Wordpress,Pelican,fr" />
+        <meta name="description" content="Après 4 ans de bons et loyaux services, j&#39;ai arrêté de maintenir le blog sous Wordpress. La rédaction des articles se faisait en ligne via l&#39;interface de Wordpress. Cette interface est très confortable mais la connexion internet au Congo qui n&#39;est pas très véloce rendait le processus pénible. De plus …" />
+
+        <meta property="og:site_name" content="Plouf" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Migration de Wordpress vers Pelican"/>
+        <meta property="og:url" content="/migration-wordpress-pelican/"/>
+        <meta property="og:description" content="Après 4 ans de bons et loyaux services, j&#39;ai arrêté de maintenir le blog sous Wordpress. La rédaction des articles se faisait en ligne via l&#39;interface de Wordpress. Cette interface est très confortable mais la connexion internet au Congo qui n&#39;est pas très véloce rendait le processus pénible. De plus …"/>
+        <meta property="article:published_time" content="2015-01-27" />
+            <meta property="article:section" content="blog" />
+            <meta property="article:tag" content="Wordpress" />
+            <meta property="article:tag" content="Pelican" />
+            <meta property="article:tag" content="fr" />
+            <meta property="article:author" content="Pierre" />
+
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="/theme/css/bootstrap.simplex.min.css" type="text/css"/>
+    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="/theme/css/pygments/default.css" rel="stylesheet">
+    <link href="/theme/tipuesearch/tipuesearch.css" rel="stylesheet">
+    <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+        <link href="/static/custom.css" rel="stylesheet">
+
+
+        <link href="/feeds/all.rss.xml" type="application/rss+xml" rel="alternate"
+              title="Plouf RSS Feed"/>
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">
+Plouf            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/research/">Research</a></li>
+                    <li><a href="/python/">Python</a></li>
+                    <li><a href="/tags.html">Tags</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><span>
+                <form class="navbar-search" action="/search.html">
+                  <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input" required>
+                </form></span>
+              </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+
+<!-- Banner -->
+<!-- End Banner -->
+
+<!-- Content Container -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="/migration-wordpress-pelican/"
+                       rel="bookmark"
+                       title="Permalink to Migration de Wordpress vers Pelican">
+                        Migration de Wordpress vers Pelican
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2015-01-27T16:39:00+01:00"> mar. 27 janvier 2015</time>
+    </span>
+
+
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="/tag/wordpress/">Wordpress</a>
+        /
+	<a href="/tag/pelican/">Pelican</a>
+        /
+	<a href="/tag/fr/">fr</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p>Après 4 ans de bons et loyaux services, j'ai arrêté de maintenir le blog sous Wordpress. La rédaction des articles se faisait en ligne via l'interface de Wordpress. Cette interface est très confortable mais la connexion internet au Congo qui n'est pas très véloce rendait le processus pénible. De plus, je n'avais pas trouvé de solution satisfaisante et simple pour faire une sauvegarde complète du site (fichiers + base de données).</p>
+<p>Du coup, j'ai opté pour <a href="http://blog.getpelican.com/">Pelican</a></p>
+<ul>
+<li>c'est écrit en Python ;</li>
+<li>Pelican génère des fichiers statiques (sans php, sans base de données), ce qui reduit les problèmes de sécurité ;</li>
+<li>les articles sont écrits en Markdown que j'apprécie de plus en plus ;</li>
+<li>l'ensemble des données du site tient dans un répertoire, ce qui rend la sauvegarde particulèrement simple.</li>
+</ul>
+<p>Un site généré statiquement par Pelican ne gère pas nativement les commentaires. Leur gestion est externalisée chez <a href="http://disqus.com/">Disqus</a>.</p>
+<p>Depuis Wordpress, j'ai d'abord exporté les commentaires des articles sur Disqus avec le plugin adéquat, puis j'ai exporté l'ensemble des pages et des articles dans un fichier xml. Enfin, j'ai récupéré sur le serveur le répertoire wp-content qui contient les images.</p>
+<p>L'installation de Pelican et l'importation du site Wordpress est bien documentée sur internet. Voici les principales étapes que j'ai réalisées :</p>
+<div class="highlight"><pre><span></span><span class="c1"># installation de pelican</span>
+sudo apt-get install python-pelican
+<span class="c1"># création du répertoire qui va contenir le site</span>
+mkdir blog
+<span class="nb">cd</span> blog
+<span class="c1"># configuration rapide</span>
+<span class="c1"># tous les paramètres se retrouvent dans les fichiers pelicanconf.py et publishconf.py</span>
+pelican-quickstart
+<span class="c1"># création des répertoires contenant les pages et les images</span>
+mkdir -p content<span class="o">{</span>pages/images<span class="o">}</span>
+<span class="c1"># import du blog depuis la sauvegarde Wordpress</span>
+pelican-import --wpfile --dir-page -o content -m markdown backup.wordpress.xml
+<span class="c1"># toutes les pages et les articles ont été convertis en markdown sans problème</span>
+</pre></div>
+
+
+<p>J'ai du mettre les doigts dans le code des articles pour corriger les catégories et les tags qui ne sont pas gérés de la même manière avec Pelican. J'en ai profité pour faire du ménage dans les images car je me suis rendu compte que Wordpress générait parfoit plusieurs tailles pour la même image.</p>
+<p>J'ai aussi passé pas mal de temps dans la configuration des fichiers <code>pelicanconf.py</code> et <code>publishconf.py</code> qui contiennent les paramètres de génération et de publication du site. La <a href="http://docs.getpelican.com/en/3.5.0/">doc</a> de Pelican est très bien faite. J'ai trouvé d'autres infos très utiles sur le blog de <a href="http://www.circuidipity.com/pelican.html">circuidipidy</a> et de <a href="http://a-slide.github.io/blog/github-pelican">Drowned in Genomics</a> (son fichier <code>pelicanconf.py</code> est <a href="https://github.com/a-slide/a-slide.github.io/blob/source/pelicanconf.py">ici</a>). Pour que Disqus puisse retrouver les anciens commentaires, les articles doivent conserver impérativement la même url.</p>
+<p>Ce que j'ai apprécie avec Pelican c'est la possibilité de visualiser en local (à l'adresse <a href="http://localhost:8000">http://localhost:8000</a>) le rendu du site en lançant un mini serveur web avec la commande </p>
+<div class="highlight"><pre><span></span><span class="err">make  devserver</span>
+</pre></div>
+
+
+<p>(et <code>make stopserver</code> pour l'arrêter),</p>
+<p>puis d'envoyer sur le serveur web extérieur le site lorsqu'il est satisfaisant </p>
+<div class="highlight"><pre><span></span><span class="err">make rsync_upload</span>
+</pre></div>
+            </div>
+            <!-- /.entry-content -->
+<section class="well" id="related-posts">
+    <h4>Related Posts:</h4>
+    <ul>
+        <li><a href="/transparent-background-for-twenty-twelve-wordpress-theme/">Transparent background for Twenty Twelve Wordpress theme</a></li>
+        <li><a href="/dev-resources/">Ressources pour le développement</a></li>
+        <li><a href="/reproductibility/">Reproductibilité en science</a></li>
+        <li><a href="/cours-interactif-directpoll/">Cours interactif avec DirectPoll</a></li>
+        <li><a href="/git-github/">Git et GitHub</a></li>
+    </ul>
+</section>
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+<!-- Sidebar -->
+<section class="well well-sm">
+  <ul class="list-group list-group-flush">
+
+<!-- Sidebar/Social -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+  <ul class="list-group" id="social">
+    <li class="list-group-item"><a href="https://twitter.com/pierrepo"><i class="fa fa-twitter-square fa-lg"></i> Twitter</a></li>
+    <li class="list-group-item"><a href="http://fr.linkedin.com/in/pierrepo"><i class="fa fa-linkedin-square fa-lg"></i> LinkedIn</a></li>
+    <li class="list-group-item"><a href="https://github.com/pierrepo"><i class="fa fa-github-square fa-lg"></i> github</a></li>
+    <li class="list-group-item"><a href="http://cupnet.net/feed/all.rss.xml"><i class="fa fa-rss-square fa-lg"></i> rss</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Social -->
+  </ul>
+</section>
+<!-- End Sidebar -->            </aside>
+        </div>
+    </div>
+</div>
+<!-- End Content Container -->
+
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2017 Pierre Poulain
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>                <p><small>  <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.en"><img alt="Creative Commons License" style="border-width:0" src="//i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+    Content
+  licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.en">Creative Commons Attribution 4.0 International License</a>, except where indicated otherwise.
+</small></p>
+         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="/theme/js/respond.min.js"></script>
+
+
+
+
+</body>
+</html>

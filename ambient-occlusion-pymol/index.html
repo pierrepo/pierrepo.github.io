@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>Ambient occlusion-like with PyMOL - Plouf</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="/favicon.ico" rel="icon">
+
+<link rel="canonical" href="/ambient-occlusion-pymol/">
+
+        <meta name="author" content="Pierre" />
+        <meta name="keywords" content="PyMOL,structure,visualization,en" />
+        <meta name="description" content="QuteMol allows production of nice realistic molecular pictures. PyMOL could do similar things albeit results are not strictly equivalent. Here is an example taken from the PyMOL wiki that produced the picture above. fetch 1BTA set_color oxygen, [1.0,0.4,0.4] set_color nitrogen, [0.5,0.5,1 …" />
+
+        <meta property="og:site_name" content="Plouf" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Ambient occlusion-like with PyMOL"/>
+        <meta property="og:url" content="/ambient-occlusion-pymol/"/>
+        <meta property="og:description" content="QuteMol allows production of nice realistic molecular pictures. PyMOL could do similar things albeit results are not strictly equivalent. Here is an example taken from the PyMOL wiki that produced the picture above. fetch 1BTA set_color oxygen, [1.0,0.4,0.4] set_color nitrogen, [0.5,0.5,1 …"/>
+        <meta property="article:published_time" content="2011-04-29" />
+            <meta property="article:section" content="blog" />
+            <meta property="article:tag" content="PyMOL" />
+            <meta property="article:tag" content="structure" />
+            <meta property="article:tag" content="visualization" />
+            <meta property="article:tag" content="en" />
+            <meta property="article:author" content="Pierre" />
+
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="/theme/css/bootstrap.simplex.min.css" type="text/css"/>
+    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="/theme/css/pygments/default.css" rel="stylesheet">
+    <link href="/theme/tipuesearch/tipuesearch.css" rel="stylesheet">
+    <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+        <link href="/static/custom.css" rel="stylesheet">
+
+
+        <link href="/feeds/all.rss.xml" type="application/rss+xml" rel="alternate"
+              title="Plouf RSS Feed"/>
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">
+Plouf            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/research/">Research</a></li>
+                    <li><a href="/python/">Python</a></li>
+                    <li><a href="/tags.html">Tags</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><span>
+                <form class="navbar-search" action="/search.html">
+                  <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input" required>
+                </form></span>
+              </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+
+<!-- Banner -->
+<!-- End Banner -->
+
+<!-- Content Container -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="/ambient-occlusion-pymol/"
+                       rel="bookmark"
+                       title="Permalink to Ambient occlusion-like with PyMOL">
+                        Ambient occlusion-like with PyMOL
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2011-04-29T16:27:00+02:00"> ven. 29 avril 2011</time>
+    </span>
+
+
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="/tag/pymol/">PyMOL</a>
+        /
+	<a href="/tag/structure/">structure</a>
+        /
+	<a href="/tag/visualization/">visualization</a>
+        /
+	<a href="/tag/en/">en</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p><a href="http://qutemol.sourceforge.net/" title="QuteMol website">QuteMol</a> allows
+production of nice realistic molecular pictures.
+<a href="http://www.pymol.org/" title="PyMOL website">PyMOL</a> could do similar things
+albeit results are not strictly equivalent. <!--more-->Here is an
+example taken from the <a href="http://www.pymolwiki.org/index.php/Gallery" title="PyMOL wiki">PyMOL
+wiki</a> that
+produced the picture above.</p>
+<div class="highlight"><pre><span></span><span class="err">fetch 1BTA</span>
+<span class="err">set_color oxygen, [1.0,0.4,0.4]</span>
+<span class="err">set_color nitrogen, [0.5,0.5,1.0]</span>
+<span class="err">remove solvent</span>
+<span class="err">as spheres</span>
+<span class="err">util.cbaw</span>
+<span class="err">bg white</span>
+<span class="err">set light_count,10</span>
+<span class="err">set spec_count,1</span>
+<span class="err">set shininess, 10</span>
+<span class="err">set specular, 0.25</span>
+<span class="err">set ambient,0</span>
+<span class="err">set direct,0</span>
+<span class="err">set reflect,1.5</span>
+<span class="err">set ray_shadow_decay_factor, 0.1</span>
+<span class="err">set ray_shadow_decay_range, 2</span>
+<span class="err">unset depth_cue</span>
+<span class="err">ray 1200, 1200</span>
+</pre></div>
+
+
+<p><img alt="1BTA with ambient occlusion in PyMOL" src="/images/1BTA_500.png" title="1BTA"></p>
+            </div>
+            <!-- /.entry-content -->
+<section class="well" id="related-posts">
+    <h4>Related Posts:</h4>
+    <ul>
+        <li><a href="/pdb2fasta/">pdb to fasta conversion with Bash</a></li>
+        <li><a href="/protein-blocks/">Protein blocks</a></li>
+        <li><a href="/cours-docking-gros-grain/">Cours docking gros grain [fr]</a></li>
+        <li><a href="/une-foule-de-proteines/">Une foule de protéines</a></li>
+        <li><a href="/backup-twitter/">Backup Twitter</a></li>
+    </ul>
+</section>
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+<!-- Sidebar -->
+<section class="well well-sm">
+  <ul class="list-group list-group-flush">
+
+<!-- Sidebar/Social -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+  <ul class="list-group" id="social">
+    <li class="list-group-item"><a href="https://twitter.com/pierrepo"><i class="fa fa-twitter-square fa-lg"></i> Twitter</a></li>
+    <li class="list-group-item"><a href="http://fr.linkedin.com/in/pierrepo"><i class="fa fa-linkedin-square fa-lg"></i> LinkedIn</a></li>
+    <li class="list-group-item"><a href="https://github.com/pierrepo"><i class="fa fa-github-square fa-lg"></i> github</a></li>
+    <li class="list-group-item"><a href="http://cupnet.net/feed/all.rss.xml"><i class="fa fa-rss-square fa-lg"></i> rss</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Social -->
+  </ul>
+</section>
+<!-- End Sidebar -->            </aside>
+        </div>
+    </div>
+</div>
+<!-- End Content Container -->
+
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2017 Pierre Poulain
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>                <p><small>  <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.en"><img alt="Creative Commons License" style="border-width:0" src="//i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+    Content
+  licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.en">Creative Commons Attribution 4.0 International License</a>, except where indicated otherwise.
+</small></p>
+         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="/theme/js/respond.min.js"></script>
+
+
+
+
+</body>
+</html>

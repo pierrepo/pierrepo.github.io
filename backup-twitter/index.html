@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>Backup Twitter - Plouf</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="/favicon.ico" rel="icon">
+
+<link rel="canonical" href="/backup-twitter/">
+
+        <meta name="author" content="Pierre" />
+        <meta name="keywords" content="en,Python,Twitter" />
+        <meta name="description" content="I am using more and more Twitter as an open bookmark / note repository. I was looking for a solution to backup my timeline and browse my tweets locally. The web service http://tweetbook.in does something like this. It downloads all tweets a user timeline and generates a PDF file …" />
+
+        <meta property="og:site_name" content="Plouf" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Backup Twitter"/>
+        <meta property="og:url" content="/backup-twitter/"/>
+        <meta property="og:description" content="I am using more and more Twitter as an open bookmark / note repository. I was looking for a solution to backup my timeline and browse my tweets locally. The web service http://tweetbook.in does something like this. It downloads all tweets a user timeline and generates a PDF file …"/>
+        <meta property="article:published_time" content="2013-01-17" />
+            <meta property="article:section" content="blog" />
+            <meta property="article:tag" content="en" />
+            <meta property="article:tag" content="Python" />
+            <meta property="article:tag" content="Twitter" />
+            <meta property="article:author" content="Pierre" />
+
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="/theme/css/bootstrap.simplex.min.css" type="text/css"/>
+    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="/theme/css/pygments/default.css" rel="stylesheet">
+    <link href="/theme/tipuesearch/tipuesearch.css" rel="stylesheet">
+    <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+        <link href="/static/custom.css" rel="stylesheet">
+
+
+        <link href="/feeds/all.rss.xml" type="application/rss+xml" rel="alternate"
+              title="Plouf RSS Feed"/>
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">
+Plouf            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/research/">Research</a></li>
+                    <li><a href="/python/">Python</a></li>
+                    <li><a href="/tags.html">Tags</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><span>
+                <form class="navbar-search" action="/search.html">
+                  <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input" required>
+                </form></span>
+              </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+
+<!-- Banner -->
+<!-- End Banner -->
+
+<!-- Content Container -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="/backup-twitter/"
+                       rel="bookmark"
+                       title="Permalink to Backup Twitter">
+                        Backup Twitter
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2013-01-17T20:59:00+01:00"> jeu. 17 janvier 2013</time>
+    </span>
+
+
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="/tag/en/">en</a>
+        /
+	<a href="/tag/python/">Python</a>
+        /
+	<a href="/tag/twitter/">Twitter</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p>I am using more and more Twitter as an open bookmark / note repository.
+I was looking for a solution to backup my timeline and browse my tweets
+locally. The web service <a href="http://tweetbook.in">http://tweetbook.in</a> does something like this.
+It downloads all tweets a user timeline and generates a PDF file.</p>
+<p>I have decided to write my own backup engine to keep my tweets in raw
+format (not only the 140-characters content, author and date) but also
+to have to ability to format my tweets the way I want. The code is
+available in the
+<a href="https://github.com/pierrepo/backup-twitter" title="backup-twitter - github">backup-twitter</a> project
+on github.</p>
+<p>The Twitter API is already wrapprreed through the python-twitter module (on
+<a href="https://github.com/bear/python-twitter" title="python-twitter on github">github</a>
+and <a href="https://code.google.com/p/python-twitter/" title="python-twitter on google-code">google-code</a>).
+This module is available in the Python Package Index
+(<a href="http://pypi.python.org/pypi" title="PyPI">PyPI</a>) and can be easily installed
+:</p>
+<p><code>sudo pip install python-twitter</code></p>
+<p>Based on python-twitter examples and <a href="http://blog.mattwaite.com/post/16942178252/using-python-to-access-tweets-from-the-command-line" title="Using Python to access tweets from the command line">this blog
+post</a>,
+I managed to get all my tweets. The strategy to download a Twitter
+timeline is described on the <a href="https://dev.twitter.com/docs/working-with-timelines%20" title="Working with Twitter timelines">Twitter API
+website</a>.
+SQLite was the storage solution of choice (Pierre Lindenbaum wrote <a href="http://plindenbaum.blogspot.fr/2012/11/saving-your-tweets-in-database-using.html" title="Saving your tweets in a database using sqlite, rhino, scribe, javascript">a
+similar backup
+script</a>
+with javascript and SQLite). I found a good tutorial about Python and
+SQLite
+<a href="zetcode.com/db/sqlitepythontutorial/%20" title="Python SQLite tutoral">here</a>.</p>
+<p>A raw tweet actually contains plenty of metadata. See for instance an
+original tweet I posted:</p>
+<p><code>{"created_at": "Tue Dec 18 15:18:54 +0000 2012", "favorited": false, "id": 281055949958049792, "retweeted": false, "source": "web", "text": "High-Resolution Mandelbrot in Obfuscated Python http://t.co/YE7Dr6sU | Impressive! cc @hsantuz @jbarnoud via @secti0n9", "truncated": false, "user": {"created_at": "Tue Mar 09 21:53:14 +0000 2010", "description": "Structural bioinformatics. Python. Science 2.0. Teaching. Humor. Science in France/French. Assistant prof at Univ Paris Diderot (France) on sabbatical in Congo.", "favourites_count": 131, "followers_count": 179, "friends_count": 132, "id": 121557269, "lang": "fr", "listed_count": 16, "location": "Pointe-Noire, Congo", "name": "Pierre Poulain", "profile_background_color": "5EAED6", "profile_background_tile": true, "profile_image_url": "http://a0.twimg.com/profile_images/1693624182/20100124-110315_normal.jpg", "profile_link_color": "009999", "profile_sidebar_fill_color": "http://a0.twimg.com/profile_background_images/264836396/dullhunk__A_molecular_model_of_the_bacterial_cytoplasm__Flickr__CC-BY.jpg", "profile_text_color": "333333", "protected": false, "screen_name": "pierrepo", "statuses_count": 2180, "time_zone": "Paris", "url": "http://cupnet.net", "utc_offset": 3600}}</code></p>
+<p>and a retweet that contains metadata of the original author and of the
+one who retweeted:</p>
+<p><code>{"created_at": "Wed Dec 19 20:36:27 +0000 2012", "favorited": false, "id": 281498250584932352, "retweet_count": 15, "retweeted": false, "retweeted_status": {"created_at": "Wed Dec 19 17:07:48 +0000 2012", "favorited": false, "id": 281445740000198656, "retweet_count": 15, "retweeted": false, "source": "web", "text": "Pleased to share our new web design for all PLOS journals http://t.co/bfFGZv0j http://t.co/KllOIdvi", "truncated": false, "user": {"created_at": "Tue Jan 29 07:27:17 +0000 2008", "description": "PLOS accelerates progress in science and medicine by leading a transformation in research communication. Tweets by Victoria Costello, Blogs &amp; Social Media Mngr", "favourites_count": 16, "followers_count": 24093, "friends_count": 3090, "id": 12819112, "lang": "en", "listed_count": 1750, "location": "USA and UK", "name": "PLOS", "profile_background_color": "999999", "profile_background_tile": true, "profile_image_url": "http://a0.twimg.com/profile_images/2424363764/2etoq0zjwxicokm1woge_normal.jpeg", "profile_link_color": "0033FF", "profile_sidebar_fill_color": "http://a0.twimg.com/profile_background_images/634286014/xhu1mspbr37f70ybe8nn.jpeg", "profile_text_color": "333333", "protected": false, "screen_name": "PLOS", "statuses_count": 2416, "time_zone": "Pacific Time (US &amp; Canada)", "url": "http://www.plos.org", "utc_offset": -28800}}, "source": "web", "text": "RT @PLOS: Pleased to share our new web design for all PLOS journals http://t.co/bfFGZv0j http://t.co/KllOIdvi", "truncated": false, "user": {"created_at": "Tue Mar 09 21:53:14 +0000 2010", "description": "Structural bioinformatics. Python. Science 2.0. Teaching. Humor. Science in France/French. Assistant prof at Univ Paris Diderot (France) on sabbatical in Congo.", "favourites_count": 131, "followers_count": 179, "friends_count": 132, "id": 121557269, "lang": "fr", "listed_count": 16, "location": "Pointe-Noire, Congo", "name": "Pierre Poulain", "profile_background_color": "5EAED6", "profile_background_tile": true, "profile_image_url": "http://a0.twimg.com/profile_images/1693624182/20100124-110315_normal.jpg", "profile_link_color": "009999", "profile_sidebar_fill_color": "http://a0.twimg.com/profile_background_images/264836396/dullhunk__A_molecular_model_of_the_bacterial_cytoplasm__Flickr__CC-BY.jpg", "profile_text_color": "333333", "protected": false, "screen_name": "pierrepo", "statuses_count": 2180, "time_zone": "Paris", "url": "http://cupnet.net", "utc_offset": 3600}}</code></p>
+<p>To date, my timeline contains about 2100 tweets and the SQLite database
+file weights 5 Mo. All tweets are then put all together in a single html
+page. The profile pictures of users are optionally displayed. Tweet
+timestamp, usernames, hashtags and urls are clickable.</p>
+<p>I have also found out that some incomplete tweets in my database (due to
+the 140-characters limit) are fully displayed on Twitter. Any idea why
+and how I can get a full tweet?</p>
+<p>Twitter <a href="http://blog.twitter.com/2012/12/your-twitter-archive.html" title="Your Twitter archive">just
+released</a>
+the ability to download your Twitter archive. I haven't tested this
+feature yet but this seems really nice. However, I am not sure it will
+be possible to download someone else's timeline.</p>
+            </div>
+            <!-- /.entry-content -->
+<section class="well" id="related-posts">
+    <h4>Related Posts:</h4>
+    <ul>
+        <li><a href="/pdb-format/">PDB format</a></li>
+        <li><a href="/transparent-background-for-twenty-twelve-wordpress-theme/">Transparent background for Twenty Twelve Wordpress theme</a></li>
+        <li><a href="/unexpected-use-of-protein-blocks/">Unexpected use of protein blocks</a></li>
+        <li><a href="/give-cookie-cite-paper/">I'll give you a cookie if you cite my paper</a></li>
+        <li><a href="/clean-gromacs-backups/">Clean Gromacs backup files</a></li>
+    </ul>
+</section>
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+<!-- Sidebar -->
+<section class="well well-sm">
+  <ul class="list-group list-group-flush">
+
+<!-- Sidebar/Social -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+  <ul class="list-group" id="social">
+    <li class="list-group-item"><a href="https://twitter.com/pierrepo"><i class="fa fa-twitter-square fa-lg"></i> Twitter</a></li>
+    <li class="list-group-item"><a href="http://fr.linkedin.com/in/pierrepo"><i class="fa fa-linkedin-square fa-lg"></i> LinkedIn</a></li>
+    <li class="list-group-item"><a href="https://github.com/pierrepo"><i class="fa fa-github-square fa-lg"></i> github</a></li>
+    <li class="list-group-item"><a href="http://cupnet.net/feed/all.rss.xml"><i class="fa fa-rss-square fa-lg"></i> rss</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Social -->
+  </ul>
+</section>
+<!-- End Sidebar -->            </aside>
+        </div>
+    </div>
+</div>
+<!-- End Content Container -->
+
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2017 Pierre Poulain
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>                <p><small>  <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.en"><img alt="Creative Commons License" style="border-width:0" src="//i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+    Content
+  licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.en">Creative Commons Attribution 4.0 International License</a>, except where indicated otherwise.
+</small></p>
+         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="/theme/js/respond.min.js"></script>
+
+
+
+
+</body>
+</html>
