@@ -120,11 +120,11 @@ Plouf            </a>
                 </div>
                 <p>Dans le cadre d'un projet d'<a href="https://github.com/pierrepo/DensiPara">application web</a>, j'utilise la possibilité  qu'offre GitHub de pouvoir visualiser les fichiers contenus dans la branche <code>gh-pages</code> comme des <a href="https://help.github.com/articles/user-organization-and-project-pages/">pages web</a>. Cela signifie concrètement que le contenu de la branche <a href="https://github.com/pierrepo/DensiPara/tree/gh-pages">https://github.com/pierrepo/DensiPara/tree/gh-pages</a> sera visible à l'adresse <a href="http://pierrepo.github.io/DensiPara/">http://pierrepo.github.io/DensiPara/</a>.</p>
 <p>Comme <code>master</code> est la branche principale de mon projet, j'étais amené en permanence à resynchroniser ma branche <code>gh-pages</code> avec <code>master</code> :</p>
-<div class="highlight"><pre><span></span>git checkout gh-pages
+<div class="highlight"><pre><span></span><code>git checkout gh-pages
 git rebase master
 git push
 git checkout master
-</pre></div>
+</code></pre></div>
 
 
 <p>Pour automatiser cela, j'ai appliqué :</p>
@@ -134,7 +134,7 @@ git checkout master
 </ul>
 <h2>Hook post-commit</h2>
 <p>Créer le fichier <code>.git/hooks/post-commit</code> :</p>
-<div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
 
 <span class="nb">set</span> -eu
 
@@ -153,24 +153,24 @@ git checkout master
 <span class="k">fi</span>
 
 <span class="nb">exit</span> <span class="m">0</span>
-</pre></div>
+</code></pre></div>
 
 
 <p>puis le rendre exécutable :</p>
-<div class="highlight"><pre><span></span>chmod +x .git/hooks/post-commit
-</pre></div>
+<div class="highlight"><pre><span></span><code>chmod +x .git/hooks/post-commit
+</code></pre></div>
 
 
 <p>Je souhaite que ce hook ne fonctionne que dans la branche <code>master</code> d'où le test dans le script.</p>
 <h2>Push master et gh-pages</h2>
 <p>Dans le fichier <code>.git/config</code>, ajouter les lignes :</p>
-<div class="highlight"><pre><span></span><span class="nv">push</span> <span class="o">=</span> refs/heads/master:refs/heads/master
+<div class="highlight"><pre><span></span><code><span class="nv">push</span> <span class="o">=</span> refs/heads/master:refs/heads/master
 <span class="nv">push</span> <span class="o">=</span> refs/heads/gh-pages:refs/heads/gh-pages
-</pre></div>
+</code></pre></div>
 
 
 <p>à la fin de la section <code>[remote "origin"]</code>. Ce qui donne au final :</p>
-<div class="highlight"><pre><span></span><span class="o">[</span>core<span class="o">]</span>
+<div class="highlight"><pre><span></span><code><span class="o">[</span>core<span class="o">]</span>
     <span class="nv">repositoryformatversion</span> <span class="o">=</span> <span class="m">0</span>
     <span class="nv">filemode</span> <span class="o">=</span> <span class="nb">true</span>
     <span class="nv">bare</span> <span class="o">=</span> <span class="nb">false</span>
@@ -186,7 +186,7 @@ git checkout master
 <span class="o">[</span>branch <span class="s2">&quot;gh-pages&quot;</span><span class="o">]</span>
     <span class="nv">remote</span> <span class="o">=</span> origin
     <span class="nv">merge</span> <span class="o">=</span> refs/heads/gh-pages
-</pre></div>
+</code></pre></div>
 
 
 <p>Dès lors, dès que je réalise un commit dans la branche <code>master</code>, celui-ci est automatiquement reporté dans la branche <code>gh-pages</code>. Et dès que je fais un <code>push</code>, ce sont les deux branches <code>master</code> et <code>gh-pages</code> qui sont envoyées sur GitHub.</p>

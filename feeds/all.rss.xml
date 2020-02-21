@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Plouf</title><link>/</link><description></description><lastBuildDate>Mon, 08 Jul 2019 00:00:00 +0200</lastBuildDate><item><title>En vrac</title><link>/vrac/</link><description>&lt;h2&gt;Markdown&lt;/h2&gt;
+<rss version="2.0"><channel><title>Plouf</title><link>/</link><description></description><lastBuildDate>Fri, 21 Feb 2020 00:00:00 +0100</lastBuildDate><item><title>En vrac</title><link>/vrac/</link><description>&lt;h2&gt;Markdown&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;La syntaxe &lt;a href="http://daringfireball.net/projects/markdown/syntax"&gt;de référence (John Gruber)&lt;/a&gt; ; celle de &lt;a href="https://guides.github.com/features/mastering-markdown/"&gt;GitHub&lt;/a&gt; ; et un &lt;a href="http://commonmark.org/help/"&gt;mémo (CommonMark)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Tutoriel interactif : &lt;a href="http://commonmark.org/help/tutorial/"&gt;10 minutes Markdown Tutorial (CommonMark)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Un éditeur en ligne : &lt;a href="https://monod.lelab.tailordev.fr/"&gt;Monod, the Markdown Editor&lt;/a&gt;, développé par &lt;a href="https://tailordev.fr/"&gt;TailorDev&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Conversion de document avec &lt;a href="http://pandoc.org/demos.html"&gt;pandoc&lt;/a&gt; :&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;pandoc -s text.md -o text.html&lt;/span&gt;
-&lt;span class="err"&gt;pandoc -s text.md --mathjax -o …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pierre</dc:creator><pubDate>Mon, 01 May 2017 08:32:41 +0200</pubDate><guid isPermaLink="false">tag:None,2017-05-01:/vrac/</guid><category>blog, fr</category><category>ressources</category><category>markdown</category><category>révisions</category></item><item><title>Ressources pour le développement</title><link>/dev-resources/</link><description>&lt;h3&gt;&lt;a href="https://tailordev.fr/blog/2017/02/03/on-code-reviews/"&gt;On Code Reviews&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;pandoc -s text.md -o text.html&lt;/span&gt;
+&lt;span class="err"&gt;pandoc -s text.md --mathjax -o …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pierre</dc:creator><pubDate>Mon, 01 May 2017 08:32:41 +0200</pubDate><guid isPermaLink="false">tag:None,2017-05-01:/vrac/</guid><category>blog, fr</category><category>ressources</category><category>markdown</category><category>révisions</category></item><item><title>Ressources pour le développement</title><link>/dev-resources/</link><description>&lt;h3&gt;&lt;a href="https://tailordev.fr/blog/2017/02/03/on-code-reviews/"&gt;On Code Reviews&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;par TailorDev (&lt;a href="https://tailordev.fr/"&gt;web&lt;/a&gt; / &lt;a href="https://twitter.com/_TailorDev"&gt;Twitter&lt;/a&gt;). Quelques conseils sur la manière de faire des reviews de code avant un pull request sur GitHub : être positive, constructif, bienveillant et factuel ; se concentrer sur les aspects les plus importants ; le faire régulièrement et par petits morceaux à chaque fois.&lt;/p&gt;
 &lt;h3&gt;&lt;a href="https://rubberduckdebugging.com/"&gt;Rubber Duck …&lt;/a&gt;&lt;/h3&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pierre</dc:creator><pubDate>Mon, 20 Feb 2017 23:19:00 +0100</pubDate><guid isPermaLink="false">tag:None,2017-02-20:/dev-resources/</guid><category>blog</category><category>open-source</category><category>dev</category><category>fr</category></item><item><title>Reproductibilité en science</title><link>/reproductibility/</link><description>&lt;p&gt;Quelques ressources pour améliorer la reproductibilité en recherche et plus particulièrement en bioinformatique :&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://blog.khinsen.net/posts/2017/01/24/reproducibility-does-not-imply-reproduction/"&gt;Reproducibility does not imply reproduction&lt;/a&gt; -- Blog de Konrad Hinsen -- 2017&lt;br&gt;
@@ -53,17 +53,17 @@ Twelve&lt;/a&gt;
 is the 2012 official theme for Wordpress. I like having a transparent
 background for all my posts and pages. To do so, edit the stylesheet
 (style.css) of the theme and replace&lt;!--more--&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c"&gt;/* Page structure */&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c"&gt;/* Page structure */&lt;/span&gt;
 &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;site&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="mi"&gt;24&lt;/span&gt;&lt;span class="kt"&gt;px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
     &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="mf"&gt;1.714285714&lt;/span&gt;&lt;span class="kt"&gt;rem&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
     &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mh"&gt;#fff&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;by&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c"&gt;/* Page …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pierre</dc:creator><pubDate>Fri, 04 Jan 2013 08:57:00 +0100</pubDate><guid isPermaLink="false">tag:None,2013-01-04:/transparent-background-for-twenty-twelve-wordpress-theme/</guid><category>blog</category><category>en</category><category>wordpress</category></item><item><title>Unexpected use of protein blocks</title><link>/unexpected-use-of-protein-blocks/</link><description>&lt;p&gt;In a &lt;a href="/protein-blocks/"&gt;previous post&lt;/a&gt;, I tried to
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c"&gt;/* Page …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pierre</dc:creator><pubDate>Fri, 04 Jan 2013 08:57:00 +0100</pubDate><guid isPermaLink="false">tag:None,2013-01-04:/transparent-background-for-twenty-twelve-wordpress-theme/</guid><category>blog</category><category>en</category><category>wordpress</category></item><item><title>Unexpected use of protein blocks</title><link>/unexpected-use-of-protein-blocks/</link><description>&lt;p&gt;In a &lt;a href="/protein-blocks/"&gt;previous post&lt;/a&gt;, I tried to
 explain what are proteins blocks (PBs). For those who forgot, PBs
 are structural prototypes used to modelize a 3D local protein structure
 into a 1D sequence. I illustrated this with a picture of protein blocks
@@ -108,11 +108,11 @@ Python&lt;/a&gt;.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/d
     .f9  {background-color:#CC66FF;}
     .f10 {background-color …&lt;/style&gt;&lt;/head&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pierre</dc:creator><pubDate>Thu, 05 Apr 2012 14:00:00 +0200</pubDate><guid isPermaLink="false">tag:None,2012-04-05:/pdb-format/</guid><category>blog</category><category>pdb</category><category>en</category><category>python</category><category>research</category></item><item><title>Clean Gromacs backup files</title><link>/clean-gromacs-backups/</link><description>&lt;p&gt;Note to self.&lt;br&gt;
 Add the following lines to &lt;code&gt;.bashrc&lt;/code&gt; file to clean Gromacs backups :&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;# clean Gromacs backups in the current directory&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;# clean Gromacs backups in the current directory&lt;/span&gt;
 &lt;span class="err"&gt;alias cleangromacsbackups=&amp;quot;rm -f \#*\#&amp;quot;&lt;/span&gt;
 &lt;span class="err"&gt;# clean Gromacs backups recursively (for the fearless warriors)&lt;/span&gt;
 &lt;span class="err"&gt;alias cleangromacsbackups_rec=&amp;quot;find ./ -name \#*\# | xargs -r rm&amp;quot;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Be careful with the second command...&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pierre</dc:creator><pubDate>Mon, 02 Apr 2012 22:22:00 +0200</pubDate><guid isPermaLink="false">tag:None,2012-04-02:/clean-gromacs-backups/</guid><category>blog</category><category>Gromacs</category><category>en</category><category>research</category><category>Tips'n tricks</category></item><item><title>pdb to fasta conversion with Bash</title><link>/pdb2fasta/</link><description>&lt;p&gt;Here is a simple
@@ -154,8 +154,8 @@ format &lt;a href="http://cupnet.net/docs/cours_gestion_projets_bioinfo.pdf"&gt
 Mo].&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pierre</dc:creator><pubDate>Thu, 26 Jan 2012 11:22:00 +0100</pubDate><guid isPermaLink="false">tag:None,2012-01-26:/cours-gestion-projets-bioinfo/</guid><category>blog</category><category>projets</category><category>cours</category><category>fr</category></item><item><title>Find + xargs = powerful combo</title><link>/find-xargs-powerful-combo/</link><description>&lt;p&gt;With the Unix commands find and xargs you have the ability to find any
 files on your hard drive while being able to manipulate them
 individually. Here are few examples:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;find ./ -type f -name &lt;span class="s2"&gt;&amp;quot;*.php&amp;quot;&lt;/span&gt;  &lt;span class="p"&gt;|&lt;/span&gt; xargs -r rename &lt;span class="s2"&gt;&amp;quot;s/php/html/&amp;quot;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;find ./ -type f -name &lt;span class="s2"&gt;&amp;quot;*.php&amp;quot;&lt;/span&gt;  &lt;span class="p"&gt;|&lt;/span&gt; xargs -r rename &lt;span class="s2"&gt;&amp;quot;s/php/html/&amp;quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Find all files (&lt;code&gt;-type f&lt;/code&gt;) with extension .php &lt;code&gt;-name …&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pierre</dc:creator><pubDate>Fri, 20 Jan 2012 09:16:00 +0100</pubDate><guid isPermaLink="false">tag:None,2012-01-20:/find-xargs-powerful-combo/</guid><category>blog</category><category>en</category><category>Tips'n tricks</category><category>Unix/Linux</category></item><item><title>Cours attitude professionnelle [fr]</title><link>/cours-attitude-professionnelle/</link><description>&lt;p&gt;Cours sur "l'attitude professionnelle" à destination des étudiants en
@@ -277,8 +277,8 @@ argument.&lt;/p&gt;
 25
 26
 27
-28&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ch"&gt;#! /bin/bash&lt;/span&gt;
-&lt;span class="c1"&gt;# PP 29/08 …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pierre</dc:creator><pubDate>Thu, 01 Sep 2011 22:52:00 +0200</pubDate><guid isPermaLink="false">tag:None,2011-09-01:/reduce-pdf-size/</guid><category>blog</category><category>pdf</category><category>en</category><category>Tips'n tricks</category><category>Unix/Linux</category></item><item><title>GGMM2011 - modérator, l'ami des organisateurs [fr]</title><link>/ggmm2011-moderator/</link><description>&lt;p&gt;&lt;img alt="" src="/images/GGMM2011_logo.png" title="Logo GGM2011"&gt;&lt;/p&gt;
+28&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="ch"&gt;#! /bin/bash&lt;/span&gt;
+&lt;span class="c1"&gt;# PP 29/08 …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pierre</dc:creator><pubDate>Thu, 01 Sep 2011 22:52:00 +0200</pubDate><guid isPermaLink="false">tag:None,2011-09-01:/reduce-pdf-size/</guid><category>blog</category><category>pdf</category><category>en</category><category>Tips'n tricks</category><category>Unix/Linux</category></item><item><title>GGMM2011 - modérator, l'ami des organisateurs [fr]</title><link>/ggmm2011-moderator/</link><description>&lt;p&gt;&lt;img alt="" src="/images/GGMM2011_logo.png" title="Logo GGM2011"&gt;&lt;/p&gt;
 &lt;p&gt;﻿Lors du congrès &lt;a href="http://ggmm2011.wordpress.com/"&gt;GGMM2011&lt;/a&gt;, nous avons
 souhaité qu'un maximum de personnes, notamment des jeunes chercheurs,
 puissent présenter oralement leurs travaux. Le format imposé étaient
@@ -298,9 +298,9 @@ albeit results are not strictly equivalent. &lt;!--more--&gt;Here is an
 example taken from the &lt;a href="http://www.pymolwiki.org/index.php/Gallery" title="PyMOL wiki"&gt;PyMOL
 wiki&lt;/a&gt; that
 produced the picture above.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;fetch 1BTA&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;fetch 1BTA&lt;/span&gt;
 &lt;span class="err"&gt;set_color oxygen, [1.0,0.4,0.4]&lt;/span&gt;
-&lt;span class="err"&gt;set_color nitrogen, [0.5,0.5,1 …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pierre</dc:creator><pubDate>Fri, 29 Apr 2011 16:27:00 +0200</pubDate><guid isPermaLink="false">tag:None,2011-04-29:/ambient-occlusion-pymol/</guid><category>blog</category><category>PyMOL</category><category>structure</category><category>visualization</category><category>en</category></item><item><title>LaTeX conditions</title><link>/latex-conditions/</link><description>&lt;p&gt;In a LaTeX document, conditions regarding the compilation of specific
+&lt;span class="err"&gt;set_color nitrogen, [0.5,0.5,1 …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pierre</dc:creator><pubDate>Fri, 29 Apr 2011 16:27:00 +0200</pubDate><guid isPermaLink="false">tag:None,2011-04-29:/ambient-occlusion-pymol/</guid><category>blog</category><category>PyMOL</category><category>structure</category><category>visualization</category><category>en</category></item><item><title>LaTeX conditions</title><link>/latex-conditions/</link><description>&lt;p&gt;In a LaTeX document, conditions regarding the compilation of specific
 portions of the text could be included&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;\ifthenelse&lt;/code&gt; instruction provided by the &lt;code&gt;ifthen&lt;/code&gt; package is a
 solution to deal with conditions but it is quite sensitive and does not

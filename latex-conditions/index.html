@@ -122,7 +122,7 @@ solution to deal with conditions but it is quite sensitive and does not
 handle the <code>verbatim</code> environment nor the <code>\verb</code> command.</p>
 <p>Getting back to the genuine Tex commands appears a more robust solution.</p>
 <p>Exemple :</p>
-<div class="highlight"><pre><span></span><span class="c">% define a condition</span>
+<div class="highlight"><pre><span></span><code><span class="c">% define a condition</span>
 <span class="o">\</span><span class="n">newif</span><span class="o">\</span><span class="n">ifmycondition</span>
 
 <span class="o">\</span><span class="n">myconditiontrue</span>
@@ -138,7 +138,7 @@ handle the <code>verbatim</code> environment nor the <code>\verb</code> comman
 <span class="c">% if mycondition is false print this :</span>
 <span class="n">hello </span><span class="s">my condition is false</span><span class="p"></span>
 <span class="o">\</span><span class="n">fi</span>
-</pre></div>
+</code></pre></div>
 
 
 <p>There is not need to load/install any special package.</p>

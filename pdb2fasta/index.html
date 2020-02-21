@@ -106,6 +106,10 @@ Plouf            </a>
     <span class="published">
         <i class="fa fa-calendar"></i><time datetime="2012-03-14T14:53:00+01:00"> mer. 14 mars 2012</time>
     </span>
+          <span class="label label-default">Modified</span>
+            <span class="modified">
+                <i class="fa fa-calendar"></i><time datetime="2020-02-21T00:00:00+01:00"> ven. 21 février 2020</time>
+            </span>
 
 
 
@@ -145,7 +149,7 @@ not used here).</p>
 starting with the <code>ATOM</code> keyword. Below is an excerpt from the
 <a href="http://www.rcsb.org/pdb/explore.do?structureId=1BTA" title="1BTA structure">1BTA</a> structure
 of Barstar.</p>
-<div class="highlight"><pre><span></span><span class="o">[</span>...<span class="o">]</span>
+<div class="highlight"><pre><span></span><code><span class="o">[</span>...<span class="o">]</span>
 ATOM     <span class="m">48</span>  CA  ALA A   <span class="m">3</span>      -1.086   <span class="m">3</span>.403   <span class="m">6</span>.848  <span class="m">1</span>.00  <span class="m">0</span>.30           C
 ATOM     <span class="m">49</span>  C   ALA A   <span class="m">3</span>       <span class="m">0</span>.316   <span class="m">4</span>.013   <span class="m">6</span>.751  <span class="m">1</span>.00  <span class="m">0</span>.30           C
 ATOM     <span class="m">50</span>  O   ALA A   <span class="m">3</span>       <span class="m">0</span>.469   <span class="m">5</span>.207   <span class="m">6</span>.586  <span class="m">1</span>.00  <span class="m">0</span>.54           O
@@ -158,7 +162,7 @@ ATOM     <span class="m">56</span>  HB3 ALA A   <span class="m">3</span>      -1
 ATOM     <span class="m">57</span>  N   VAL A   <span class="m">4</span>       <span class="m">1</span>.342   <span class="m">3</span>.214   <span class="m">6</span>.860  <span class="m">1</span>.00  <span class="m">0</span>.30           N
 ATOM     <span class="m">58</span>  CA  VAL A   <span class="m">4</span>       <span class="m">2</span>.725   <span class="m">3</span>.769   <span class="m">6</span>.780  <span class="m">1</span>.00  <span class="m">0</span>.27           C
 <span class="o">[</span>...<span class="o">]</span>
-</pre></div>
+</code></pre></div>
 
 
 <p>The 3rd, 4th and 5th columns correspond to the atom name, residue name
@@ -169,19 +173,19 @@ atom</a>
 labelled <code>CA</code> (provided no atom is missing). Therefore, we have to
 select lines that start with the keyword <code>ATOM</code>, with column 3 equals to
 <code>CA</code> and column 5 equals to the targeted chain (here chain <code>A</code>).</p>
-<div class="highlight"><pre><span></span>cat 1BTA.pdb <span class="p">|</span> awk <span class="s1">&#39;/^ATOM/ &amp;&amp; $3 == &quot;CA&quot; &amp;&amp; $5 == &quot;A&quot; {print $4}&#39;</span>
-</pre></div>
+<div class="highlight"><pre><span></span><code>cat 1BTA.pdb <span class="p">|</span> awk <span class="s1">&#39;/^ATOM/ &amp;&amp; $3 == &quot;CA&quot; &amp;&amp; $5 == &quot;A&quot; {print $4}&#39;</span>
+</code></pre></div>
 
 
 <p>We then get the sequence with one residue per line</p>
-<div class="highlight"><pre><span></span><span class="err">LYS</span>
+<div class="highlight"><pre><span></span><code><span class="err">LYS</span>
 <span class="err">LYS</span>
 <span class="err">ALA</span>
 <span class="err">VAL</span>
 <span class="err">ILE</span>
 <span class="err">ASN</span>
 <span class="err">[...]</span>
-</pre></div>
+</code></pre></div>
 
 
 <p>To remove the newline character after each residue, there are several
@@ -196,19 +200,19 @@ options:</p>
     on StackOverflow)</li>
 </ul>
 <p>And from this</p>
-<div class="highlight"><pre><span></span>cat 1BTA.pdb <span class="p">|</span> awk <span class="s1">&#39;/ATOM/ &amp;&amp; $3 == &quot;CA&quot; &amp;&amp; $5 == &quot;A&quot; {print $4}&#39;</span> <span class="p">|</span> tr <span class="s1">&#39;\n&#39;</span> <span class="s1">&#39; &#39;</span>
-</pre></div>
+<div class="highlight"><pre><span></span><code>cat 1BTA.pdb <span class="p">|</span> awk <span class="s1">&#39;/ATOM/ &amp;&amp; $3 == &quot;CA&quot; &amp;&amp; $5 == &quot;A&quot; {print $4}&#39;</span> <span class="p">|</span> tr <span class="s1">&#39;\n&#39;</span> <span class="s1">&#39; &#39;</span>
+</code></pre></div>
 
 
 <p>we get that</p>
-<div class="highlight"><pre><span></span><span class="err">LYS LYS ALA VAL ILE ASN GLY GLU GLN ILE ARG SER ILE...</span>
-</pre></div>
+<div class="highlight"><pre><span></span><code><span class="err">LYS LYS ALA VAL ILE ASN GLY GLU GLN ILE ARG SER ILE...</span>
+</code></pre></div>
 
 
 <p>Next we want to convert the 3-letter code residue name into 1-letter
 code. <code>sed</code> is useful here</p>
-<div class="highlight"><pre><span></span>sed <span class="s1">&#39;s/ALA/A/g;s/CYS/C/g;s/ASP/D/g;s/GLU/E/g;s/PHE/F/g;s/GLY/G/g;s/HIS/H/g;s/ILE/I/g;s/LYS/K/g;s/LEU/L/g;s/MET/M/g;s/ASN/N/g;s/PRO/P/g;s/GLN/Q/g;s/ARG/R/g;s/SER/S/g;s/THR/T/g;s/VAL/V/g;s/TRP/W/g;s/TYR/Y/g&#39;</span>
-</pre></div>
+<div class="highlight"><pre><span></span><code>sed <span class="s1">&#39;s/ALA/A/g;s/CYS/C/g;s/ASP/D/g;s/GLU/E/g;s/PHE/F/g;s/GLY/G/g;s/HIS/H/g;s/ILE/I/g;s/LYS/K/g;s/LEU/L/g;s/MET/M/g;s/ASN/N/g;s/PRO/P/g;s/GLN/Q/g;s/ARG/R/g;s/SER/S/g;s/THR/T/g;s/VAL/V/g;s/TRP/W/g;s/TYR/Y/g&#39;</span>
+</code></pre></div>
 
 
 <p>This is a pretty long command line since we have to convert the 20 amino
@@ -216,36 +220,36 @@ acids.</p>
 <p>Eventually, we have to remove space between residue names with
 <code>sed 's/ //g'</code> and fold the sequence into 60-character lines with
 <code>fold -w 60</code>. The complete command line is</p>
-<div class="highlight"><pre><span></span>cat 1BTA.pdb <span class="p">|</span> awk <span class="s1">&#39;/ATOM/ &amp;&amp; $3 == &quot;CA&quot; &amp;&amp; $5 == &quot;A&quot; {print $4}&#39;</span> <span class="p">|</span> tr <span class="s1">&#39;\n&#39;</span> <span class="s1">&#39; &#39;</span> <span class="p">|</span> sed <span class="s1">&#39;s/ALA/A/g;s/CYS/C/g;s/ASP/D/g;s/GLU/E/g;s/PHE/F/g;s/GLY/G/g;s/HIS/H/g;s/ILE/I/g;s/LYS/K/g;s/LEU/L/g;s/MET/M/g;s/ASN/N/g;s/PRO/P/g;s/GLN/Q/g;s/ARG/R/g;s/SER/S/g;s/THR/T/g;s/VAL/V/g;s/TRP/W/g;s/TYR/Y/g&#39;</span> <span class="p">|</span> sed <span class="s1">&#39;s/ //g&#39;</span> <span class="p">|</span> fold -w <span class="m">60</span>
-</pre></div>
+<div class="highlight"><pre><span></span><code>cat 1BTA.pdb <span class="p">|</span> awk <span class="s1">&#39;/ATOM/ &amp;&amp; $3 == &quot;CA&quot; &amp;&amp; $5 == &quot;A&quot; {print $4}&#39;</span> <span class="p">|</span> tr <span class="s1">&#39;\n&#39;</span> <span class="s1">&#39; &#39;</span> <span class="p">|</span> sed <span class="s1">&#39;s/ALA/A/g;s/CYS/C/g;s/ASP/D/g;s/GLU/E/g;s/PHE/F/g;s/GLY/G/g;s/HIS/H/g;s/ILE/I/g;s/LYS/K/g;s/LEU/L/g;s/MET/M/g;s/ASN/N/g;s/PRO/P/g;s/GLN/Q/g;s/ARG/R/g;s/SER/S/g;s/THR/T/g;s/VAL/V/g;s/TRP/W/g;s/TYR/Y/g&#39;</span> <span class="p">|</span> sed <span class="s1">&#39;s/ //g&#39;</span> <span class="p">|</span> fold -w <span class="m">60</span>
+</code></pre></div>
 
 
 <p>that outputs</p>
-<div class="highlight"><pre><span></span><span class="err">KKAVINGEQIRSISDLHQTLKKELALPEYYGENLDALWDCLTGWVEYPLVLEWRQFEQSK</span>
+<div class="highlight"><pre><span></span><code><span class="err">KKAVINGEQIRSISDLHQTLKKELALPEYYGENLDALWDCLTGWVEYPLVLEWRQFEQSK</span>
 <span class="err">QLTENGAESVLQVFREAKAEGCDITIILS</span>
-</pre></div>
+</code></pre></div>
 
 
 <p>A more exhaustive script that scans all possible chains is available in
 the
 <a href="https://bitbucket.org/pierrepo/pdb2fasta" title="pdb2fasta repository (Bitbucket)">pdb2fasta</a>
 repository from Bitbucket. You can get it with</p>
-<div class="highlight"><pre><span></span>git clone https://bitbucket.org/pierrepo/pdb2fasta.git
-</pre></div>
+<div class="highlight"><pre><span></span><code>git clone https://bitbucket.org/pierrepo/pdb2fasta.git
+</code></pre></div>
 
 
 <p>or directly through the <a href="https://bitbucket.org/pierrepo/pdb2fasta/src" title="Bitbucket / pdb2fasta - source code brower">source code
 browser</a>.
 The repository also contains two PDB files in the <code>test</code> directory.</p>
-<div class="highlight"><pre><span></span>poulain@badiane&gt; ./pdb2fasta.sh test/1BTA.pdb
+<div class="highlight"><pre><span></span><code>poulain@badiane&gt; ./pdb2fasta.sh test/1BTA.pdb
 &gt;test/1BTA <span class="p">|</span> chain A <span class="p">|</span> <span class="m">89</span> aa
 KKAVINGEQIRSISDLHQTLKKELALPEYYGENLDALWDCLTGWVEYPLVLEWRQFEQSK
 QLTENGAESVLQVFREAKAEGCDITIILS
-</pre></div>
+</code></pre></div>
 
 
 <p>and</p>
-<div class="highlight"><pre><span></span>poulain@badiane&gt; ./pdb2fasta.sh test/3FCS.pdb
+<div class="highlight"><pre><span></span><code>poulain@badiane&gt; ./pdb2fasta.sh test/3FCS.pdb
 &gt;test/3FCS <span class="p">|</span> chain A <span class="p">|</span> <span class="m">934</span> aa
 LNLDPVQLTFYAGPNGSQFGFSLDFHKDSHGRVAIVVGAPRTLGPSQEETGGVFLCPWRA
 <span class="o">[</span>...<span class="o">]</span>
@@ -266,7 +270,7 @@ GPNICTTRGVSSCQQCLAVSPMCAWCSDEALPLGSPRCDLKENLLKDNCAPAEBESIEFP
 <span class="o">[</span>...<span class="o">]</span>
 QCSCGDCLCDSDWTGYYCNCTTRTDTCMSSNGLLCSGRGKCECGSCVCIQPGSYGDTCEK
 CPTCPDACTFKK
-</pre></div>
+</code></pre></div>
 
 
 <p>Have fun.</p>

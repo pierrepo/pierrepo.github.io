@@ -96,11 +96,11 @@ d'accéder à des articles scientifiques à condition que :<!--more--></p>
                 <h2><a href="/clean-gromacs-backups/">Clean Gromacs backup files</a></h2>
                 <div class="summary"><p>Note to self.<br>
 Add the following lines to <code>.bashrc</code> file to clean Gromacs backups :</p>
-<div class="highlight"><pre><span></span><span class="err"># clean Gromacs backups in the current directory</span>
+<div class="highlight"><pre><span></span><code><span class="err"># clean Gromacs backups in the current directory</span>
 <span class="err">alias cleangromacsbackups=&quot;rm -f \#*\#&quot;</span>
 <span class="err"># clean Gromacs backups recursively (for the fearless warriors)</span>
 <span class="err">alias cleangromacsbackups_rec=&quot;find ./ -name \#*\# | xargs -r rm&quot;</span>
-</pre></div>
+</code></pre></div>
 
 
 <p>Be careful with the second command...</p>
@@ -113,8 +113,8 @@ Add the following lines to <code>.bashrc</code> file to clean Gromacs backups :
                 <div class="summary"><p>With the Unix commands find and xargs you have the ability to find any
 files on your hard drive while being able to manipulate them
 individually. Here are few examples:</p>
-<div class="highlight"><pre><span></span>find ./ -type f -name <span class="s2">&quot;*.php&quot;</span>  <span class="p">|</span> xargs -r rename <span class="s2">&quot;s/php/html/&quot;</span>
-</pre></div>
+<div class="highlight"><pre><span></span><code>find ./ -type f -name <span class="s2">&quot;*.php&quot;</span>  <span class="p">|</span> xargs -r rename <span class="s2">&quot;s/php/html/&quot;</span>
+</code></pre></div>
 
 
 <p>Find all files (<code>-type f</code>) with extension .php <code>-name …</code></p>
@@ -153,8 +153,8 @@ argument.</p>
 25
 26
 27
-28</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="ch">#! /bin/bash</span>
-<span class="c1"># PP 29/08 …</span></pre></div></td></tr></table>
+28</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="ch">#! /bin/bash</span>
+<span class="c1"># PP 29/08 …</span></code></pre></div></td></tr></table>
                     <a class="btn btn-default btn-xs" href="/reduce-pdf-size/">more ...</a>
                 </div>
             </article>

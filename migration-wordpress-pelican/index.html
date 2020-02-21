@@ -129,7 +129,7 @@ Plouf            </a>
 <p>Un site généré statiquement par Pelican ne gère pas nativement les commentaires. Leur gestion est externalisée chez <a href="http://disqus.com/">Disqus</a>.</p>
 <p>Depuis Wordpress, j'ai d'abord exporté les commentaires des articles sur Disqus avec le plugin adéquat, puis j'ai exporté l'ensemble des pages et des articles dans un fichier xml. Enfin, j'ai récupéré sur le serveur le répertoire wp-content qui contient les images.</p>
 <p>L'installation de Pelican et l'importation du site Wordpress est bien documentée sur internet. Voici les principales étapes que j'ai réalisées :</p>
-<div class="highlight"><pre><span></span><span class="c1"># installation de pelican</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># installation de pelican</span>
 sudo apt-get install python-pelican
 <span class="c1"># création du répertoire qui va contenir le site</span>
 mkdir blog
@@ -142,20 +142,20 @@ mkdir -p content<span class="o">{</span>pages/images<span class="o">}</span>
 <span class="c1"># import du blog depuis la sauvegarde Wordpress</span>
 pelican-import --wpfile --dir-page -o content -m markdown backup.wordpress.xml
 <span class="c1"># toutes les pages et les articles ont été convertis en markdown sans problème</span>
-</pre></div>
+</code></pre></div>
 
 
 <p>J'ai du mettre les doigts dans le code des articles pour corriger les catégories et les tags qui ne sont pas gérés de la même manière avec Pelican. J'en ai profité pour faire du ménage dans les images car je me suis rendu compte que Wordpress générait parfoit plusieurs tailles pour la même image.</p>
 <p>J'ai aussi passé pas mal de temps dans la configuration des fichiers <code>pelicanconf.py</code> et <code>publishconf.py</code> qui contiennent les paramètres de génération et de publication du site. La <a href="http://docs.getpelican.com/en/3.5.0/">doc</a> de Pelican est très bien faite. J'ai trouvé d'autres infos très utiles sur le blog de <a href="http://www.circuidipity.com/pelican.html">circuidipidy</a> et de <a href="http://a-slide.github.io/blog/github-pelican">Drowned in Genomics</a> (son fichier <code>pelicanconf.py</code> est <a href="https://github.com/a-slide/a-slide.github.io/blob/source/pelicanconf.py">ici</a>). Pour que Disqus puisse retrouver les anciens commentaires, les articles doivent conserver impérativement la même url.</p>
 <p>Ce que j'ai apprécie avec Pelican c'est la possibilité de visualiser en local (à l'adresse <a href="http://localhost:8000">http://localhost:8000</a>) le rendu du site en lançant un mini serveur web avec la commande </p>
-<div class="highlight"><pre><span></span><span class="err">make  devserver</span>
-</pre></div>
+<div class="highlight"><pre><span></span><code><span class="err">make  devserver</span>
+</code></pre></div>
 
 
 <p>(et <code>make stopserver</code> pour l'arrêter),</p>
 <p>puis d'envoyer sur le serveur web extérieur le site lorsqu'il est satisfaisant </p>
-<div class="highlight"><pre><span></span><span class="err">make rsync_upload</span>
-</pre></div>
+<div class="highlight"><pre><span></span><code><span class="err">make rsync_upload</span>
+</code></pre></div>
             </div>
             <!-- /.entry-content -->
 <section class="well" id="related-posts">

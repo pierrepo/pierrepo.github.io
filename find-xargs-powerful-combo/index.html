@@ -121,35 +121,35 @@ Plouf            </a>
                 <p>With the Unix commands find and xargs you have the ability to find any
 files on your hard drive while being able to manipulate them
 individually. Here are few examples:</p>
-<div class="highlight"><pre><span></span>find ./ -type f -name <span class="s2">&quot;*.php&quot;</span>  <span class="p">|</span> xargs -r rename <span class="s2">&quot;s/php/html/&quot;</span>
-</pre></div>
+<div class="highlight"><pre><span></span><code>find ./ -type f -name <span class="s2">&quot;*.php&quot;</span>  <span class="p">|</span> xargs -r rename <span class="s2">&quot;s/php/html/&quot;</span>
+</code></pre></div>
 
 
 <p>Find all files (<code>-type f</code>) with extension .php <code>-name "*.php"</code> and
 replace php by html in their names (<code>rename "s/php/html/"</code>). The option <code>-r</code>
 for xargs prevents xargs to execute the following command if the ouput
 provided by find is empty.</p>
-<div class="highlight"><pre><span></span>find ./ -type f -name *<span class="s2">&quot;.html&quot;</span> <span class="p">|</span> xargs sed -i <span class="s2">&quot;s/php/html/g&quot;</span>
-</pre></div>
+<div class="highlight"><pre><span></span><code>find ./ -type f -name *<span class="s2">&quot;.html&quot;</span> <span class="p">|</span> xargs sed -i <span class="s2">&quot;s/php/html/g&quot;</span>
+</code></pre></div>
 
 
 <p>Find all file (<code>-type f</code>) with extension .html (<code>-name "*.html"</code>) and
 replace all occurences of php by html inside these files.</p>
-<div class="highlight"><pre><span></span>find ./work/ -type f -name <span class="s2">&quot;*.sh&quot;</span> -mtime -20 <span class="p">|</span> xargs -r ls -l
-</pre></div>
+<div class="highlight"><pre><span></span><code>find ./work/ -type f -name <span class="s2">&quot;*.sh&quot;</span> -mtime -20 <span class="p">|</span> xargs -r ls -l
+</code></pre></div>
 
 
 <p>Find all files (<code>-type f</code>) in the ./work/ directory with extension .sh
 (<code>-name *.sh</code>) and modified less than 20 days ago and print details of
 these files (<code>ls -l</code>).</p>
-<div class="highlight"><pre><span></span>find ./ -size +5M -type f <span class="p">|</span> xargs -r ls -Ssh
-</pre></div>
+<div class="highlight"><pre><span></span><code>find ./ -size +5M -type f <span class="p">|</span> xargs -r ls -Ssh
+</code></pre></div>
 
 
 <p>Find all files (<code>-type f</code>) with size bigger than 5 Mb (<code>-size +5M</code>) and sort
 them by size (<code>ls -Ssh</code>)</p>
-<div class="highlight"><pre><span></span>find ./work/ -type f -name <span class="s2">&quot;*.pdf&quot;</span> -mtime +5 -size +2M  <span class="p">|</span> xargs -r cp -t ./backup/
-</pre></div>
+<div class="highlight"><pre><span></span><code>find ./work/ -type f -name <span class="s2">&quot;*.pdf&quot;</span> -mtime +5 -size +2M  <span class="p">|</span> xargs -r cp -t ./backup/
+</code></pre></div>
 
 
 <p>Find all .pdf files (<code>-type f -name "*.pdf"</code>) from the ./work/ directory
