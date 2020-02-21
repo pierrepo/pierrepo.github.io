@@ -173,7 +173,7 @@ atom</a>
 labelled <code>CA</code> (provided no atom is missing). Therefore, we have to
 select lines that start with the keyword <code>ATOM</code>, with column 3 equals to
 <code>CA</code> and column 5 equals to the targeted chain (here chain <code>A</code>).</p>
-<div class="highlight"><pre><span></span><code>cat 1BTA.pdb <span class="p">|</span> awk <span class="s1">&#39;/^ATOM/ &amp;&amp; $3 == &quot;CA&quot; &amp;&amp; $5 == &quot;A&quot; {print $4}&#39;</span>
+<div class="highlight"><pre><span></span><code>$ cat 1BTA.pdb <span class="p">|</span> awk <span class="s1">&#39;/^ATOM/ &amp;&amp; $3 == &quot;CA&quot; &amp;&amp; $5 == &quot;A&quot; {print $4}&#39;</span>
 </code></pre></div>
 
 
@@ -200,7 +200,7 @@ options:</p>
     on StackOverflow)</li>
 </ul>
 <p>And from this</p>
-<div class="highlight"><pre><span></span><code>cat 1BTA.pdb <span class="p">|</span> awk <span class="s1">&#39;/ATOM/ &amp;&amp; $3 == &quot;CA&quot; &amp;&amp; $5 == &quot;A&quot; {print $4}&#39;</span> <span class="p">|</span> tr <span class="s1">&#39;\n&#39;</span> <span class="s1">&#39; &#39;</span>
+<div class="highlight"><pre><span></span><code>$ cat 1BTA.pdb <span class="p">|</span> awk <span class="s1">&#39;/ATOM/ &amp;&amp; $3 == &quot;CA&quot; &amp;&amp; $5 == &quot;A&quot; {print $4}&#39;</span> <span class="p">|</span> tr <span class="s1">&#39;\n&#39;</span> <span class="s1">&#39; &#39;</span>
 </code></pre></div>
 
 
@@ -211,7 +211,7 @@ options:</p>
 
 <p>Next we want to convert the 3-letter code residue name into 1-letter
 code. <code>sed</code> is useful here</p>
-<div class="highlight"><pre><span></span><code>sed <span class="s1">&#39;s/ALA/A/g;s/CYS/C/g;s/ASP/D/g;s/GLU/E/g;s/PHE/F/g;s/GLY/G/g;s/HIS/H/g;s/ILE/I/g;s/LYS/K/g;s/LEU/L/g;s/MET/M/g;s/ASN/N/g;s/PRO/P/g;s/GLN/Q/g;s/ARG/R/g;s/SER/S/g;s/THR/T/g;s/VAL/V/g;s/TRP/W/g;s/TYR/Y/g&#39;</span>
+<div class="highlight"><pre><span></span><code>$ sed <span class="s1">&#39;s/ALA/A/g;s/CYS/C/g;s/ASP/D/g;s/GLU/E/g;s/PHE/F/g;s/GLY/G/g;s/HIS/H/g;s/ILE/I/g;s/LYS/K/g;s/LEU/L/g;s/MET/M/g;s/ASN/N/g;s/PRO/P/g;s/GLN/Q/g;s/ARG/R/g;s/SER/S/g;s/THR/T/g;s/VAL/V/g;s/TRP/W/g;s/TYR/Y/g&#39;</span>
 </code></pre></div>
 
 
@@ -220,7 +220,7 @@ acids.</p>
 <p>Eventually, we have to remove space between residue names with
 <code>sed 's/ //g'</code> and fold the sequence into 60-character lines with
 <code>fold -w 60</code>. The complete command line is</p>
-<div class="highlight"><pre><span></span><code>cat 1BTA.pdb <span class="p">|</span> awk <span class="s1">&#39;/ATOM/ &amp;&amp; $3 == &quot;CA&quot; &amp;&amp; $5 == &quot;A&quot; {print $4}&#39;</span> <span class="p">|</span> tr <span class="s1">&#39;\n&#39;</span> <span class="s1">&#39; &#39;</span> <span class="p">|</span> sed <span class="s1">&#39;s/ALA/A/g;s/CYS/C/g;s/ASP/D/g;s/GLU/E/g;s/PHE/F/g;s/GLY/G/g;s/HIS/H/g;s/ILE/I/g;s/LYS/K/g;s/LEU/L/g;s/MET/M/g;s/ASN/N/g;s/PRO/P/g;s/GLN/Q/g;s/ARG/R/g;s/SER/S/g;s/THR/T/g;s/VAL/V/g;s/TRP/W/g;s/TYR/Y/g&#39;</span> <span class="p">|</span> sed <span class="s1">&#39;s/ //g&#39;</span> <span class="p">|</span> fold -w <span class="m">60</span>
+<div class="highlight"><pre><span></span><code>$ cat 1BTA.pdb <span class="p">|</span> awk <span class="s1">&#39;/ATOM/ &amp;&amp; $3 == &quot;CA&quot; &amp;&amp; $5 == &quot;A&quot; {print $4}&#39;</span> <span class="p">|</span> tr <span class="s1">&#39;\n&#39;</span> <span class="s1">&#39; &#39;</span> <span class="p">|</span> sed <span class="s1">&#39;s/ALA/A/g;s/CYS/C/g;s/ASP/D/g;s/GLU/E/g;s/PHE/F/g;s/GLY/G/g;s/HIS/H/g;s/ILE/I/g;s/LYS/K/g;s/LEU/L/g;s/MET/M/g;s/ASN/N/g;s/PRO/P/g;s/GLN/Q/g;s/ARG/R/g;s/SER/S/g;s/THR/T/g;s/VAL/V/g;s/TRP/W/g;s/TYR/Y/g&#39;</span> <span class="p">|</span> sed <span class="s1">&#39;s/ //g&#39;</span> <span class="p">|</span> fold -w <span class="m">60</span>
 </code></pre></div>
 
 
@@ -234,14 +234,14 @@ acids.</p>
 the
 <a href="https://bitbucket.org/pierrepo/pdb2fasta" title="pdb2fasta repository (Bitbucket)">pdb2fasta</a>
 repository from Bitbucket. You can get it with</p>
-<div class="highlight"><pre><span></span><code>git clone https://bitbucket.org/pierrepo/pdb2fasta.git
+<div class="highlight"><pre><span></span><code>$ git clone https://bitbucket.org/pierrepo/pdb2fasta.git
 </code></pre></div>
 
 
 <p>or directly through the <a href="https://bitbucket.org/pierrepo/pdb2fasta/src" title="Bitbucket / pdb2fasta - source code brower">source code
 browser</a>.
 The repository also contains two PDB files in the <code>test</code> directory.</p>
-<div class="highlight"><pre><span></span><code>poulain@badiane&gt; ./pdb2fasta.sh test/1BTA.pdb
+<div class="highlight"><pre><span></span><code>$ ./pdb2fasta.sh test/1BTA.pdb
 &gt;test/1BTA <span class="p">|</span> chain A <span class="p">|</span> <span class="m">89</span> aa
 KKAVINGEQIRSISDLHQTLKKELALPEYYGENLDALWDCLTGWVEYPLVLEWRQFEQSK
 QLTENGAESVLQVFREAKAEGCDITIILS
@@ -249,7 +249,7 @@ QLTENGAESVLQVFREAKAEGCDITIILS
 
 
 <p>and</p>
-<div class="highlight"><pre><span></span><code>poulain@badiane&gt; ./pdb2fasta.sh test/3FCS.pdb
+<div class="highlight"><pre><span></span><code>$ ./pdb2fasta.sh test/3FCS.pdb
 &gt;test/3FCS <span class="p">|</span> chain A <span class="p">|</span> <span class="m">934</span> aa
 LNLDPVQLTFYAGPNGSQFGFSLDFHKDSHGRVAIVVGAPRTLGPSQEETGGVFLCPWRA
 <span class="o">[</span>...<span class="o">]</span>
