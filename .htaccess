@@ -1,0 +1,5 @@
+# Disable server signature
+ServerSignature Off
+
+# Define 404 page
+ErrorDocument 404 /404/
