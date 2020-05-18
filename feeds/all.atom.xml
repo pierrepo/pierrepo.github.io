@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Plouf</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2020-02-22T00:00:00+01:00</updated><entry><title>En vrac</title><link href="/vrac/" rel="alternate"></link><published>2017-05-01T08:32:41+02:00</published><updated>2020-02-22T00:00:00+01:00</updated><author><name>Pierre</name></author><id>tag:None,2017-05-01:/vrac/</id><summary type="html">&lt;h2&gt;Markdown&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Plouf</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2020-05-18T00:00:00+02:00</updated><entry><title>En vrac</title><link href="/vrac/" rel="alternate"></link><published>2017-05-01T08:32:41+02:00</published><updated>2020-02-22T00:00:00+01:00</updated><author><name>Pierre</name></author><id>tag:None,2017-05-01:/vrac/</id><summary type="html">&lt;h2&gt;Markdown&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;La syntaxe &lt;a href="http://daringfireball.net/projects/markdown/syntax"&gt;de référence (John Gruber)&lt;/a&gt; ; celle de &lt;a href="https://guides.github.com/features/mastering-markdown/"&gt;GitHub&lt;/a&gt; ; et un &lt;a href="http://commonmark.org/help/"&gt;mémo (CommonMark)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Tutoriel interactif : &lt;a href="http://commonmark.org/help/tutorial/"&gt;10 minutes Markdown Tutorial (CommonMark)&lt;/a&gt;&lt;/li&gt;
@@ -146,7 +146,7 @@ En bas de cette page est indiqué le lien vers l'interface enseignant.&lt;/p&gt;
 La plupart des étudiants n'avaient pas sur leur téléphone d'application qui scanne les QR codes. Ce n'est pas gênant, l'adresse du site est indiquée dessous sous forme de lien court.&lt;/p&gt;
 &lt;p&gt;Les étudiants qui n'avaient pas de connexions 3G pouvaient utiliser le wifi de l'université dans l'amphi.&lt;/p&gt;
 &lt;p&gt;Les étudiants qui n'avaient pas de smartphone se rapprochaient simplement d'un camarade qui en avait un. Ils votaient alors à 2 ou 3. L'objectif de ce type de questionnaire pour moi n'est pas d'évaluer chaque étudiant mais bien d'avoir un retour &lt;em&gt;qualitatif&lt;/em&gt; des étudiants sur leur compréhension de ce qui est abordé en cours.&lt;/p&gt;
-&lt;p&gt;Bref, c'est vraiment pas mal, je vais sans doute poursuivre l'expérience. Si vous connaissez des sites similaires, je suis interessé !&lt;/p&gt;</content><category term="blog"></category><category term="directpoll"></category><category term="cours"></category><category term="fr"></category></entry><entry><title>Git et GitHub</title><link href="/git-github/" rel="alternate"></link><published>2016-09-01T00:00:00+02:00</published><updated>2019-07-08T00:00:00+02:00</updated><author><name>Pierre</name></author><id>tag:None,2016-09-01:/git-github/</id><summary type="html">&lt;p&gt;Git et un GitHub sont deux supers outils pour le travail collaboratif, que ce soit pour de la programmation ou d'autres projets.&lt;/p&gt;
+&lt;p&gt;Bref, c'est vraiment pas mal, je vais sans doute poursuivre l'expérience. Si vous connaissez des sites similaires, je suis interessé !&lt;/p&gt;</content><category term="blog"></category><category term="directpoll"></category><category term="cours"></category><category term="fr"></category></entry><entry><title>Git et GitHub</title><link href="/git-github/" rel="alternate"></link><published>2016-09-01T00:00:00+02:00</published><updated>2020-05-18T00:00:00+02:00</updated><author><name>Pierre</name></author><id>tag:None,2016-09-01:/git-github/</id><summary type="html">&lt;p&gt;Git et un GitHub sont deux supers outils pour le travail collaboratif, que ce soit pour de la programmation ou d'autres projets.&lt;/p&gt;
 &lt;p&gt;Git est un gestionnaire de version, qui va garder une mémoire, un historique, des modifications d'un ou plusieurs fichiers.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://github.com/"&gt;GitHub&lt;/a&gt; est un site web qui rend l'utilisation de …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Git et un GitHub sont deux supers outils pour le travail collaboratif, que ce soit pour de la programmation ou d'autres projets.&lt;/p&gt;
 &lt;p&gt;Git est un gestionnaire de version, qui va garder une mémoire, un historique, des modifications d'un ou plusieurs fichiers.&lt;/p&gt;
@@ -249,10 +249,6 @@ La plupart des étudiants n'avaient pas sur leur téléphone d'application qui s
 &lt;p&gt;&lt;a href="https://www.wired.com/2013/09/github-for-anything/"&gt;From Collaborative Coding to Wedding Invitations: GitHub Is Going Mainstream&lt;/a&gt;, Wired, 2013.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2&gt;GitHub pour l'éducation&lt;/h2&gt;
-&lt;p&gt;Pour les enseignants et les étudiants, GitHub propose une réduction permettant d'avoir gratuitement un nombre illimité de dépôts privés (option d'habitude payante). Il faut faire une demande &lt;a href="https://education.github.com/discount_requests/new"&gt;ici&lt;/a&gt; et justifier d'une adresse mail dans une université.&lt;/p&gt;
-&lt;p&gt;La réduction est valable pendant deux ans et se renouvelle facilement en redemandant la réduction.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2&gt;Quelques exemples de dépôts notables sur GitHub&lt;/h2&gt;
 &lt;ul&gt;
