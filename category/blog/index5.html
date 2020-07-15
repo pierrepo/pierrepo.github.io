@@ -82,6 +82,22 @@ Plouf            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
+                <h2><a href="/clean-gromacs-backups/">Clean Gromacs backup files</a></h2>
+                <div class="summary"><p>Note to self.<br>
+Add the following lines to <code>.bashrc</code> file to clean Gromacs backups :</p>
+<div class="highlight"><pre><span></span><code><span class="err"># clean Gromacs backups in the current directory</span>
+<span class="err">alias cleangromacsbackups=&quot;rm -f \#*\#&quot;</span>
+<span class="err"># clean Gromacs backups recursively (for the fearless warriors)</span>
+<span class="err">alias cleangromacsbackups_rec=&quot;find ./ -name \#*\# | xargs -r rm&quot;</span>
+</code></pre></div>
+
+
+<p>Be careful with the second command...</p>
+                    <a class="btn btn-default btn-xs" href="/clean-gromacs-backups/">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="/pdb2fasta/">pdb to fasta conversion with Bash</a></h2>
                 <div class="summary"><p>Here is a simple
 <a href="http://www.wwpdb.org/documentation/format33/v3.3.html" title="PDB format">pdb</a>
@@ -142,20 +158,6 @@ l’Université Paris Diderot – Paris 7.<!--more--></p>
 format <a href="http://cupnet.net/docs/cours_gestion_projets_bioinfo.pdf">PDF</a> [1,1
 Mo].</p>
                     <a class="btn btn-default btn-xs" href="/cours-gestion-projets-bioinfo/">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="/find-xargs-powerful-combo/">Find + xargs = powerful combo</a></h2>
-                <div class="summary"><p>With the Unix commands find and xargs you have the ability to find any
-files on your hard drive while being able to manipulate them
-individually. Here are few examples:</p>
-<div class="highlight"><pre><span></span><code>find ./ -type f -name <span class="s2">&quot;*.php&quot;</span>  <span class="p">|</span> xargs -r rename <span class="s2">&quot;s/php/html/&quot;</span>
-</code></pre></div>
-
-
-<p>Find all files (<code>-type f</code>) with extension .php <code>-name …</code></p>
-                    <a class="btn btn-default btn-xs" href="/find-xargs-powerful-combo/">more ...</a>
                 </div>
             </article>
             <hr/>
