@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Plouf</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2020-07-15T09:55:48+02:00</updated><entry><title>Conseils son et vidéo pour des enseignements</title><link href="/conseils-son-video/" rel="alternate"></link><published>2020-07-15T09:55:48+02:00</published><updated>2020-07-15T09:55:48+02:00</updated><author><name>Pierre</name></author><id>tag:None,2020-07-15:/conseils-son-video/</id><summary type="html">&lt;p&gt;Comme la plupart des mes collègues, la pandémie Covid-19 m'a amené à participer à de nombreuses visioconférences, que ce soit pour des réunions ou des enseignements. Je prépare aussi des vidéos pour accompagner mes étudiants dans leurs apprentissages.&lt;/p&gt;
 &lt;p&gt;Sans compétence préalable en audiovisuel, j'ai cherché quelques conseils sur internet. Voici …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Comme la plupart des mes collègues, la pandémie Covid-19 m'a amené à participer à de nombreuses visioconférences, que ce soit pour des réunions ou des enseignements. Je prépare aussi des vidéos pour accompagner mes étudiants dans leurs apprentissages.&lt;/p&gt;
 &lt;p&gt;Sans compétence préalable en audiovisuel, j'ai cherché quelques conseils sur internet. Voici ceux qui me semblent compréhensibles et applicables :&lt;/p&gt;
-&lt;h3&gt;Améliorer le son de votre voix pour communiquer par internet&lt;/h3&gt;
+&lt;h2&gt;Améliorer le son de votre voix pour communiquer par internet&lt;/h2&gt;
 &lt;p&gt;de  Scilabus plus, 13/04/2020.&lt;/p&gt;
 &lt;iframe width="400" height="225" src="https://www.youtube-nocookie.com/embed/_1keV0J1vd4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 
@@ -12,7 +12,7 @@
 &lt;li&gt;Avoir le micro proche de la bouche. Éviter d'utiliser le micro de la webcam qui est en général sur l'écran et qui va capter tous les sons alentour. Les micro-casques (écouteurs) fournis avec les téléphones portables sont une bonne solution.&lt;/li&gt;
 &lt;li&gt;Si le budget le permet, acheter des micros dédiés, par exemple le Blue Yeti. [J'ai pour ma part un Rode NT-USB]. Un filtre antipop est aussi utile pour atténuer les consonnes explosives (« b », « p », « t »...).&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Comment améliorer la qualité de son image en visio ?&lt;/h3&gt;
+&lt;h2&gt;Comment améliorer la qualité de son image en visio ?&lt;/h2&gt;
 &lt;p&gt;de nowtech.tv, 04/06/2020.&lt;/p&gt;
 &lt;iframe width="400" height="225" src="https://www.youtube-nocookie.com/embed/PbloqhN_eGw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 
@@ -23,17 +23,17 @@
 &lt;li&gt;Utiliser un casque pour avoir le retour audio de la visioconférence et éviter le larsen.&lt;/li&gt;
 &lt;li&gt;Couper le micro quand on ne parle pas.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Microphone Comparison&lt;/h3&gt;
+&lt;h2&gt;Microphone Comparison&lt;/h2&gt;
 &lt;p&gt;de Matthew Rocklin, 03/07/2020.&lt;/p&gt;
 &lt;iframe width="400" height="225" src="https://www.youtube-nocookie.com/embed/cGEUAav3exk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;p&gt;Dans cette vidéo, Matthew Rocklin compare un micro de type conférence (Jabra), un micro casque et un micro cravate. Le micro cravate semble produire un meilleur son.&lt;/p&gt;
-&lt;h3&gt;Why are Talk-Show Hosts so Bad at YouTube? A Closer Look&lt;/h3&gt;
+&lt;h2&gt;Why are Talk-Show Hosts so Bad at YouTube? A Closer Look&lt;/h2&gt;
 &lt;p&gt;de Matt_Parker_2, 30/03/2020.&lt;/p&gt;
 &lt;iframe width="400" height="225" src="https://www.youtube-nocookie.com/embed/tEC8q9i2fOw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;p&gt;Matt Parker fournit des conseils et astuces pour améliorer la qualité d'une vidéo. Ici encore, utiliser un micro dédié (plutôt un micro cravate), atténuer l'écho, placer la caméra à hauteur des yeux, éviter la webcam par défaut...&lt;/p&gt;
-&lt;h2&gt;Et donc...&lt;/h2&gt;
+&lt;h1&gt;Et donc...&lt;/h1&gt;
 &lt;p&gt;Toutes ces vidéos m'ont convaincu de plusieurs choses :&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Utiliser un micro proche de ma bouche. Suivant le cas d'usage j'alterne entre un Rode NT-USB et un micro casque Jabra Evolve 40. En déplacement, j'utilise le micro casque (écouteurs) fourni avec mon smartphone. Exit le micro de la webcam.&lt;/li&gt;
