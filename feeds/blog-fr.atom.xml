@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Plouf - blog, fr</title><link href="/" rel="alternate"></link><link href="/feeds/blog-fr.atom.xml" rel="self"></link><id>/</id><updated>2020-02-22T00:00:00+01:00</updated><entry><title>En vrac</title><link href="/vrac/" rel="alternate"></link><published>2017-05-01T08:32:41+02:00</published><updated>2020-02-22T00:00:00+01:00</updated><author><name>Pierre</name></author><id>tag:None,2017-05-01:/vrac/</id><summary type="html">&lt;h2&gt;Markdown&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Plouf - blog, fr</title><link href="/" rel="alternate"></link><link href="/feeds/blog-fr.atom.xml" rel="self"></link><id>/</id><updated>2020-07-17T00:00:00+02:00</updated><entry><title>En vrac</title><link href="/memo-markdown/" rel="alternate"></link><published>2017-05-01T00:00:00+02:00</published><updated>2020-07-17T00:00:00+02:00</updated><author><name>Pierre</name></author><id>tag:None,2017-05-01:/memo-markdown/</id><summary type="html">&lt;h2&gt;Mémo Markdown&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;La syntaxe &lt;a href="http://daringfireball.net/projects/markdown/syntax"&gt;de référence (John Gruber)&lt;/a&gt; ; celle de &lt;a href="https://guides.github.com/features/mastering-markdown/"&gt;GitHub&lt;/a&gt; ; et un &lt;a href="http://commonmark.org/help/"&gt;mémo (CommonMark)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Tutoriel interactif : &lt;a href="http://commonmark.org/help/tutorial/"&gt;10 minutes Markdown Tutorial (CommonMark)&lt;/a&gt;&lt;/li&gt;
@@ -7,7 +7,7 @@
 &lt;/ul&gt;
 &lt;p&gt;Conversion de document avec &lt;a href="http://pandoc.org/demos.html"&gt;pandoc&lt;/a&gt; :&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;pandoc -s text.md -o text.html&lt;/span&gt;
-&lt;span class="err"&gt;pandoc -s text.md --mathjax -o …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2&gt;Markdown&lt;/h2&gt;
+&lt;span class="err"&gt;pandoc -s text.md --mathjax …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2&gt;Mémo Markdown&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;La syntaxe &lt;a href="http://daringfireball.net/projects/markdown/syntax"&gt;de référence (John Gruber)&lt;/a&gt; ; celle de &lt;a href="https://guides.github.com/features/mastering-markdown/"&gt;GitHub&lt;/a&gt; ; et un &lt;a href="http://commonmark.org/help/"&gt;mémo (CommonMark)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Tutoriel interactif : &lt;a href="http://commonmark.org/help/tutorial/"&gt;10 minutes Markdown Tutorial (CommonMark)&lt;/a&gt;&lt;/li&gt;
@@ -21,8 +21,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Un article sur la manière de rédiger un article scientifique avec Markdown : &lt;a href="https://peerj.com/articles/cs-112/"&gt;Formatting Open Science: agilely creating multiple document formats for academic manuscripts with Pandoc Scholar&lt;/a&gt; (PeerJ CompSci, 2017).&lt;/p&gt;
-&lt;h2&gt;Mémorisation / révisions&lt;/h2&gt;
+&lt;p&gt;Un article sur la manière de rédiger un article scientifique avec Markdown : &lt;a href="https://peerj.com/articles/cs-112/"&gt;Formatting Open Science: agilely creating multiple document formats for academic manuscripts with Pandoc Scholar&lt;/a&gt; (PeerJ CompSci, 2017).&lt;/p&gt;</content><category term="blog, fr"></category><category term="ressources"></category><category term="markdown"></category></entry><entry><title>En vrac</title><link href="/memorisation-revisions/" rel="alternate"></link><published>2017-05-01T00:00:00+02:00</published><updated>2020-07-17T00:00:00+02:00</updated><author><name>Pierre</name></author><id>tag:None,2017-05-01:/memorisation-revisions/</id><summary type="html">&lt;h2&gt;Mémorisation / révisions&lt;/h2&gt;
 &lt;p&gt;Une très bonne vidéo du blogueur &lt;a href="https://www.youtube.com/channel/UCtqICqGbPSbTN09K1_7VZ3Q"&gt;DirtyBiology&lt;/a&gt; sur la science des révisions :&lt;/p&gt;
 &lt;iframe width="400" height="225" src="https://www.youtube.com/embed/Sxy6ye_QzPg?rel=0&amp;amp;showinfo=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
@@ -35,4 +34,17 @@
 &lt;li&gt;Expliquez à quelqu'un (proverbe latin "&lt;a href="https://en.wikipedia.org/wiki/Docendo_discimus"&gt;Docendo discimus&lt;/a&gt;" : "Quand on enseigne, on apprend").&lt;/li&gt;
 &lt;li&gt;Testez-vous !&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;L'article du Monde &lt;a href="http://www.lemonde.fr/campus/article/2017/05/26/pour-memoriser-le-plus-efficace-c-est-de-s-amuser_5134419_4401467.html"&gt;« Pour mémoriser, le plus efficace, c’est de s’amuser »&lt;/a&gt; met l'accent sur la nécessite de faire des pauses régulièrement, toutes les 25 minutes (voir &lt;a href="https://fr.wikipedia.org/wiki/Technique_Pomodoro"&gt;la technique Pomodoro&lt;/a&gt;), de se tester par des questions / réponses et par le test de la feuille blanche (voir également &lt;a href="https://fr.wikipedia.org/wiki/Carte_heuristique"&gt;les cartes heuristiques&lt;/a&gt;), de bien s'alimenter et de dormir suffisamment.&lt;/p&gt;</content><category term="blog, fr"></category><category term="ressources"></category><category term="markdown"></category><category term="révisions"></category></entry></feed>
+&lt;p&gt;L'article du Monde &lt;a href="http://www.lemonde.fr/campus/article/2017/05/26/pour-memoriser-le-plus-efficace-c-est-de-s-amuser_5134419_4401467.html"&gt;« Pour mémoriser …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Mémorisation / révisions&lt;/h2&gt;
+&lt;p&gt;Une très bonne vidéo du blogueur &lt;a href="https://www.youtube.com/channel/UCtqICqGbPSbTN09K1_7VZ3Q"&gt;DirtyBiology&lt;/a&gt; sur la science des révisions :&lt;/p&gt;
+&lt;iframe width="400" height="225" src="https://www.youtube.com/embed/Sxy6ye_QzPg?rel=0&amp;amp;showinfo=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Pour résumer :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Mangez.&lt;/li&gt;
+&lt;li&gt;Dormez.&lt;/li&gt;
+&lt;li&gt;Espacez vos révisions. Voir également &lt;a href="https://www.youtube.com/watch?v=fBCJmqvevNE"&gt;cette vidéo&lt;/a&gt; sur le &lt;em&gt;space learning&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Lachez vos marqueurs.&lt;/li&gt;
+&lt;li&gt;Expliquez à quelqu'un (proverbe latin "&lt;a href="https://en.wikipedia.org/wiki/Docendo_discimus"&gt;Docendo discimus&lt;/a&gt;" : "Quand on enseigne, on apprend").&lt;/li&gt;
+&lt;li&gt;Testez-vous !&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;L'article du Monde &lt;a href="http://www.lemonde.fr/campus/article/2017/05/26/pour-memoriser-le-plus-efficace-c-est-de-s-amuser_5134419_4401467.html"&gt;« Pour mémoriser, le plus efficace, c’est de s’amuser »&lt;/a&gt; met l'accent sur la nécessite de faire des pauses régulièrement, toutes les 25 minutes (voir &lt;a href="https://fr.wikipedia.org/wiki/Technique_Pomodoro"&gt;la technique Pomodoro&lt;/a&gt;), de se tester par des questions / réponses et par le test de la feuille blanche (voir également &lt;a href="https://fr.wikipedia.org/wiki/Carte_heuristique"&gt;les cartes heuristiques&lt;/a&gt;), de bien s'alimenter et de dormir suffisamment.&lt;/p&gt;</content><category term="blog, fr"></category><category term="révisions"></category></entry></feed>
