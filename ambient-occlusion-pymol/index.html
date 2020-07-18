@@ -131,24 +131,24 @@ albeit results are not strictly equivalent. <!--more-->Here is an
 example taken from the <a href="http://www.pymolwiki.org/index.php/Gallery" title="PyMOL wiki">PyMOL
 wiki</a> that
 produced the picture above.</p>
-<div class="highlight"><pre><span></span><code><span class="err">fetch 1BTA</span>
-<span class="err">set_color oxygen, [1.0,0.4,0.4]</span>
-<span class="err">set_color nitrogen, [0.5,0.5,1.0]</span>
-<span class="err">remove solvent</span>
-<span class="err">as spheres</span>
-<span class="err">util.cbaw</span>
-<span class="err">bg white</span>
-<span class="err">set light_count,10</span>
-<span class="err">set spec_count,1</span>
-<span class="err">set shininess, 10</span>
-<span class="err">set specular, 0.25</span>
-<span class="err">set ambient,0</span>
-<span class="err">set direct,0</span>
-<span class="err">set reflect,1.5</span>
-<span class="err">set ray_shadow_decay_factor, 0.1</span>
-<span class="err">set ray_shadow_decay_range, 2</span>
-<span class="err">unset depth_cue</span>
-<span class="err">ray 1200, 1200</span>
+<div class="highlight"><pre><span></span><code>fetch 1BTA
+set_color oxygen, <span class="o">[</span><span class="m">1</span>.0,0.4,0.4<span class="o">]</span>
+set_color nitrogen, <span class="o">[</span><span class="m">0</span>.5,0.5,1.0<span class="o">]</span>
+remove solvent
+as spheres
+util.cbaw
+<span class="nb">bg</span> white
+<span class="nb">set</span> light_count,10
+<span class="nb">set</span> spec_count,1
+<span class="nb">set</span> shininess, <span class="m">10</span>
+<span class="nb">set</span> specular, <span class="m">0</span>.25
+<span class="nb">set</span> ambient,0
+<span class="nb">set</span> direct,0
+<span class="nb">set</span> reflect,1.5
+<span class="nb">set</span> ray_shadow_decay_factor, <span class="m">0</span>.1
+<span class="nb">set</span> ray_shadow_decay_range, <span class="m">2</span>
+<span class="nb">unset</span> depth_cue
+ray <span class="m">1200</span>, <span class="m">1200</span>
 </code></pre></div>
 
 
