@@ -87,25 +87,23 @@
 &lt;li&gt;Utiliser un micro proche de ma bouche. Suivant le cas d'usage j'alterne entre un Rode NT-USB et un micro casque Jabra Evolve 40. En déplacement, j'utilise le micro casque (écouteurs) fourni avec mon smartphone. Exit le micro de la webcam.&lt;/li&gt;
 &lt;li&gt;Éviter l'écho (j'espère que la bibliothèque derrière moi fait l'affaire) et le larsen (en mettant un casque).&lt;/li&gt;
 &lt;li&gt;Placer la caméra au niveau des yeux. Ce que j'ai pu faire en utilisant une seconde webcam à la place de celle de mon ordi portable. Ayant une fenêtre derrière moi sur ma droite, j'ai quand même un beau contre-jour...&lt;/li&gt;
-&lt;/ol&gt;</content><category term="blog"></category><category term="fr"></category><category term="enseignement"></category></entry><entry><title>Mémo Markdown</title><link href="/memo-markdown/" rel="alternate"></link><published>2017-05-01T00:00:00+02:00</published><updated>2020-07-17T00:00:00+02:00</updated><author><name>Pierre</name></author><id>tag:None,2017-05-01:/memo-markdown/</id><summary type="html">&lt;h2&gt;Mémo Markdown&lt;/h2&gt;
-&lt;ul&gt;
+&lt;/ol&gt;</content><category term="blog"></category><category term="fr"></category><category term="enseignement"></category></entry><entry><title>Mémo Markdown</title><link href="/memo-markdown/" rel="alternate"></link><published>2017-05-01T00:00:00+02:00</published><updated>2020-07-17T00:00:00+02:00</updated><author><name>Pierre</name></author><id>tag:None,2017-05-01:/memo-markdown/</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;La syntaxe &lt;a href="http://daringfireball.net/projects/markdown/syntax"&gt;de référence (John Gruber)&lt;/a&gt; ; celle de &lt;a href="https://guides.github.com/features/mastering-markdown/"&gt;GitHub&lt;/a&gt; ; et un &lt;a href="http://commonmark.org/help/"&gt;mémo (CommonMark)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Tutoriel interactif : &lt;a href="http://commonmark.org/help/tutorial/"&gt;10 minutes Markdown Tutorial (CommonMark)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Un éditeur en ligne : &lt;a href="https://monod.lelab.tailordev.fr/"&gt;Monod, the Markdown Editor&lt;/a&gt;, développé par &lt;a href="https://tailordev.fr/"&gt;TailorDev&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Conversion de document avec &lt;a href="http://pandoc.org/demos.html"&gt;pandoc&lt;/a&gt; :&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;pandoc -s text.md -o text.html&lt;/span&gt;
-&lt;span class="err"&gt;pandoc -s text.md --mathjax …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2&gt;Mémo Markdown&lt;/h2&gt;
-&lt;ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pandoc -s text.md -o text.html
+pandoc -s text.md --mathjax -o text …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;ul&gt;
 &lt;li&gt;La syntaxe &lt;a href="http://daringfireball.net/projects/markdown/syntax"&gt;de référence (John Gruber)&lt;/a&gt; ; celle de &lt;a href="https://guides.github.com/features/mastering-markdown/"&gt;GitHub&lt;/a&gt; ; et un &lt;a href="http://commonmark.org/help/"&gt;mémo (CommonMark)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Tutoriel interactif : &lt;a href="http://commonmark.org/help/tutorial/"&gt;10 minutes Markdown Tutorial (CommonMark)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Un éditeur en ligne : &lt;a href="https://monod.lelab.tailordev.fr/"&gt;Monod, the Markdown Editor&lt;/a&gt;, développé par &lt;a href="https://tailordev.fr/"&gt;TailorDev&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Conversion de document avec &lt;a href="http://pandoc.org/demos.html"&gt;pandoc&lt;/a&gt; :&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;pandoc -s text.md -o text.html&lt;/span&gt;
-&lt;span class="err"&gt;pandoc -s text.md --mathjax -o text.html&lt;/span&gt;
-&lt;span class="err"&gt;pandoc -s text.md --toc -o text.html&lt;/span&gt;
-&lt;span class="err"&gt;pandoc text.md --latex-engine=xelatex --toc -o text.pdf&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pandoc -s text.md -o text.html
+pandoc -s text.md --mathjax -o text.html
+pandoc -s text.md --toc -o text.html
+pandoc text.md --latex-engine&lt;span class="o"&gt;=&lt;/span&gt;xelatex --toc -o text.pdf
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
