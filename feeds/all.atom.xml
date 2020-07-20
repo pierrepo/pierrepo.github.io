@@ -91,10 +91,10 @@
 &lt;li&gt;Placer la caméra au niveau des yeux. Ce que j'ai pu faire en utilisant une seconde webcam à la place de celle de mon ordinateur portable.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h1&gt;Un point rapide sur les logiciels et la diffusion&lt;/h1&gt;
-&lt;p&gt;Je n'ai mentionné ici que des conseils matériels et d'organisation de l'espace de travail. Voici mon modeste retour d'expérience, pour la partie logicielle et diffusion.&lt;/p&gt;
+&lt;p&gt;Je n'ai mentionné ici que des conseils matériel et d'organisation de l'espace de travail. Voici mon modeste retour d'expérience, pour la partie logiciel et diffusion.&lt;/p&gt;
 &lt;p&gt;Si vous êtes sous Windows ou Mac et que vous avez un peu d'argent, je conseille &lt;a href="https://screencast-o-matic.com/"&gt;Screencast-O-Matic&lt;/a&gt;. L'outil est très simple à utiliser et convivial. Il permet en plus de retoucher les vidéos (supprimer certains passages, modifier le son...).&lt;/p&gt;
 &lt;p&gt;La fonctionnalité d'enregistrement proposée par Zoom est aussi très bien. Je l'ai utilisée pour rediffuser ensuite des vidéos de séance de cours. Ne soyez pas surpris si la vidéo n'est pas immédiatement disponible après la visio. Zoom l'enregistre d'abord dans un format brut puis la convertit ensuite en fichier mp4.&lt;/p&gt;
-&lt;p&gt;Pour enregistrer des vidéos, hors visio, j'utilise &lt;a href="https://obsproject.com/fr"&gt;OBS&lt;/a&gt;. Ce logiciel est open source (libre et gratuit) et multiplateforme. C'est un outil très puissant, utilisé massivement par les personnes qui font du &lt;em&gt;live stream&lt;/em&gt;. Il demande donc un certain temps pour sa prise en main. On trouve plein de ressources sur OBS sur internet. En voici quelques unes :&lt;/p&gt;
+&lt;p&gt;Pour enregistrer des vidéos, hors visio, j'utilise &lt;a href="https://obsproject.com/fr"&gt;OBS&lt;/a&gt;. Ce logiciel est open source (libre et gratuit) et multiplateforme. C'est un outil très puissant, utilisé massivement par les personnes qui font du &lt;em&gt;live stream&lt;/em&gt;. Il demande donc un certain temps d'adaptation. On trouve plein de ressources sur OBS sur internet. En voici quelques unes :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.dane.ac-versailles.fr/IMG/pdf/tutorielcapsulesobsfinalv1.pdf"&gt;OBS Studio Réaliser une capsule vidéo de son écran&lt;/a&gt;, par l'Académie de Versailles.&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=DkPCIiM6c38"&gt;Covid 19 et continuité pédagogique : un tuto pour réaliser une vidéo de son écran avec sa voix.&lt;/a&gt;, par Hervé Brunet.&lt;/li&gt;
