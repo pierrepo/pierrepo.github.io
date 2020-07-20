@@ -48,7 +48,9 @@
 &lt;iframe width="400" height="225" src="https://www.youtube-nocookie.com/embed/Dj8iVjy-NsA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;p&gt;L'université de Lausanne a également publié le « &lt;a href="https://www.unil.ch/coronavirus/files/live/sites/coronavirus/files/vademecum_evaluation_etudiants_distance.pdf"&gt;Vade-mecum pour l’évaluation à distance des étudiant·e·s&lt;/a&gt; » qui permet de s'orienter dans les différentes modalités d'évaluation à distance possibles. Christophe Batier et Emmanuel Sylvestre ont ensuite repris ce guide sous forme d'une série de 6 courtes vidéos sur &lt;a href="https://www.youtube.com/playlist?list=PLWfpjXQlhDZlcKoqHb_jB1ZUpZleJTIVR"&gt;Youtube&lt;/a&gt;.&lt;/p&gt;</content><category term="blog"></category><category term="fr"></category><category term="enseignement"></category><category term="pédagogie"></category><category term="ressources"></category></entry><entry><title>Conseils son et vidéo pour les enseignements</title><link href="/conseils-son-video/" rel="alternate"></link><published>2020-07-15T00:00:00+02:00</published><updated>2020-07-15T00:00:00+02:00</updated><author><name>Pierre</name></author><id>tag:None,2020-07-15:/conseils-son-video/</id><summary type="html">&lt;p&gt;Comme la plupart des mes collègues, la pandémie Covid-19 m'a amené à participer à de nombreuses visioconférences, que ce soit pour des réunions ou des enseignements. Je prépare aussi des vidéos pour accompagner mes étudiants dans leurs apprentissages.&lt;/p&gt;
-&lt;p&gt;Sans compétence préalable en audiovisuel, j'ai cherché quelques conseils sur internet. Voici …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Comme la plupart des mes collègues, la pandémie Covid-19 m'a amené à participer à de nombreuses visioconférences, que ce soit pour des réunions ou des enseignements. Je prépare aussi des vidéos pour accompagner mes étudiants dans leurs apprentissages.&lt;/p&gt;
+&lt;h1&gt;Le son et la vidéo&lt;/h1&gt;
+&lt;p&gt;Sans compétence préalable en audiovisuel, j'ai cherché …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Comme la plupart des mes collègues, la pandémie Covid-19 m'a amené à participer à de nombreuses visioconférences, que ce soit pour des réunions ou des enseignements. Je prépare aussi des vidéos pour accompagner mes étudiants dans leurs apprentissages.&lt;/p&gt;
+&lt;h1&gt;Le son et la vidéo&lt;/h1&gt;
 &lt;p&gt;Sans compétence préalable en audiovisuel, j'ai cherché quelques conseils sur internet. Voici ceux qui me semblent compréhensibles et applicables :&lt;/p&gt;
 &lt;h2&gt;Améliorer le son de votre voix pour communiquer par internet&lt;/h2&gt;
 &lt;p&gt;de  Scilabus plus, 13/04/2020.&lt;/p&gt;
@@ -81,13 +83,14 @@
 &lt;iframe width="400" height="225" src="https://www.youtube-nocookie.com/embed/tEC8q9i2fOw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;p&gt;Matt Parker fournit des conseils et astuces pour améliorer la qualité d'une vidéo. Ici encore, utiliser un micro dédié (plutôt un micro cravate), atténuer l'écho, placer la caméra à hauteur des yeux, éviter la webcam par défaut...&lt;/p&gt;
-&lt;h1&gt;Et donc...&lt;/h1&gt;
+&lt;h2&gt;Et donc...&lt;/h2&gt;
 &lt;p&gt;Toutes ces vidéos m'ont convaincu de plusieurs choses :&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Utiliser un micro proche de ma bouche. Suivant le cas d'usage j'alterne entre un Rode NT-USB et un micro casque Jabra Evolve 40. En déplacement, j'utilise le micro casque (écouteurs) fourni avec mon smartphone. Exit le micro de la webcam.&lt;/li&gt;
 &lt;li&gt;Éviter l'écho (j'espère que la bibliothèque derrière moi fait l'affaire) et le larsen (en mettant un casque).&lt;/li&gt;
 &lt;li&gt;Placer la caméra au niveau des yeux. Ce que j'ai pu faire en utilisant une seconde webcam à la place de celle de mon ordinateur portable.&lt;/li&gt;
 &lt;/ol&gt;
+&lt;h1&gt;Un point rapide sur les logiciels et la diffusion&lt;/h1&gt;
 &lt;p&gt;Je n'ai mentionné ici que des conseils matériels. Voici mon modeste retour d'expérience, pour la partie logicielle et diffusion.&lt;/p&gt;
 &lt;p&gt;Si vous êtes sous Windows ou Mac et que vous avez un peu d'argent, je conseille &lt;a href="https://screencast-o-matic.com/"&gt;Screencast-O-Matic&lt;/a&gt;. L'outil est très simple à utiliser et convivial. Il permet en plus de retoucher les vidéos (supprimer certains passages, modifier le son...).&lt;/p&gt;
 &lt;p&gt;La fonctionnalité d'enregistrement proposée par Zoom est aussi très bien. Je l'ai utilisée pour rediffuser ensuite des vidéos de séance de cours. Ne soyez pas surpris si la vidéo n'est pas immédiatement disponible après la visio. Zoom l'enregistre d'abord dans un format brut puis la convertit ensuite en fichier mp4.&lt;/p&gt;
