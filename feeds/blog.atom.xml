@@ -299,12 +299,8 @@ La plupart des étudiants n'avaient pas sur leur téléphone d'application qui s
 &lt;h2&gt;Git / GitHub dans les revues scientifiques&lt;/h2&gt;
 &lt;p&gt;Deux articles publiés en 2016 dans PLoS Computational Biology :&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004668"&gt;A Quick Introduction to Version Control with Git and GitHub&lt;/a&gt; (Blischak, 2016)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004947"&gt;Ten Simple Rules for Taking Advantage of Git and GitHub&lt;/a&gt; (Perez-Riverol, 2016)&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004668"&gt;A Quick Introduction to Version Control with Git and GitHub&lt;/a&gt; (Blischak, 2016)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004947"&gt;Ten Simple Rules for Taking Advantage of Git and GitHub&lt;/a&gt; (Perez-Riverol, 2016)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Et un autre dans Nature qui explique la pertinence de GitHub pour le travail collaboratif en science :&lt;/p&gt;
 &lt;ul&gt;
@@ -312,6 +308,7 @@ La plupart des étudiants n'avaient pas sur leur téléphone d'application qui s
 &lt;/ul&gt;
 &lt;p&gt;Enfin, d'autres articles scientifiques sur le sujet :&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a href="https://scfbm.biomedcentral.com/articles/10.1186/1751-0473-8-7"&gt;Git can facilitate greater reproducibility and increased transparency in science&lt;/a&gt; (Ram, 2013)&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://link.springer.com/article/10.1007/s40614-019-00202-5"&gt;Furthering Open Science in Behavior Analysis: An Introduction and Tutorial for Using GitHub in Research&lt;/a&gt; (Gilroy, 2019)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
