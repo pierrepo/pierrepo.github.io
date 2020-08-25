@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Plouf - blog</title><link href="/" rel="alternate"></link><link href="/feeds/blog.atom.xml" rel="self"></link><id>/</id><updated>2020-07-23T00:00:00+02:00</updated><entry><title>Enseigner à distance : scénarios et conseils</title><link href="/enseigner-distance/" rel="alternate"></link><published>2020-07-16T00:00:00+02:00</published><updated>2020-07-23T00:00:00+02:00</updated><author><name>Pierre</name></author><id>tag:None,2020-07-16:/enseigner-distance/</id><summary type="html">&lt;p&gt;Covid-19 oblige, 2020 nous aura fait plonger dans l'enseignement à distance.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Plouf - blog</title><link href="/" rel="alternate"></link><link href="/feeds/blog.atom.xml" rel="self"></link><id>/</id><updated>2020-08-25T00:00:00+02:00</updated><entry><title>Enseigner à distance : scénarios et conseils</title><link href="/enseigner-distance/" rel="alternate"></link><published>2020-07-16T00:00:00+02:00</published><updated>2020-07-23T00:00:00+02:00</updated><author><name>Pierre</name></author><id>tag:None,2020-07-16:/enseigner-distance/</id><summary type="html">&lt;p&gt;Covid-19 oblige, 2020 nous aura fait plonger dans l'enseignement à distance.&lt;/p&gt;
 &lt;p&gt;Autant le dire tout de suite, qu'on l'appelle enseignement à distance ou distanciel, cette situation où l'enseignant n'est pas physiquement avec ses étudiants n'est pas idéale. Pour ma part, la richesse et l'intérêt de mon métier d'enseignant réside dans …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Covid-19 oblige, 2020 nous aura fait plonger dans l'enseignement à distance.&lt;/p&gt;
 &lt;p&gt;Autant le dire tout de suite, qu'on l'appelle enseignement à distance ou distanciel, cette situation où l'enseignant n'est pas physiquement avec ses étudiants n'est pas idéale. Pour ma part, la richesse et l'intérêt de mon métier d'enseignant réside dans les interactions que j'ai avec mes étudiants, a priori au même endroit et au même moment. Pour autant, peut-on créer de l'interaction avec des étudiants qui sont ailleurs, à travers une visio Zoom ou un forum Moodle ? Je l'espère, au moins momentanément, car cela semble être la situation des prochains mois.&lt;/p&gt;
 &lt;p&gt;D'ailleurs, si vous ne l'avez pas déjà vu, jetez un oeil au court métrage &lt;em&gt;As it used to be&lt;/em&gt; de Clément Gonzalez :&lt;/p&gt;
@@ -235,7 +235,7 @@ En bas de cette page est indiqué le lien vers l'interface enseignant.&lt;/p&gt;
 La plupart des étudiants n'avaient pas sur leur téléphone d'application qui scanne les QR codes. Ce n'est pas gênant, l'adresse du site est indiquée dessous sous forme de lien court.&lt;/p&gt;
 &lt;p&gt;Les étudiants qui n'avaient pas de connexions 3G pouvaient utiliser le wifi de l'université dans l'amphi.&lt;/p&gt;
 &lt;p&gt;Les étudiants qui n'avaient pas de smartphone se rapprochaient simplement d'un camarade qui en avait un. Ils votaient alors à 2 ou 3. L'objectif de ce type de questionnaire pour moi n'est pas d'évaluer chaque étudiant mais bien d'avoir un retour &lt;em&gt;qualitatif&lt;/em&gt; des étudiants sur leur compréhension de ce qui est abordé en cours.&lt;/p&gt;
-&lt;p&gt;Bref, c'est vraiment pas mal, je vais sans doute poursuivre l'expérience. Si vous connaissez des sites similaires, je suis interessé !&lt;/p&gt;</content><category term="blog"></category><category term="directpoll"></category><category term="enseignement"></category><category term="fr"></category></entry><entry><title>Git et GitHub</title><link href="/git-github/" rel="alternate"></link><published>2016-09-01T00:00:00+02:00</published><updated>2020-05-18T00:00:00+02:00</updated><author><name>Pierre</name></author><id>tag:None,2016-09-01:/git-github/</id><summary type="html">&lt;p&gt;Git et un GitHub sont deux supers outils pour le travail collaboratif, que ce soit pour de la programmation ou d'autres projets.&lt;/p&gt;
+&lt;p&gt;Bref, c'est vraiment pas mal, je vais sans doute poursuivre l'expérience. Si vous connaissez des sites similaires, je suis interessé !&lt;/p&gt;</content><category term="blog"></category><category term="directpoll"></category><category term="enseignement"></category><category term="fr"></category></entry><entry><title>Git et GitHub</title><link href="/git-github/" rel="alternate"></link><published>2016-09-01T00:00:00+02:00</published><updated>2020-08-25T00:00:00+02:00</updated><author><name>Pierre</name></author><id>tag:None,2016-09-01:/git-github/</id><summary type="html">&lt;p&gt;Git et un GitHub sont deux supers outils pour le travail collaboratif, que ce soit pour de la programmation ou d'autres projets.&lt;/p&gt;
 &lt;p&gt;Git est un gestionnaire de version, qui va garder une mémoire, un historique, des modifications d'un ou plusieurs fichiers.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://github.com/"&gt;GitHub&lt;/a&gt; est un site web qui rend l'utilisation de …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Git et un GitHub sont deux supers outils pour le travail collaboratif, que ce soit pour de la programmation ou d'autres projets.&lt;/p&gt;
 &lt;p&gt;Git est un gestionnaire de version, qui va garder une mémoire, un historique, des modifications d'un ou plusieurs fichiers.&lt;/p&gt;
@@ -300,15 +300,19 @@ La plupart des étudiants n'avaient pas sur leur téléphone d'application qui s
 &lt;p&gt;Deux articles publiés en 2016 dans PLoS Computational Biology :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004668"&gt;A Quick Introduction to Version Control with Git and GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004668"&gt;A Quick Introduction to Version Control with Git and GitHub&lt;/a&gt; (Blischak, 2016)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004947"&gt;Ten Simple Rules for Taking Advantage of Git and GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004947"&gt;Ten Simple Rules for Taking Advantage of Git and GitHub&lt;/a&gt; (Perez-Riverol, 2016)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Et un autre dans Nature qui explique la pertinence de GitHub pour le travail collaboratif en science :&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://www.nature.com/news/democratic-databases-science-on-github-1.20719"&gt;Democratic databases: science on GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.nature.com/news/democratic-databases-science-on-github-1.20719"&gt;Democratic databases: science on GitHub&lt;/a&gt; (Perkel, 2016)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Enfin, d'autres articles scientifiques sur le sujet :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://link.springer.com/article/10.1007/s40614-019-00202-5"&gt;Furthering Open Science in Behavior Analysis: An Introduction and Tutorial for Using GitHub in Research&lt;/a&gt; (Gilroy, 2019)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2&gt;Git / GitHub dans la presse en ligne&lt;/h2&gt;
@@ -2094,10 +2098,10 @@ handle the &lt;code&gt;verbatim&lt;/code&gt; environment nor the &lt;code&gt;\
 
 &lt;span class="o"&gt;\&lt;/span&gt;&lt;span class="n"&gt;ifmycondition&lt;/span&gt;
 &lt;span class="c"&gt;% if mycondition is true print this :&lt;/span&gt;
-&lt;span class="n"&gt;hello &lt;/span&gt;&lt;span class="s"&gt;my condition is true&lt;/span&gt;&lt;span class="p"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;hello&lt;/span&gt; &lt;span class="s"&gt;my&lt;/span&gt; &lt;span class="s"&gt;condition&lt;/span&gt; &lt;span class="s"&gt;is&lt;/span&gt; &lt;span class="s"&gt;true&lt;/span&gt;
 &lt;span class="o"&gt;\&lt;/span&gt;&lt;span class="k"&gt;else&lt;/span&gt;
 &lt;span class="c"&gt;% if mycondition is false print this :&lt;/span&gt;
-&lt;span class="n"&gt;hello &lt;/span&gt;&lt;span class="s"&gt;my condition is false&lt;/span&gt;&lt;span class="p"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;hello&lt;/span&gt; &lt;span class="s"&gt;my&lt;/span&gt; &lt;span class="s"&gt;condition&lt;/span&gt; &lt;span class="s"&gt;is&lt;/span&gt; &lt;span class="s"&gt;false&lt;/span&gt;
 &lt;span class="o"&gt;\&lt;/span&gt;&lt;span class="n"&gt;fi&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
