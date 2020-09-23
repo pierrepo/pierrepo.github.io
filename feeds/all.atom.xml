@@ -37,7 +37,7 @@
 &lt;p&gt;avec l'option &lt;em&gt;Émettre un son pour :&lt;/em&gt; réglée à &lt;em&gt;Hôte et co-hôte uniquement&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Concrètement j'entends un son lorsque un participant entre dans la réunion. Cela permet de savoir s'il y a des retardataires (sans pour autant savoir qui vient d'arriver).&lt;/p&gt;
 &lt;h3&gt;Co-animateur : activé&lt;/h3&gt;
-&lt;p&gt;Très utile pour animer des réunions à plusieurs. Par contre, comme mon compte est fourni par l'Université, les co-animateurs doivent obligatoirement être authentifiés par le même système. Concrètement, ils doivent avoir un compte à l'Université. Pas terrible quand on veut co-animer une réunion avec des collègues d'une autre université ou qui n'ont pas encore de compte à l'Université.&lt;/p&gt;
+&lt;p&gt;Très utile pour animer des réunions à plusieurs. Par contre, comme mon compte est fourni par l'Université, les co-animateurs doivent obligatoirement être authentifiés par le même système. Concrètement, ils doivent avoir un compte à l'Université. Pas terrible quand on veut co-animer une réunion avec des collègues d'une autre institution ou qui n'ont pas encore de compte à l'Université.&lt;/p&gt;
 &lt;h3&gt;Sondage : activé&lt;/h3&gt;
 &lt;p&gt;Mon Université a activé et verrouillé ce paramètre.&lt;/p&gt;
 &lt;p&gt;On peut faire des sondages avec Zoom. Il faut les préparer en amont de la réunion. Les fonctionnalités sont limitées à des questions de type QCM. Préfèrez WooClap si vous pouvez.&lt;/p&gt;
@@ -83,7 +83,7 @@
 &lt;p&gt;Sans co-animateur, c'est un peu compliqué au delà de 30 étudiants et 4 étudiants par groupe.&lt;/p&gt;
 &lt;h3&gt;Afficher un lien « Rejoindre depuis votre navigateur » : activé&lt;/h3&gt;
 &lt;p&gt;Permet aux participants de rejoindre la réunion sans nécessairement installer le client Zoom.&lt;/p&gt;
-&lt;h2&gt;Rubrique &lt;em&gt;En réunion (avancé)&lt;/em&gt;&lt;/h2&gt;
+&lt;h2&gt;Rubrique &lt;em&gt;Notification de courriels&lt;/em&gt;&lt;/h2&gt;
 &lt;h3&gt;Lorsqu’un enregistrement dans le nuage est disponible : activé&lt;/h3&gt;
 &lt;p&gt;Lorsque j'enregistre mes réunions, elles sont enregistrées dans le cloud. Je reçois alors un message quelques heures après la réunion pour m'indiquer que je peux récupérer les vidéos.&lt;/p&gt;
 &lt;h1&gt;La réunion Zoom&lt;/h1&gt;
@@ -91,7 +91,7 @@
 &lt;h2&gt;Le son&lt;/h2&gt;
 &lt;p&gt;Dans le menu à bas à gauche, j'active le son. Je vérifie dans les &lt;em&gt;paramètres audio&lt;/em&gt; que l'entrée (micro) et la sortie sont correctement configurées. Je teste à chaque fois l'entrée (le volume du son capté varie) et la sortie (Zoom diffuse une petite musique).&lt;/p&gt;
 &lt;h2&gt;La vidéo&lt;/h2&gt;
-&lt;p&gt;Dans le menu en bas à gauche, j'active la vidéo. Je sélectionne la bonne caméra le cas échéant. J'ajuste l'éclairage. Je vire le linge qu'on voit dans le champ.&lt;/p&gt;
+&lt;p&gt;Dans le menu en bas à gauche, j'active la vidéo. Je sélectionne la bonne caméra. J'ajuste l'éclairage. Je vire le linge qu'on voit dans le champ.&lt;/p&gt;
 &lt;h2&gt;Participants et Chat.&lt;/h2&gt;
 &lt;p&gt;Toujours dans le menu en bas, j'affiche les participants et le chat.&lt;/p&gt;
 &lt;h2&gt;Pour un cours&lt;/h2&gt;
@@ -105,16 +105,16 @@
 &lt;/ul&gt;
 &lt;p&gt;Pendant le cours, je propose aux étudiants :&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;De prendre la parole mais uniquement en ayant levé la main au préalable.&lt;/li&gt;
+&lt;li&gt;De prendre la parole en ayant levé la main (virtuellement) au préalable.&lt;/li&gt;
 &lt;li&gt;De poser des questions, de fournir des réponses dans le chat.&lt;/li&gt;
 &lt;li&gt;De répondre à mes sollicitations ponctuelles avec les icônes du retour non verbal.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Dans le cadre d'un cours en grand effectif, je bloque la possibilité aux étudiants d'activer eux-mêmes leur micro (voir la configuration ci-dessous). Un étudiant peut néamoins intervenir oralement. Pour cela, il lève (virtuellement la main) et je lui donne alors la parole.&lt;/p&gt;
+&lt;p&gt;Dans le cadre d'un cours en grand effectif, je bloque la possibilité aux étudiants d'activer eux-mêmes leur micro (voir la configuration ci-dessous). Un étudiant peut néamoins intervenir oralement. Pour cela, il lève (virtuellement) la main et je lui donne alors la parole.&lt;/p&gt;
 &lt;h2&gt;Pour une conférence, une soutenance de thèse&lt;/h2&gt;
 &lt;p&gt;Je conserve la salle d'attente jusqu'au début de la conférence.&lt;/p&gt;
 &lt;p&gt;Je bloque la possibilité que les participants activent par eux-mêmes leur micro, via le bouton &lt;em&gt;Sécurité&lt;/em&gt; dans la barre de menu en bas et en décochant &lt;em&gt;Réactiver eux-mêmes leur micro&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Zoom : sécurité" src="/images/zoom_securite.png"&gt;&lt;/p&gt;
-&lt;p&gt;Eventuellement, je bloque aussi la possibilité que les participants partagent leurs écrans (par le même bouton &lt;em&gt;Sécurité&lt;/em&gt;). Cela n'est néanmoins pas indispensable car j'avais configuré le fait qu'un participant ne pouvait pas partager un écran si l'animateur (donc moi) en partageait déjà un.&lt;/p&gt;
+&lt;p&gt;Eventuellement, je bloque aussi la possibilité que les participants partagent leurs écrans (par le même bouton &lt;em&gt;Sécurité&lt;/em&gt;). Cela n'est néanmoins pas indispensable car j'ai configuré le fait qu'un participant ne peut pas partager un écran si l'animateur (donc moi) en partage déjà un.&lt;/p&gt;
 &lt;p&gt;J'indique à l'oral que les micros sont bloqués et que les intéractions se feront uniquement via le chat (ou le retour non verbal). Selon le contexte, je demande aux participants de couper leur caméra.&lt;/p&gt;
 &lt;p&gt;Enfin, si j'en ai besoin, j'enregistre la conférence.&lt;/p&gt;</content><category term="blog"></category><category term="fr"></category><category term="enseignement"></category><category term="pédagogie"></category><category term="ressources"></category></entry><entry><title>Enseigner à distance : scénarios et conseils</title><link href="/enseigner-distance/" rel="alternate"></link><published>2020-07-16T00:00:00+02:00</published><updated>2020-08-25T00:00:00+02:00</updated><author><name>Pierre</name></author><id>tag:None,2020-07-16:/enseigner-distance/</id><summary type="html">&lt;p&gt;Covid-19 oblige, 2020 nous aura fait plonger dans l'enseignement à distance.&lt;/p&gt;
 &lt;p&gt;Autant le dire tout de suite, qu'on l'appelle enseignement à distance ou distanciel, cette situation où l'enseignant n'est pas physiquement avec ses étudiants n'est pas idéale. Pour ma part, la richesse et l'intérêt de mon métier d'enseignant réside dans …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Covid-19 oblige, 2020 nous aura fait plonger dans l'enseignement à distance.&lt;/p&gt;
