@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Plouf - blog</title><link href="/" rel="alternate"></link><link href="/feeds/blog.atom.xml" rel="self"></link><id>/</id><updated>2020-09-21T00:00:00+02:00</updated><entry><title>Enseigner avec Zoom</title><link href="/enseigner-avec-zoom/" rel="alternate"></link><published>2020-09-21T00:00:00+02:00</published><updated>2020-09-21T00:00:00+02:00</updated><author><name>Pierre</name></author><id>tag:None,2020-09-21:/enseigner-avec-zoom/</id><summary type="html">&lt;p&gt;Voici comment je paramètre Zoom puis l'utilise pour des enseignements ou des conférences. Cependant :&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Plouf - blog</title><link href="/" rel="alternate"></link><link href="/feeds/blog.atom.xml" rel="self"></link><id>/</id><updated>2020-09-24T00:00:00+02:00</updated><entry><title>Enseigner avec Zoom</title><link href="/enseigner-avec-zoom/" rel="alternate"></link><published>2020-09-21T00:00:00+02:00</published><updated>2020-09-24T00:00:00+02:00</updated><author><name>Pierre</name></author><id>tag:None,2020-09-21:/enseigner-avec-zoom/</id><summary type="html">&lt;p&gt;Voici comment je paramètre Zoom puis l'utilise pour des enseignements ou des conférences. Cependant :&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;J'utilise un compte Zoom fourni par mon Université et pour lequel un certain nombre de paramètres de configuration sont fixés et non modifiables.&lt;/li&gt;
 &lt;li&gt;J'utilise la dernière version de Zoom en date de publication de cet article …&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;p&gt;Voici comment je paramètre Zoom puis l'utilise pour des enseignements ou des conférences. Cependant :&lt;/p&gt;
@@ -35,7 +35,7 @@
 &lt;p&gt;Si les participants échangent, je souhaite qu'ils le fassent avec tout le monde, pas en privé (il y a Whatsapp pour cela).&lt;/p&gt;
 &lt;h3&gt;Émettre un son de notification lorsque quelqu’un rejoint ou quitte la réunion : activé&lt;/h3&gt;
 &lt;p&gt;avec l'option &lt;em&gt;Émettre un son pour :&lt;/em&gt; réglée à &lt;em&gt;Hôte et co-hôte uniquement&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;Concrètement j'entends un son lorsque un participant entre dans la réunion. Cela permet de savoir s'il y a des retardataires (sans pour autant savoir qui vient d'arriver).&lt;/p&gt;
+&lt;p&gt;Concrètement j'entends un son lorsque un participant entre dans la réunion. Cela me permet de savoir s'il y a des retardataires (sans pour autant savoir qui vient d'arriver).&lt;/p&gt;
 &lt;h3&gt;Co-animateur : activé&lt;/h3&gt;
 &lt;p&gt;Très utile pour animer des réunions à plusieurs. Par contre, comme mon compte est fourni par l'Université, les co-animateurs doivent obligatoirement être authentifiés par le même système. Concrètement, ils doivent avoir un compte à l'Université. Pas terrible quand on veut co-animer une réunion avec des collègues d'une autre institution ou qui n'ont pas encore de compte à l'Université.&lt;/p&gt;
 &lt;h3&gt;Sondage : activé&lt;/h3&gt;
@@ -71,15 +71,15 @@
 &lt;p&gt;&lt;img alt="Zoom : effacer tous les retours" src="/images/zoom_retour_non_verbal_3.png"&gt;&lt;/p&gt;
 &lt;p&gt;Il y d'autres icônes disponibles. Celui de la pause café est pratique ;-) &lt;/p&gt;
 &lt;h3&gt;Meeting reactions : désactivé&lt;/h3&gt;
-&lt;p&gt;J'ai désactivé ce paramètre car je suis pas fan d'avoir des « pouce en l'air » apparaîtrent partout. Je préfère les icônes du retour non verbal (voir ci-dessus).&lt;/p&gt;
+&lt;p&gt;J'ai désactivé ce paramètre car je suis pas fan d'avoir des « pouces en l'air » apparaîtrent partout. Je préfère les icônes du retour non verbal (voir ci-dessus).&lt;/p&gt;
 &lt;h3&gt;Permettre aux participants de se renommer : désactivé&lt;/h3&gt;
-&lt;p&gt;Mon Université a désactivé et verrouillé ce paramètre. Et c'est embêtant ! J'ai en effet régulièrement besoin que les participants à mes cours ajoutent une information dans leur nom de profile : un numéro de groupe, le système d'exploitation utilisé... &lt;/p&gt;
+&lt;p&gt;Mon Université a désactivé et verrouillé ce paramètre. Et c'est embêtant ! J'ai en effet régulièrement besoin que les participants à mes cours ajoutent une information dans leur nom de profile : un numéro de groupe, le système d'exploitation utilisé... En tant qu'animateur, je peux néanmoins renommer les participants.&lt;/p&gt;
 &lt;h3&gt;Cacher les photos de profil des participants à une réunion : activé&lt;/h3&gt;
-&lt;p&gt;Lorsque ma réunion Zoom est un cours, je propose aux étudiants qui le souhaitent d'éteindre leur caméra, essentiellement pour deux motifs. Le premier est que cela diminue leur consommation internet et le second est que cela évite le &lt;a href="https://www.nationalgeographic.com/science/2020/04/coronavirus-zoom-fatigue-is-taxing-the-brain-here-is-why-that-happens/"&gt;&lt;em&gt;Zoom fatigue&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Lorsque ma réunion Zoom est un cours, je propose aux étudiants qui le souhaitent d'éteindre leur caméra, essentiellement pour deux motifs. Le premier est que cela diminue leur consommation internet et le second est que cela contribue à éviter le &lt;a href="https://www.nationalgeographic.com/science/2020/04/coronavirus-zoom-fatigue-is-taxing-the-brain-here-is-why-that-happens/"&gt;&lt;em&gt;Zoom fatigue&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Pour ne pas me retrouver avec des photos de profile plus ou moins flateuses, j'ai activé ce paramètre. Les participants qui ont éteint leur caméra apparaissent donc avec des cadres noirs et leurs noms à l'intérieur. Un peu perturbant au début mais très reposant visuellement.&lt;/p&gt;
 &lt;h2&gt;Rubrique &lt;em&gt;En réunion (avancé)&lt;/em&gt;&lt;/h2&gt;
 &lt;h3&gt;Salle de petits groupes : activé&lt;/h3&gt;
-&lt;p&gt;J'adore cette fonctionnalité qui permet de répartir les participants en petits groupes. Les groupes sont consitués soit aléatoirement soit manuellement.&lt;/p&gt;
+&lt;p&gt;J'adore cette fonctionnalité qui permet de répartir les participants en petits groupes. Les groupes sont constitués soit aléatoirement soit manuellement.&lt;/p&gt;
 &lt;p&gt;Sans co-animateur, c'est un peu compliqué au delà de 30 étudiants et 4 étudiants par groupe.&lt;/p&gt;
 &lt;h3&gt;Afficher un lien « Rejoindre depuis votre navigateur » : activé&lt;/h3&gt;
 &lt;p&gt;Permet aux participants de rejoindre la réunion sans nécessairement installer le client Zoom.&lt;/p&gt;
@@ -96,7 +96,7 @@
 &lt;p&gt;Toujours dans le menu en bas, j'affiche les participants et le chat.&lt;/p&gt;
 &lt;h2&gt;Pour un cours&lt;/h2&gt;
 &lt;p&gt;Je fais entrer les étudiants qui sont sont dans la salle d'attente (dans la fenêtre des participants, &lt;em&gt;Admettre tout&lt;/em&gt;), leur demande d'activer leur caméra, s'ils le peuvent, pour quelques minutes. Cela permet de mettre un visage sur un nom. On en profite pour papoter un peu.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Remarque concernant la caméra.&lt;/em&gt; Je crois qu'il n'est pas pertinent de forcer un étudiant à activer sa caméra. En effet la caméra va capter et révéler de nombreux détails personnels sur l'étudiant et son environnement proche. On peut parfaitement comprendre que celui-ci ne souhaite pas les partager...&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Remarque concernant la caméra.&lt;/em&gt; Je crois qu'il n'est pas pertinent de forcer un étudiant à activer sa caméra. En effet, la caméra va capter et révéler de nombreux détails personnels sur l'étudiant et son environnement proche. On peut parfaitement comprendre que celui-ci ne souhaite pas les partager...&lt;/p&gt;
 &lt;p&gt;Lorsque le cours commence :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Je désactive la salle d'attente via le bouton &lt;em&gt;Sécurité&lt;/em&gt;, dans le menu en bas.&lt;/li&gt;
@@ -109,7 +109,7 @@
 &lt;li&gt;De poser des questions, de fournir des réponses dans le chat.&lt;/li&gt;
 &lt;li&gt;De répondre à mes sollicitations ponctuelles avec les icônes du retour non verbal.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Suite à un cours avec une trentaine d'étudiants, j'avais fait un &lt;a href="https://twitter.com/pierrepo/status/1304151467998281731"&gt;rapide retour d'expérience sur Twitter&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Suite à un cours avec une trentaine d'étudiants de M2, j'ai fait un &lt;a href="https://twitter.com/pierrepo/status/1304151467998281731"&gt;rapide retour d'expérience sur Twitter&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Dans le cadre d'un cours en grand effectif, je bloque la possibilité aux étudiants d'activer eux-mêmes leur micro (voir la configuration ci-dessous). Un étudiant peut néamoins intervenir oralement. Pour cela, il lève (virtuellement) la main et je lui donne alors la parole.&lt;/p&gt;
 &lt;h2&gt;Pour une conférence, une soutenance de thèse&lt;/h2&gt;
 &lt;p&gt;Je conserve la salle d'attente jusqu'au début de la conférence.&lt;/p&gt;
@@ -121,7 +121,7 @@
 &lt;h2&gt;Commentaires sur l'enregistrement des réunions&lt;/h2&gt;
 &lt;p&gt;On peut très facilement enregistrer une réunion sur Zoom (bouton &lt;em&gt;Enregistrer&lt;/em&gt; dans le menu en bas). Si vous avez le choix entre enregistrement local et enregistrement cloud, je vous recommande le second car une fois enregistrée la vidéo doit être transformée par Zoom pour que vous puissiez l'utiliser. Si vous avez enregistré localement votre réunion, c'est votre machine qui va mouliner le temps de la conversion de la vidéo, et suivant la durée de votre réunion, ça peut prendre plusieurs heures.&lt;/p&gt;
 &lt;p&gt;Lors d'un cours sur Zoom, n'hésitez pas à mettre en pause l'enregistrement, par exemple lors du travail en salles de petits groupes (&lt;em&gt;Breakout rooms&lt;/em&gt;).&lt;/p&gt;
-&lt;p&gt;Pour les utilisateurs Zoom « Université de Paris », l'enregistrement se fait uniquement dans le cloud. Sur la vidéo, on ne verra que l'écran partagé et la caméra de la personne qui parle (si elle a activé sa caméra). Aucun nom de participant n'est visible.&lt;/p&gt;</content><category term="blog"></category><category term="fr"></category><category term="enseignement"></category><category term="pédagogie"></category><category term="ressources"></category></entry><entry><title>Enseigner à distance : scénarios et conseils</title><link href="/enseigner-distance/" rel="alternate"></link><published>2020-07-16T00:00:00+02:00</published><updated>2020-08-25T00:00:00+02:00</updated><author><name>Pierre</name></author><id>tag:None,2020-07-16:/enseigner-distance/</id><summary type="html">&lt;p&gt;Covid-19 oblige, 2020 nous aura fait plonger dans l'enseignement à distance.&lt;/p&gt;
+&lt;p&gt;Pour les utilisateurs Zoom « Université de Paris », l'enregistrement se fait uniquement dans le cloud. Sur la vidéo, on ne verra que l'écran partagé et la caméra de la personne qui parle (si elle a activé sa caméra). Aucun nom de participant ne sera visible.&lt;/p&gt;</content><category term="blog"></category><category term="fr"></category><category term="enseignement"></category><category term="pédagogie"></category><category term="ressources"></category></entry><entry><title>Enseigner à distance : scénarios et conseils</title><link href="/enseigner-distance/" rel="alternate"></link><published>2020-07-16T00:00:00+02:00</published><updated>2020-08-25T00:00:00+02:00</updated><author><name>Pierre</name></author><id>tag:None,2020-07-16:/enseigner-distance/</id><summary type="html">&lt;p&gt;Covid-19 oblige, 2020 nous aura fait plonger dans l'enseignement à distance.&lt;/p&gt;
 &lt;p&gt;Autant le dire tout de suite, qu'on l'appelle enseignement à distance ou distanciel, cette situation où l'enseignant n'est pas physiquement avec ses étudiants n'est pas idéale. Pour ma part, la richesse et l'intérêt de mon métier d'enseignant réside dans …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Covid-19 oblige, 2020 nous aura fait plonger dans l'enseignement à distance.&lt;/p&gt;
 &lt;p&gt;Autant le dire tout de suite, qu'on l'appelle enseignement à distance ou distanciel, cette situation où l'enseignant n'est pas physiquement avec ses étudiants n'est pas idéale. Pour ma part, la richesse et l'intérêt de mon métier d'enseignant réside dans les interactions que j'ai avec mes étudiants, a priori au même endroit et au même moment. Pour autant, peut-on créer de l'interaction avec des étudiants qui sont ailleurs, à travers une visio Zoom ou un forum Moodle ? Je l'espère, au moins momentanément, car cela semble être la situation des prochains mois.&lt;/p&gt;
 &lt;p&gt;D'ailleurs, si vous ne l'avez pas déjà vu, jetez un oeil au court métrage &lt;em&gt;As it used to be&lt;/em&gt; de Clément Gonzalez :&lt;/p&gt;
