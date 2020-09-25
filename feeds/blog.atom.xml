@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Plouf - blog</title><link href="/" rel="alternate"></link><link href="/feeds/blog.atom.xml" rel="self"></link><id>/</id><updated>2020-09-24T00:00:00+02:00</updated><entry><title>Enseigner avec Zoom</title><link href="/enseigner-avec-zoom/" rel="alternate"></link><published>2020-09-21T00:00:00+02:00</published><updated>2020-09-24T00:00:00+02:00</updated><author><name>Pierre</name></author><id>tag:None,2020-09-21:/enseigner-avec-zoom/</id><summary type="html">&lt;p&gt;Voici comment je paramètre Zoom puis l'utilise pour des enseignements ou des conférences. Cependant :&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Plouf - blog</title><link href="/" rel="alternate"></link><link href="/feeds/blog.atom.xml" rel="self"></link><id>/</id><updated>2020-09-24T00:00:00+02:00</updated><entry><title>Enseigner avec Zoom</title><link href="/enseigner-avec-zoom/" rel="alternate"></link><published>2020-09-21T00:00:00+02:00</published><updated>2020-09-24T00:00:00+02:00</updated><author><name>Pierre</name></author><id>tag:None,2020-09-21:/enseigner-avec-zoom/</id><summary type="html">&lt;p&gt;Suite à des questions et des discussions avec plusieurs collègues, voici comment je configure et utilise Zoom pour des enseignements ou des conférences. Veuillez noter cependant que :&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;J'utilise un compte Zoom fourni par mon Université et pour lequel un certain nombre de paramètres de configuration sont fixés et non modifiables.&lt;/li&gt;
-&lt;li&gt;J'utilise la dernière version de Zoom en date de publication de cet article …&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;p&gt;Voici comment je paramètre Zoom puis l'utilise pour des enseignements ou des conférences. Cependant :&lt;/p&gt;
+&lt;li&gt;J'utilise un compte Zoom fourni par mon Université et pour lequel un certain nombre de paramètres de configuration sont fixés et non modifiables …&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;p&gt;Suite à des questions et des discussions avec plusieurs collègues, voici comment je configure et utilise Zoom pour des enseignements ou des conférences. Veuillez noter cependant que :&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;J'utilise un compte Zoom fourni par mon Université et pour lequel un certain nombre de paramètres de configuration sont fixés et non modifiables.&lt;/li&gt;
 &lt;li&gt;J'utilise la dernière version de Zoom en date de publication de cet article.&lt;/li&gt;
+&lt;li&gt;Je suis ni ingénieur pédagogique, ni informaticien.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h1&gt;Les paramètres&lt;/h1&gt;
 &lt;p&gt;L'interface web de Zoom permet de configurer plusieurs paramètres qui seront ensuite appliqués à toutes vos futures réunions.&lt;/p&gt;
@@ -37,7 +37,8 @@
 &lt;p&gt;avec l'option &lt;em&gt;Émettre un son pour :&lt;/em&gt; réglée à &lt;em&gt;Hôte et co-hôte uniquement&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Concrètement j'entends un son lorsque un participant entre dans la réunion. Cela me permet de savoir s'il y a des retardataires (sans pour autant savoir qui vient d'arriver).&lt;/p&gt;
 &lt;h3&gt;Co-animateur : activé&lt;/h3&gt;
-&lt;p&gt;Très utile pour animer des réunions à plusieurs. Par contre, comme mon compte est fourni par l'Université, les co-animateurs doivent obligatoirement être authentifiés par le même système. Concrètement, ils doivent avoir un compte à l'Université. Pas terrible quand on veut co-animer une réunion avec des collègues d'une autre institution ou qui n'ont pas encore de compte à l'Université.&lt;/p&gt;
+&lt;p&gt;Ce paramètre est très utile pour animer des réunions à plusieurs. Par contre, comme mon compte est fourni par l'Université, les co-animateurs (&lt;em&gt;co-hosts&lt;/em&gt;) doivent obligatoirement être authentifiés par le même système. Concrètement, ils doivent avoir un compte à l'Université. Cela n'est pas très pratique quand on veut configurer au préalable la co-animation d'une réunion avec des collègues d'une autre institution ou qui n'ont pas encore de compte à l'Université. &lt;/p&gt;
+&lt;p&gt;Cependant, une fois la réunion démarrée, on peut passer un participant comme co-animateur en cliquant sur son nom dans la liste des participants, puis en cliquant sur &lt;em&gt;Plus&lt;/em&gt; et enfin &lt;em&gt;Nommer co-animateur&lt;/em&gt; (merci Madeleine).&lt;/p&gt;
 &lt;h3&gt;Sondage : activé&lt;/h3&gt;
 &lt;p&gt;Mon Université a activé et verrouillé ce paramètre.&lt;/p&gt;
 &lt;p&gt;On peut faire des sondages avec Zoom. Il faut les préparer en amont de la réunion. Les fonctionnalités sont limitées à des questions de type QCM. Préfèrez WooClap si vous pouvez.&lt;/p&gt;
