@@ -36,7 +36,7 @@ Avec ce type d'enseignement, les étudiants pouvaient voir, en temps réel, comm
 &lt;h3&gt;Évaluation par les pairs&lt;/h3&gt;
 &lt;p&gt;Les étudiants venaient en cours avec leurs fiches mémos. En début de séance, les étudiants échangeaient entre eux leurs fiches, puis et corrigeaient et complétaient éventuellement les fiches de leurs binômes.&lt;/p&gt;
 &lt;h3&gt;Quiz&lt;/h3&gt;
-&lt;p&gt;J'ai utilisé la plateforme en ligne WooClap pour proposer aux étudiants des questions à choix multiples (QCM) et des questions ouvertes.&lt;/p&gt;
+&lt;p&gt;J'ai utilisé la plateforme en ligne &lt;a href="https://www.wooclap.com/"&gt;WooClap&lt;/a&gt; pour proposer aux étudiants des questions à choix multiples (QCM) et des questions ouvertes.&lt;/p&gt;
 &lt;p&gt;Les QCM sont intéressants car ils permettent d'évaluer très rapidement la compréhension des étudiants sur un aspect donné. Dans l'exemple ci-dessous, je demandais aux étudiants ce que produisait le script suivant :&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;sys&lt;/span&gt;
 &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sys&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;argv&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;:])&lt;/span&gt;
