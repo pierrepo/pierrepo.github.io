@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>Classe inversée en programmation Python 2019 - Plouf</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175311175-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-175311175-1');
+    </script>
+    
+
+    <link href="/favicon.ico" rel="icon">
+
+<link rel="canonical" href="/drafts/python-ci-2019.html">
+
+        <meta name="author" content="Pierre" />
+        <meta name="keywords" content="fr,enseignement,pédagogie,python" />
+        <meta name="description" content="Vous trouverez sur cette page mon retour d&#39;expérience et les ressources associées sur la mise en place d&#39;une classe inversée pour l&#39;enseignement « Programmation Python 1 » à l&#39;université. J&#39;y explique comment j&#39;ai implémenté cette classe inversée (sans vidéo) pour apprendre à programmer (presque sans ordinateur). CLIC 2020 J&#39;ai présenté ce retour …" />
+
+        <meta property="og:site_name" content="Plouf" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Classe inversée en programmation Python 2019"/>
+        <meta property="og:url" content="/drafts/python-ci-2019.html"/>
+        <meta property="og:description" content="Vous trouverez sur cette page mon retour d&#39;expérience et les ressources associées sur la mise en place d&#39;une classe inversée pour l&#39;enseignement « Programmation Python 1 » à l&#39;université. J&#39;y explique comment j&#39;ai implémenté cette classe inversée (sans vidéo) pour apprendre à programmer (presque sans ordinateur). CLIC 2020 J&#39;ai présenté ce retour …"/>
+        <meta property="article:published_time" content="2020-10-31" />
+            <meta property="article:section" content="blog" />
+            <meta property="article:tag" content="fr" />
+            <meta property="article:tag" content="enseignement" />
+            <meta property="article:tag" content="pédagogie" />
+            <meta property="article:tag" content="python" />
+            <meta property="article:author" content="Pierre" />
+
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="/theme/css/bootstrap.simplex.min.css" type="text/css"/>
+    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="/theme/css/pygments/default.css" rel="stylesheet">
+    <link href="/theme/tipuesearch/tipuesearch.css" rel="stylesheet">
+    <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+        <link href="/static/custom.css" rel="stylesheet">
+
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="Plouf ATOM Feed"/>
+
+        <link href="/feeds/all.rss.xml" type="application/rss+xml" rel="alternate"
+              title="Plouf RSS Feed"/>
+        <link href="/feeds/blog.atom.xml" type="application/atom+xml" rel="alternate"
+              title="Plouf blog ATOM Feed"/>
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">
+Plouf            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/research/">Research</a></li>
+                    <li><a href="/python/">Python</a></li>
+                    <li><a href="/tags.html">Tags</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><span>
+                <form class="navbar-search" action="/search.html">
+                  <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input" required>
+                </form></span>
+              </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+
+<!-- Banner -->
+<!-- End Banner -->
+
+<!-- Content Container -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="/drafts/python-ci-2019.html"
+                       rel="bookmark"
+                       title="Permalink to Classe inversée en programmation Python 2019">
+                        Classe inversée en programmation Python 2019
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2020-10-31T00:00:00+01:00"> sam. 31 octobre 2020</time>
+    </span>
+          <span class="label label-default">Modified</span>
+            <span class="modified">
+                <i class="fa fa-calendar"></i><time datetime="2020-10-31T00:00:00+01:00"> sam. 31 octobre 2020</time>
+            </span>
+
+
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="/tag/fr/">fr</a>
+        /
+	<a href="/tag/enseignement/">enseignement</a>
+        /
+	<a href="/tag/pedagogie/">pédagogie</a>
+        /
+	<a href="/tag/python/">python</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p>Vous trouverez sur cette page mon retour d'expérience et les ressources associées sur la mise en place d'une classe inversée pour l'enseignement « Programmation Python 1 » à l'université. J'y explique comment j'ai implémenté cette classe inversée (sans vidéo) pour apprendre à programmer (<em>presque</em> sans ordinateur).</p>
+<h1>CLIC 2020</h1>
+<p>J'ai présenté ce retour d'expérience lors du congrès sur les classes inversées et les pédagogies actives, <a href="http://www.congresclic.org/">CL!C 2020</a>, qui a eu lieu du 30 octobre au 1er novembre 2020.</p>
+<p>Diaporama de la présentation.</p>
+<h1>Retour d'expérience</h1>
+<h2>Contexte de l'enseignement</h2>
+<p>L'enseignement « Programmation Python 1 » a eu lieu de septembre à décembre 2019. Il a été suivi par 29 étudiants de master 1 du cursus de bio- et chimie-informatique de l'Université de Paris. Tous ces étudiants étaient débutants en programmation. Le volume horaire total pour cet enseignement était de 30 h réparties en 7 séances de cours magistraux (CM) de 2h et 8 séances de travaux pratiques (TP) de 2 h, en salle informatique.</p>
+<p>Un polycopié (papier) du cours était distribué à tous les étudiants au début du semestre.</p>
+<p>L’apprentissage de la programmation Python et de la programmation en général, peut être associé à 3 niveaux de difficulté (pas forcément croissant) :</p>
+<ol>
+<li>Programmer nécessite de manipuler des concepts particuliers comme la notion de variable, de boucles, de test... J'ai réalisé une vidéo d'<a href="https://www.youtube.com/watch?v=N9URJ4yVuGA">introduction à la programmation</a> qui aborde ces concepts.</li>
+<li>Programmer en Python, cette fois, suppose l'acquisition d'un vocabulaire et de règles spécifiques à ce langage de programmation.</li>
+<li>Enfin, programmer est une activité qui nécessite la manipulation d'un ordinateur et d'outils (terminal, éditeur de texte, mini-serveur web Jupyter...). Contrairement à ce qu'on pourrait supposer de nos étudiants, leur alphabétisation (ou fluence) numérique (<em>computer literacy</em>) n'est pas forcément très bonne (y compris dans un cursus de master en bioinformatique).</li>
+</ol>
+<h2>Contexte personnel</h2>
+<p>J'enseigne la programmation Python depuis plus de 10 ans à l'université. Je dispose d'un support de cours mature que nous avons créé avec mon collègue Patrick Fuchs et que nous mettons à jour régulièrement. Ce cours est disponible en <a href="https://python.sdv.univ-paris-diderot.fr/">ligne</a> et a récemment été publié chez <a href="https://www.dunod.com/sciences-techniques/programmation-en-python-pour-sciences-vie">Dunod</a>. </p>
+<p>Par ailleurs, j'ai suivi une formation à la pédagogie de 2017 à 2019. Cette formation est animée et proposée par le <a href="https://sapiens-uspc.com/">Service d’Accompagnement aux Pédagogies Innovantes et à l’Enseignement Numérique de Sorbonne Paris Cité</a> (SAPIENS). À l'issue de cette formation, j'ai obtenu le certificat de pédagogie <a href="https://sapiens-uspc.com/certificats/certificat-certifiens/">CertifiENS</a>.</p>
+<h2>Motivation pour la classe inversée</h2>
+<p>J'ai souhaité faire évoluer mon enseignement, notamment en cours magistral, pour recentre les sessions de cours vers les étudiants et les rendre plus actifs. J'avais également besoin que les étudiants produisent des traces de leurs apprentissages de la programmation Python.</p>
+<p>Au début de ma carrière, mes cours magistraux consistaient essentiellement à diffuser un diaporama qui couvraient toutes les notions à apprendre par les étudiants. Je ponctuais ce cours par des « démos » sur ma machine pour illustrer mes propos ou répondre aux questions des étudiants.</p>
+<p>J'ai progressivement abandonné le diaporama au profit d'un cours complet en « live coding », c'est-à-dire que je construisais mon cours uniquement avec une démonstration des différentes commandes Python, exécutées sur ma machine et diffusées à toute la classe par un vidéoprojecteur. Cette méthode permettait de rendre plus actifs les étudiants. Je pouvais leur demander de prédire le résultat d'une commande, de corriger une erreur que j'aurai pu faire, de me suggérer des solutions alternatives que je testais immédiatement.
+Avec ce type d'enseignement, les étudiants pouvaient voir, en temps réel, comment je programmais, à quelle vitesse je tapais et toutes les erreurs de typo que je faisais (et j'en fais beaucoup !).</p>
+<p>J'ai profité d'un support de cours robuste et mature pour mettre en place une classe inversée (Bergmann &amp; Sams, 2012) pour cet enseignement, notamment dans les cours magistraux. Je voulais utiliser les sessions de cours, où les étudiants n'avaient pas accès à un ordinateur, pour travailler les deux premiers niveaux de difficulté énoncés précédemment, à savoir les concepts généraux de programmation ainsi que le vocabulaire et la grammaire spécifiques au langage Python.</p>
+<h2>Mise en place de la classe inversée</h2>
+<p>En septembre 2019, je me suis lancé dans l’aventure de la classe inversée. J’ai bénéficié pour cela de l'accompagnement d'Antoinette Bouziane et Marine Lanteri, conseillères pédagogiques à SAPIENS.</p>
+<p>Ma classe inversée est basée sur un modèle de classe inversée de type I de Lebrun (Lebrun et al., 2016), pour lequel l'enseignant fournit l'essentiel du matériel pédagogique, les étudiants travaillent leur cours en dehors de la classe (chez eux, à la bibliothèque universitaire...), vérifient et consolident leurs apprentissages avec l'enseignant, en classe.</p>
+<p>J'ai présenté l'organisation de l'enseignement aux étudiants lors de la première séance de cours. Les principaux éléments était repris dans un <a href="docs/python-ci-2019_syllabus_Python_1.pdf">syllabus</a>, distribué également lors de la première séance.</p>
+<h3>En dehors de la classe</h3>
+<p>En dehors de la classe, les étudiants devaient lire entre 2 et 3 chapitres du cours, disponibles sous la forme d'un polycopié papier ou du cours en ligne. Pour chaque chapitre travaillé, les étudiants réalisaient une fiche mémo (manuscrite, A4, recto uniquement) qui résumait les notions abordées. Les étudiants déposaient la photo ou le scan de ces fiches sur la plateforme d'enseignement en ligne (Moodle) de l'université avant le cours. Ce travail permettait aux étudiants de découvrir puis de se familiariser avec le contenu nouveau et ainsi mobiliser les niveaux cognitifs (Bloom, 1956 ; Anderson et al., 2001) mémorisation et compréhension.</p>
+<p>Exemples de fiches mémo produites par un étudiant (merci Léo) :</p>
+<p><img src="/images/python-ci-2019_fiche-memo_1.png" alt="Fiche mémo 1" width="400" >
+<img src="/images/python-ci-2019_fiche-memo_2.png" alt="Fiche mémo 2" width="400" ></p>
+<h3>En cours magistraux</h3>
+<p>J'ai utilisé plusieurs outils de pédagogique active pour développer et approfondir les notions abordées dans le polycopié ainsi que pour manipuler les concepts liés à la programmation. En cours magistraux, les étudiants n'ont pas accès à un ordinateur. La majorité des activités font appel aux niveaux cognitifs de type application et analyse voire de synthèse et d’évaluation.</p>
+<p>Les étudiants ont ainsi travaillé selon des modalités variées.</p>
+<h4>Évaluation par les pairs</h4>
+<p>Les étudiants venaient en cours avec leurs fiches mémos. En début de séance, les étudiants échangeaient entre eux leurs fiches, puis et corrigeaient et complétaient éventuellement les fiches de leurs binômes.</p>
+<h4>Quiz</h4>
+<p>J'ai utilisé la plateforme en ligne WooClap pour proposer aux étudiants des questions à choix multiples (QCM) et des questions ouvertes.</p>
+<p>Les QCM sont intéressants car ils permettent d'évaluer très rapidement la compréhension des étudiants sur un aspect donné. Dans l'exemple ci-dessous, je demandais aux étudiants ce que produisait le script suivant :</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">sys</span>
+<span class="k">print</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
+</code></pre></div>
+
+
+<p>lancé avec la commande </p>
+<div class="highlight"><pre><span></span><code><span class="err">python toto.py  1 8   souris    3.14</span>
+</code></pre></div>
+
+
+<p><img src="/images/python-ci-2019_wooclap_QCM.png" alt="WooClap QCM" width="500" ></p>
+<p>Dans cet exemple, on remarque d'ailleurs que la réponse correct n'a pas été majoritairement trouvée par les étudiants. Une occasion parfaite pour discuter de la pertinence de chaque réponse et corriger un apprentissage lacunaire sur ce point.</p>
+<p>Les questions ouvertes sont très utiles pour réaliser un brainstorming, par exemple en début de séance, pour faire le point sur les commandes introduites dans un chapitre particulier. Les réponses produites par les étudiants sont alors simplement résumées sous la forme d'un nuage de mots. Dans l'exemple ci-dessous, les étudiants indiquaient les principales instructions qu'ils avaient retenues d'un chapitre.</p>
+<p><img src="/images/python-ci-2019_wooclap_wordcloud.png" alt="WooClap nuage de mots" width="500" > </p>
+<p>Ces activités étaient autant d'occasions d'ouvrir des discussions, voire des débats, sur les réponses produites.</p>
+<h4>Association d'idées</h4>
+<p>Je demandais aux étudiants d'associer un objet ou un concept à un chapitre donné, puis de partager avec le groupe cette association. Par exemple : une liste peut être représentée par un meuble à tiroirs, une boucle par un looping de fête foraine...</p>
+<h4>Scripts à trous</h4>
+<p>Partant d'une mise en situation, je proposais aux étudiants un script que j'avais imprimé mais pour lequel, malheureusement, l'imprimante avait laissé des blancs. Les étudiants devaient alors compléter les trous.</p>
+<p>J'aime beaucoup cet exercice car il demande aux étudiants de s'adapter à un contexte existant (le script à trous) pour répondre à un problème. Suivant le trou à remplir, les étudiants ont soit une totale liberté pour le compléter (par exemple une variable qui est définie dans un premier trou puis utilisée dans un second), soit au contraire, ils doivent déduire du contexte ce qui doit être dans le trou (par exemple une variable déjà définie précédemment ou une instruction Python).</p>
+<p>Exemple de mise en situation : Construction d'une spirale.</p>
+<p>Objectif à atteindre et énoncé :</p>
+<p><img src="/images/python-ci-2019_spirale_1.png" alt="Spirale 1" width="200" > 
+<img src="/images/python-ci-2019_spirale_2.png" alt="Spirale 2" width="500" > </p>
+<p>Script à trous proposé aux étudiants (vue globale et zoom) :</p>
+<p><img src="/images/python-ci-2019_script-trous.png" alt="Spirale 1" width="400" >
+<img src="/images/python-ci-2019_script-trous_zoom.png" alt="Spirale 1" width="400" ></p>
+<h3>Scripts tournants</h3>
+<p>Cette activité est inspiré des « tableaux tournants » de Jean-Charles Cailliez (Cailliez, 2020).</p>
+<p>Partant d'une mise en situation, les étudiants rédigent sur une feuille vierge les premières étapes du script. Après 10 ou 15 minutes, ils échangent leur feuille avec d'autres étudiants et doivent poursuivre le script.</p>
+<p>Cet exercice est difficile car il demande aux étudiants d'écrire un script sur du papier (ce qu'ils ne font jamais) mais aussi de comprendre ce qui a été écrit par les autres étudiants. Pour autant, cet exercice est intéressant. Écrire un script sur papier, donc sans éditeur de texte (ni auto-identation, ni auto-complétion), demande à l'étudiant de réfléchir à chaque caractère qu'il va écrire, notamment de faire attention à la casse (utilisation des minuscules et des majuscules), les deux-points et l'indentation pour marquer les blocs d'instructions. Poursuivre et compléter un script déjà initié par une autre personne, nécessite d'être capable de comprendre un contexte existant et de s'y adapter. En effet, l'étudiant qui reprend un début de script ne doit par le réécrire complètement mais seulement le corriger si besoin est et le poursuivre.</p>
+<h4>Question suivante</h4>
+<p>Cette activité, tirée des <a href="https://www.mieux-apprendre.com/lapproche-du-mieux-apprendre/les-outils/les-jeux-cadres/">jeux Thiagi</a>, consiste à rédiger des fiches de questions / réponses puis à se défier entre groupe.</p>
+<p>J'ai expliqué en détails cette activité dans une vidéo créée avec SAPIENS :</p>
+<iframe width="400" height="225" src="https://www.youtube-nocookie.com/embed/A0HDJoE7XIE?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p>D'autres explications <a href="https://www.mieux-apprendre.com/blog/2018/05/04/question-suivante/">ici</a>.</p>
+<p>Voici les étudiants travaillant en groupe et les questions / réponses sur des post-its :</p>
+<p><img src="/images/python-ci-2019_question-suivante_1.jpg" alt="Question suivante, travail en groupe" width="500" >
+<img src="/images/python-ci-2019_question-suivante_2.jpg" alt="Question suivante, post-its" width="500" ></p>
+<p>Lors de cette activité, les étudiants ont conçu des questions / réponses puis se sont évalués entre eux. Pour motiver les étudiants, j'ai annoncé aux étudiants au début de l'activité que les meilleures questions se trouveraient dans l'examen de QCM qui avait lieu la semaine suivante (ce qu'évidemment j'ai fait).</p>
+<h3>En travaux pratiques</h3>
+<p>En travaux pratiques, les étudiants ont travaillé, enfin, sur ordinateur pour mettre en application concrète les notions découvertes à la maison puis développées en cours. Les exercices étaient de difficulté croissante et le plus possible en relation avec la biologie. Ici, la plupart des exercices correspondaient aux niveaux cognitifs d’application, de synthèse et d’analyse.</p>
+<p>En TP, chaque étudiant disposait d'un ordinateur. Pour favoriser le travail en équipe et développer l'aspect « social » de la programmation. Les étudiants étaient encouragés à travailler en <em>pair programming</em>. En binôme sur une seule machine, les étudiants alternaient les rôles de « conducteur » et de « navigateur ». Le conducteur est celui qui contrôle le PC, tape les différentes instructions pour répondre au problème. Le navigateur est celui qui prend plus de hauteur, repère les éventuelles fautes de frappe et oriente le conducteur sur la marche à suivre.</p>
+<p>Voici une illustration tirée de Wikimedia (<a href="https://commons.wikimedia.org/wiki/File:Programmation_en_bin%C3%B4me.jpg">Bdecarne, CC BY-SA</a>), avec le navigateur à gauche et le conducteur à droite :</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Programmation_en_bin%C3%B4me.jpg/640px-Programmation_en_bin%C3%B4me.jpg" alt="Programmation en binôme" width="500" ></p>
+<h3>Évaluation sommative</h3>
+<p>Toutes les activités présentées précédemment constituent pour moi autant de traces d'apprentissage. Mais elles constituent aussi, pour les étudiants, autant d'évaluations formatives qui fournissent aux étudiants roun retour sur leurs apprentissages.</p>
+<p>L'évaluation sommative des étudiants était constituée de plusieurs éléments :</p>
+<ul>
+<li>préparation des cours, dépôt des fiches mémo sur la plateforme d'enseignement Moodle (en autonomie) ;</li>
+<li>examen QCM (en présentiel, sur machine, sans internet, sans document) ;</li>
+<li>résolution de problèmes de bioinformatique sur le site en ligne <a href="http://rosalind.info/problems/locations/">Rosalind</a> (en autonomie) ;</li>
+<li>résolution de problèmes de bioinformatique pour l'évaluation finale (en présentiel, sur machine, sans internet mais avec documents, dont le polycopié et les fiches).</li>
+</ul>
+<h3>Retour des étudiants</h3>
+<p>À la fin du cours, j'ai demandé aux étudiants de remplir une évaluation de l'enseignement sur Moodle.</p>
+<p>Les activités préférées des étudiants étaient le script à trous, les quiz sur WooClap, le script tournant et la question suivante.</p>
+<p><img src="/images/python-ci-2019_EEE_1.png" alt="Evaluation de l'enseignement par les étudiants" width="500" ></p>
+<p>Les associations d'idées et les fiches mémos sont relativement peu plébiscitées.</p>
+<p>Des avis contrastés pour les fiches mémos se retrouvent dans les commentaires libres :</p>
+<blockquote>
+<p>Je pense qu'il faudrait donner une "fiche squelette" pour faire les fiches mémos. Il est assez difficile de faire ces
+fiches lorsque le chapitre devient plus grand ou plus dense en information. Rosalind est vraiment une bonne
+idée de mini projet pour débuter sur python.</p>
+<p>J'ai trouvé l'échange de fiches à chaque CM, ennuyant à la fin. Le cours est bien structuré et comprehensible,
+j'ai trouvé du plaisir à le lire. Je retiens du positif dans ce cours, il m'a fait découvrir et aimer la programmation.</p>
+<p>Sans les fiches memo à faire je n'aurai jamais lu le poly correctement. Faire plus de script a trous ca nous force
+a réfléchir sur les variables à manipuler</p>
+</blockquote>
+<p>Effectivement, réaliser une fiche mémo, donc une synthèse, est difficile, mais nécessite de lire complètement le chapitre à résumer.</p>
+<p>In fine, la pédagogie inversée a été appréciée. En moyenne, l'affirmation « La classe inversée m'a aidé dans l'appropriation des concepts de programmation en Python. » a obtenu le score de 4,1, sachant que le score de 1 signifie « vous n'êtes pas d'accord » et 5 « vous êtes tout à fait d'accord ».</p>
+<h2>Conclusion</h2>
+<p>Cette expérience fut très positive pour moi. Bénéficiant d’un support de cours construit et déjà rodé, je souhaitais redynamiser mon enseignement.</p>
+<p>La classe inversée m’a permis d’impliquer les étudiants dans leur apprentissage : préparation du cours en amont, réalisation d’une fiche mémo, participation à des activités en séance de cours, résolution de problèmes en cours (sans ordinateur) et en TD (avec ordinateur), projets fil rouge (Rosalind) tout au long du semestre. Tout cela constituant autant de preuves d'apprentissage régulièrement fournis par les étudiants. Pour ne pas perdre le Nord, j’ai essayé d’être le plus explicite possible dans mes intentions, tant avec les étudiants (diffusion d’un syllabus au début du semestre, énoncé des objectifs pédagogiques à chaque début de séance) qu’avec moi-même (construction d’un scénario pédagogique détaillant le déroulé de chaque séance, accompagnement par deux conseillères pédagogiques).</p>
+<p>Du point de vue des étudiants, une grande majorité considère que la classe inversée les a aidé dans l’appropriation des concepts en programmation Python. Les activités réalisées en cours qu’ils ont préférées sont : les quiz et les nuages de mots, les scripts à trous, les scripts tournants et la question suivante. De manière générale, l’interactivité en cours a été appréciée, comme en témoigne un/e étudiant/e : </p>
+<blockquote>
+<p>Selon moi le gros point fort est l'interactivité des cours, possible grâce à la pédagogie inversée, il faut absolument garder cette interactivité car c'est ce qui rend ce cours passionnant. Les activités en groupe de 2/3/4 sont aussi à garder car c'est une façon de nous faire travailler de manière ludique sans qu'on ait l'impression de travailler, et surtout cela donne l'envie d'aller plus loin dans la programmation.</p>
+</blockquote>
+<h2>Bibliographie / webographie</h2>
+<p><strong>Anderson et al., 2001</strong><br>
+LW Anderson, DR Krathwohl, PW Airasian, KA Cruikshank, RE Mayer, PR Pintrich, J Raths &amp; MC Wittrock, <em>A Taxonomy for Learning, Teaching, and Assessing.</em> Addison Wesley Longman, Inc., 2001</p>
+<p><strong>Bergmann &amp; Sams, 2012</strong><br>
+J Bergman &amp; A Sams, <em>Flip Your Classroom: Reach Every Student in Every Class Every Day</em>. International Society for Technology in Education, 2012</p>
+<p><strong>Bloom, 1956</strong><br>
+BS Bloom, <em>Taxonomy of Educational Objectives</em>. Longmans, 1956</p>
+<p><strong>Cailliez, 2020</strong><br>
+JC Caillez, <a href="http://blog.educpros.fr/jean-charles-cailliez/2020/02/09/innovez-dans-votre-classe-faites-tourner-les-tableaux/">Innovez dans votre classe… faites tourner les tableaux !</a>, consulté le 17/02/2020.</p>
+<p><strong>Lebrun et al., 2016</strong><br>
+M Lebrun, C Goffinet &amp; C Gilson, <em>Vers une typologie des classes inversées. Contribution à une typologie des classes inversées : éléments descriptifs de différents types, configurations pédagogiques et effets.</em><br>
+Education &amp; Formation, Vol. e-306, no.2, p. 125-146, 2016  http://hdl.handle.net/2078.1/183211</p>
+            </div>
+            <!-- /.entry-content -->
+<section class="well" id="related-posts">
+    <h4>Related Posts:</h4>
+    <ul>
+        <li><a href="/enseigner-avec-zoom/">Enseigner avec Zoom</a></li>
+        <li><a href="/enseigner-distance/">Enseigner à distance : scénarios et conseils</a></li>
+        <li><a href="/cours-de-python-avance/">Cours de Python avancé</a></li>
+        <li><a href="/introduction-programmation/">Introduction à la programmation & formats de données en biologie [fr]</a></li>
+        <li><a href="/conseils-son-video/">Conseils son et vidéo pour les enseignements</a></li>
+    </ul>
+</section>
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+<!-- Sidebar -->
+<section class="well well-sm">
+  <ul class="list-group list-group-flush">
+
+<!-- Sidebar/Social -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+  <ul class="list-group" id="social">
+    <li class="list-group-item"><a href="https://twitter.com/pierrepo"><i class="fa fa-twitter-square fa-lg"></i> Twitter</a></li>
+    <li class="list-group-item"><a href="http://fr.linkedin.com/in/pierrepo"><i class="fa fa-linkedin-square fa-lg"></i> LinkedIn</a></li>
+    <li class="list-group-item"><a href="https://github.com/pierrepo"><i class="fa fa-github-square fa-lg"></i> github</a></li>
+    <li class="list-group-item"><a href="http://cupnet.net/feed/all.rss.xml"><i class="fa fa-rss-square fa-lg"></i> rss</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Social -->
+  </ul>
+</section>
+<!-- End Sidebar -->            </aside>
+        </div>
+    </div>
+</div>
+<!-- End Content Container -->
+
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2020 Pierre Poulain
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>                <p><small>  <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.en"><img alt="Creative Commons License" style="border-width:0" src="//i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+    Content
+  licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.en">Creative Commons Attribution 4.0 International License</a>, except where indicated otherwise.
+</small></p>
+         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="/theme/js/respond.min.js"></script>
+
+
+
+
+
+</body>
+</html>
