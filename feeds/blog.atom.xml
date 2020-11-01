@@ -99,17 +99,21 @@ Avec ce type d'enseignement, les étudiants pouvaient voir, en temps réel, comm
 &lt;p&gt;&lt;img src="/images/python-ci-2019_EEE_1.png" alt="Evaluation de l'enseignement par les étudiants" width="700" &gt;&lt;/p&gt;
 &lt;p&gt;Les associations d'idées et les fiches mémos sont relativement peu plébiscitées.&lt;/p&gt;
 &lt;p&gt;Des avis contrastés pour les fiches mémos se retrouvent dans les commentaires libres :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Je pense qu'il faudrait donner une "fiche squelette" pour faire les fiches mémos. Il est assez difficile de faire ces
-fiches lorsque le chapitre devient plus grand ou plus dense en information. Rosalind est vraiment une bonne
-idée de mini projet pour débuter sur python.  &lt;/p&gt;
+    fiches lorsque le chapitre devient plus grand ou plus dense en information. Rosalind est vraiment une bonne
+    idée de mini projet pour débuter sur python.  &lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;--&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
 &lt;blockquote&gt;
 &lt;p&gt;J'ai trouvé l'échange de fiches à chaque CM, ennuyant à la fin. Le cours est bien structuré et comprehensible,
-j'ai trouvé du plaisir à le lire. Je retiens du positif dans ce cours, il m'a fait découvrir et aimer la programmation.  &lt;/p&gt;
+    j'ai trouvé du plaisir à le lire. Je retiens du positif dans ce cours, il m'a fait découvrir et aimer la programmation.  &lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;--&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Sans les fiches memo à faire je n'aurai jamais lu le poly correctement. Faire plus de script a trous ca nous force
 a réfléchir sur les variables à manipuler.&lt;/p&gt;
