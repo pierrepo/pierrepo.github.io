@@ -39,12 +39,12 @@ Avec ce type d'enseignement, les étudiants pouvaient voir, en temps réel, comm
 &lt;p&gt;J'ai utilisé la plateforme en ligne WooClap pour proposer aux étudiants des questions à choix multiples (QCM) et des questions ouvertes.&lt;/p&gt;
 &lt;p&gt;Les QCM sont intéressants car ils permettent d'évaluer très rapidement la compréhension des étudiants sur un aspect donné. Dans l'exemple ci-dessous, je demandais aux étudiants ce que produisait le script suivant :&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;sys&lt;/span&gt;
-&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sys&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;argv&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;:])&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sys&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;argv&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;:])&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;lancé avec la commande &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;python toto.py  1 8   souris    3.14&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;python toto.py  &lt;span class="m"&gt;1&lt;/span&gt; &lt;span class="m"&gt;8&lt;/span&gt;   souris    &lt;span class="m"&gt;3&lt;/span&gt;.14
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
