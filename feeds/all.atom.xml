@@ -36,11 +36,12 @@ Avec ce type d'enseignement, les étudiants observaient, en temps réel, comment
 &lt;p&gt;Exemples de fiches mémo produites par un étudiant (merci Léo) :&lt;/p&gt;
 &lt;p&gt;&lt;img src="/images/python-ci-2019_fiche-memo_1.png" alt="Fiche mémo 1" width="400" &gt;
 &lt;img src="/images/python-ci-2019_fiche-memo_2.png" alt="Fiche mémo 2" width="400" &gt;&lt;/p&gt;
-&lt;h2&gt;En cours magistraux&lt;/h2&gt;
-&lt;p&gt;J'ai utilisé plusieurs outils de pédagogique active pour développer et approfondir les notions abordées dans le polycopié ainsi que pour manipuler les concepts liés à la programmation. En cours magistraux, les étudiants n'ont pas accès à un ordinateur. La majorité des activités font appel aux niveaux cognitifs de type application et analyse voire de synthèse et d’évaluation.&lt;/p&gt;
+&lt;h2&gt;En cours magistral&lt;/h2&gt;
+&lt;p&gt;J'ai utilisé plusieurs outils empruntés aux pédagogique active pour développer et approfondir les notions abordées dans le polycopié ainsi que pour manipuler les concepts liés à la programmation. En cours magistral, les étudiants n'ont pas accès à un ordinateur. La majorité des activités font appel aux niveaux cognitifs de type application et analyse voire de synthèse et d’évaluation.&lt;/p&gt;
 &lt;p&gt;Les étudiants ont ainsi travaillé selon des modalités variées.&lt;/p&gt;
 &lt;h3&gt;Évaluation par les pairs&lt;/h3&gt;
-&lt;p&gt;Les étudiants venaient en cours avec leurs fiches mémos. En début de séance, les étudiants échangeaient entre eux leurs fiches, puis et corrigeaient et complétaient éventuellement les fiches de leurs binômes.&lt;/p&gt;
+&lt;p&gt;Les étudiants venaient en cours avec leurs fiches mémos. En début de séance, les étudiants échangeaient entre eux leurs fiches, puis corrigeaient et complétaient éventuellement les fiches de leurs binômes.&lt;/p&gt;
+&lt;p&gt;L'espace disponible pour la fiche mémo était très contraint (1 page contre 6 à 8 pages sur le polycopié) et nécessitait de faire des choix sur la présence de telle ou telle notion sur la fiche. Ces choix étaient l'occasion de discussions entre les étudiants.&lt;/p&gt;
 &lt;h3&gt;Quiz&lt;/h3&gt;
 &lt;p&gt;J'ai utilisé la plateforme en ligne &lt;a href="https://www.wooclap.com/"&gt;WooClap&lt;/a&gt; pour proposer aux étudiants des questions à choix multiples (QCM) et des questions ouvertes.&lt;/p&gt;
 &lt;p&gt;Les QCM sont intéressants car ils permettent d'évaluer très rapidement la compréhension des étudiants sur un aspect donné. Dans l'exemple ci-dessous, je demandais aux étudiants ce que produisait le script suivant :&lt;/p&gt;
