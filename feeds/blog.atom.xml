@@ -70,7 +70,7 @@ Avec ce type d'enseignement, les étudiants observaient, en temps réel, comment
 &lt;p&gt;Partant d'une mise en situation, je proposais aux étudiants un script que j'avais imprimé mais pour lequel, malheureusement, l'imprimante avait laissé des blancs. Les étudiants devaient alors compléter les trous.&lt;/p&gt;
 &lt;p&gt;J'aime beaucoup cet exercice car il demande aux étudiants de s'adapter à un contexte existant (le script à trous) pour répondre à un problème. Suivant le trou à remplir, les étudiants ont soit une totale liberté pour le compléter (par exemple une variable qui est définie dans un premier trou puis utilisée dans un second), soit au contraire, ils doivent déduire du contexte ce qui doit être dans le trou (par exemple une variable déjà définie précédemment ou une instruction Python).&lt;/p&gt;
 &lt;p&gt;Exemple de mise en situation : Construction d'une spirale.&lt;/p&gt;
-&lt;p&gt;Objectif à atteindre et énoncé :&lt;/p&gt;
+&lt;p&gt;Objectif à atteindre et une partie de l'énoncé :&lt;/p&gt;
 &lt;p&gt;&lt;img src="/images/python-ci-2019_spirale_1.png" alt="Spirale 1" width="300" &gt;
 &lt;img src="/images/python-ci-2019_spirale_2.png" alt="Spirale 2" width="500" &gt;&lt;/p&gt;
 &lt;p&gt;Script à trous proposé aux étudiants (vue globale et zoom) :&lt;/p&gt;
