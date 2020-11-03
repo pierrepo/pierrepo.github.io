@@ -39,7 +39,7 @@ Avec ce type d'enseignement, les étudiants observaient, en temps réel, comment
 &lt;h2&gt;En cours magistral&lt;/h2&gt;
 &lt;p&gt;J'ai utilisé plusieurs outils empruntés aux pédagogique active pour développer et approfondir les notions abordées dans le polycopié ainsi que pour manipuler les concepts liés à la programmation. En cours magistral, les étudiants n'ont pas accès à un ordinateur. La majorité des activités font appel aux niveaux cognitifs de type application et analyse voire de synthèse et d’évaluation.&lt;/p&gt;
 &lt;p&gt;Les étudiants ont ainsi travaillé selon des modalités variées.&lt;/p&gt;
-&lt;h3&gt;Évaluation par les pairs&lt;/h3&gt;
+&lt;h3&gt;Discussions entre pairs&lt;/h3&gt;
 &lt;p&gt;Les étudiants venaient en cours avec leurs fiches mémos. En début de séance, les étudiants échangeaient entre eux leurs fiches, puis corrigeaient et complétaient éventuellement les fiches de leurs binômes.&lt;/p&gt;
 &lt;p&gt;L'espace disponible pour la fiche mémo était très contraint (1 page contre 6 à 8 pages sur le polycopié) et nécessitait de faire des choix sur la présence de telle ou telle notion sur la fiche. Ces choix étaient l'occasion de discussions entre les étudiants.&lt;/p&gt;
 &lt;h3&gt;Quiz&lt;/h3&gt;
@@ -56,7 +56,7 @@ Avec ce type d'enseignement, les étudiants observaient, en temps réel, comment
 
 
 &lt;p&gt;&lt;img src="/images/python-ci-2019_wooclap_QCM.png" alt="WooClap QCM" width="600" &gt;&lt;/p&gt;
-&lt;p&gt;Dans cet exemple, on remarque d'ailleurs que la réponse correcte n'a pas été majoritairement trouvée par les étudiants. Une occasion parfaite pour discuter de la pertinence de chaque réponse et corriger un apprentissage lacunaire sur ce point.&lt;/p&gt;
+&lt;p&gt;Dans cet exemple, on remarque que la réponse correcte n'a pas été majoritairement trouvée par les étudiants. Une occasion parfaite pour discuter de la pertinence de chaque réponse et corriger un apprentissage erroné sur ce point.&lt;/p&gt;
 &lt;p&gt;Les questions ouvertes sont très utiles pour réaliser un &lt;em&gt;brainstorming&lt;/em&gt;, par exemple en début de séance, pour faire le point sur les commandes introduites dans un chapitre particulier. Les réponses produites par les étudiants sont alors simplement résumées sous la forme d'un nuage de mots. Dans l'exemple ci-dessous, les étudiants indiquaient les principales instructions qu'ils avaient retenues d'un chapitre.&lt;/p&gt;
 &lt;p&gt;&lt;img src="/images/python-ci-2019_wooclap_wordcloud.png" alt="WooClap nuage de mots" width="600" &gt;&lt;/p&gt;
 &lt;p&gt;Ces activités étaient autant d'occasions d'ouvrir des discussions, voire des débats, sur les réponses produites et ainsi fournir de la remédiation quand cela était nécessaire.&lt;/p&gt;
