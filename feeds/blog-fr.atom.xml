@@ -5,19 +5,18 @@
 &lt;li&gt;Un éditeur en ligne : &lt;a href="https://monod.lelab.tailordev.fr/"&gt;Monod, the Markdown Editor&lt;/a&gt;, développé par &lt;a href="https://tailordev.fr/"&gt;TailorDev&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Conversion de document avec &lt;a href="http://pandoc.org/demos.html"&gt;pandoc&lt;/a&gt; :&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pandoc -s text.md -o text.html
-pandoc -s text.md --mathjax -o text …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pandoc&lt;span class="w"&gt; &lt;/span&gt;-s&lt;span class="w"&gt; &lt;/span&gt;text.md&lt;span class="w"&gt; &lt;/span&gt;-o&lt;span class="w"&gt; &lt;/span&gt;text.html
+pandoc&lt;span class="w"&gt; &lt;/span&gt;-s&lt;span class="w"&gt; &lt;/span&gt;text.md&lt;span class="w"&gt; &lt;/span&gt;--mathjax&lt;span class="w"&gt; &lt;/span&gt;-o&lt;span class="w"&gt; &lt;/span&gt;text …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;ul&gt;
 &lt;li&gt;La syntaxe &lt;a href="http://daringfireball.net/projects/markdown/syntax"&gt;de référence (John Gruber)&lt;/a&gt; ; celle de &lt;a href="https://guides.github.com/features/mastering-markdown/"&gt;GitHub&lt;/a&gt; ; et un &lt;a href="http://commonmark.org/help/"&gt;mémo (CommonMark)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Tutoriel interactif : &lt;a href="http://commonmark.org/help/tutorial/"&gt;10 minutes Markdown Tutorial (CommonMark)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Un éditeur en ligne : &lt;a href="https://monod.lelab.tailordev.fr/"&gt;Monod, the Markdown Editor&lt;/a&gt;, développé par &lt;a href="https://tailordev.fr/"&gt;TailorDev&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Conversion de document avec &lt;a href="http://pandoc.org/demos.html"&gt;pandoc&lt;/a&gt; :&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pandoc -s text.md -o text.html
-pandoc -s text.md --mathjax -o text.html
-pandoc -s text.md --toc -o text.html
-pandoc text.md --latex-engine&lt;span class="o"&gt;=&lt;/span&gt;xelatex --toc -o text.pdf
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pandoc&lt;span class="w"&gt; &lt;/span&gt;-s&lt;span class="w"&gt; &lt;/span&gt;text.md&lt;span class="w"&gt; &lt;/span&gt;-o&lt;span class="w"&gt; &lt;/span&gt;text.html
+pandoc&lt;span class="w"&gt; &lt;/span&gt;-s&lt;span class="w"&gt; &lt;/span&gt;text.md&lt;span class="w"&gt; &lt;/span&gt;--mathjax&lt;span class="w"&gt; &lt;/span&gt;-o&lt;span class="w"&gt; &lt;/span&gt;text.html
+pandoc&lt;span class="w"&gt; &lt;/span&gt;-s&lt;span class="w"&gt; &lt;/span&gt;text.md&lt;span class="w"&gt; &lt;/span&gt;--toc&lt;span class="w"&gt; &lt;/span&gt;-o&lt;span class="w"&gt; &lt;/span&gt;text.html
+pandoc&lt;span class="w"&gt; &lt;/span&gt;text.md&lt;span class="w"&gt; &lt;/span&gt;--latex-engine&lt;span class="o"&gt;=&lt;/span&gt;xelatex&lt;span class="w"&gt; &lt;/span&gt;--toc&lt;span class="w"&gt; &lt;/span&gt;-o&lt;span class="w"&gt; &lt;/span&gt;text.pdf
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
 
 &lt;p&gt;Un article sur la manière de rédiger un article scientifique avec Markdown : &lt;a href="https://peerj.com/articles/cs-112/"&gt;Formatting Open Science: agilely creating multiple document formats for academic manuscripts with Pandoc Scholar&lt;/a&gt; (PeerJ CompSci, 2017).&lt;/p&gt;</content><category term="blog, fr"></category><category term="ressources"></category><category term="markdown"></category></entry><entry><title>Mémorisation / révisions</title><link href="/memorisation-revisions/" rel="alternate"></link><published>2017-05-01T00:00:00+02:00</published><updated>2020-07-17T00:00:00+02:00</updated><author><name>Pierre</name></author><id>tag:None,2017-05-01:/memorisation-revisions/</id><summary type="html">&lt;p&gt;Une très bonne vidéo du blogueur &lt;a href="https://www.youtube.com/channel/UCtqICqGbPSbTN09K1_7VZ3Q"&gt;DirtyBiology&lt;/a&gt; sur la science des révisions :&lt;/p&gt;
 &lt;iframe width="400" height="225" src="https://www.youtube.com/embed/Sxy6ye_QzPg?rel=0&amp;amp;showinfo=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;

@@ -130,12 +130,11 @@ Plouf            </a>
                 </div>
                 <p>Dans le cadre d'un projet d'<a href="https://github.com/pierrepo/DensiPara">application web</a>, j'utilise la possibilité  qu'offre GitHub de pouvoir visualiser les fichiers contenus dans la branche <code>gh-pages</code> comme des <a href="https://help.github.com/articles/user-organization-and-project-pages/">pages web</a>. Cela signifie concrètement que le contenu de la branche <a href="https://github.com/pierrepo/DensiPara/tree/gh-pages">https://github.com/pierrepo/DensiPara/tree/gh-pages</a> sera visible à l'adresse <a href="http://pierrepo.github.io/DensiPara/">http://pierrepo.github.io/DensiPara/</a>.</p>
 <p>Comme <code>master</code> est la branche principale de mon projet, j'étais amené en permanence à resynchroniser ma branche <code>gh-pages</code> avec <code>master</code> :</p>
-<div class="highlight"><pre><span></span><code>git checkout gh-pages
-git rebase master
-git push
-git checkout master
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>gh-pages
+git<span class="w"> </span>rebase<span class="w"> </span>master
+git<span class="w"> </span>push
+git<span class="w"> </span>checkout<span class="w"> </span>master
 </code></pre></div>
-
 
 <p>Pour automatiser cela, j'ai appliqué :</p>
 <ul>
@@ -146,58 +145,54 @@ git checkout master
 <p>Créer le fichier <code>.git/hooks/post-commit</code> :</p>
 <div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
 
-<span class="nb">set</span> -eu
+<span class="nb">set</span><span class="w"> </span>-eu
 
 <span class="c1"># sync &#39;gh-pages&#39; branch with &#39;master&#39; branch&#39; </span>
 
-<span class="nv">currentbranch</span><span class="o">=</span><span class="k">$(</span>git symbolic-ref --short HEAD<span class="k">)</span>
+<span class="nv">currentbranch</span><span class="o">=</span><span class="k">$(</span>git<span class="w"> </span>symbolic-ref<span class="w"> </span>--short<span class="w"> </span>HEAD<span class="k">)</span>
 
-<span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;</span><span class="nv">$currentbranch</span><span class="s2">&quot;</span> <span class="o">==</span> <span class="s2">&quot;master&quot;</span> <span class="o">]</span>
+<span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$currentbranch</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;master&quot;</span><span class="w"> </span><span class="o">]</span>
 <span class="k">then</span>
-    <span class="nb">echo</span> <span class="s2">&quot;post-commit hook: sync &#39;gh-pages&#39; branch with master.&quot;</span>
-    git checkout gh-pages
-    git rebase master
-    git checkout master
+<span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;post-commit hook: sync &#39;gh-pages&#39; branch with master.&quot;</span>
+<span class="w">    </span>git<span class="w"> </span>checkout<span class="w"> </span>gh-pages
+<span class="w">    </span>git<span class="w"> </span>rebase<span class="w"> </span>master
+<span class="w">    </span>git<span class="w"> </span>checkout<span class="w"> </span>master
 <span class="k">else</span>
-    <span class="nb">echo</span> <span class="s2">&quot;post-commit hook: not in master branch (</span><span class="nv">$currentbranch</span><span class="s2">). Nothing to do.&quot;</span>
+<span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;post-commit hook: not in master branch (</span><span class="nv">$currentbranch</span><span class="s2">). Nothing to do.&quot;</span>
 <span class="k">fi</span>
 
-<span class="nb">exit</span> <span class="m">0</span>
+<span class="nb">exit</span><span class="w"> </span><span class="m">0</span>
 </code></pre></div>
-
 
 <p>puis le rendre exécutable :</p>
-<div class="highlight"><pre><span></span><code>chmod +x .git/hooks/post-commit
+<div class="highlight"><pre><span></span><code>chmod<span class="w"> </span>+x<span class="w"> </span>.git/hooks/post-commit
 </code></pre></div>
-
 
 <p>Je souhaite que ce hook ne fonctionne que dans la branche <code>master</code> d'où le test dans le script.</p>
 <h2>Push master et gh-pages</h2>
 <p>Dans le fichier <code>.git/config</code>, ajouter les lignes :</p>
-<div class="highlight"><pre><span></span><code><span class="nv">push</span> <span class="o">=</span> refs/heads/master:refs/heads/master
-<span class="nv">push</span> <span class="o">=</span> refs/heads/gh-pages:refs/heads/gh-pages
+<div class="highlight"><pre><span></span><code><span class="nv">push</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>refs/heads/master:refs/heads/master
+<span class="nv">push</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>refs/heads/gh-pages:refs/heads/gh-pages
 </code></pre></div>
-
 
 <p>à la fin de la section <code>[remote "origin"]</code>. Ce qui donne au final :</p>
 <div class="highlight"><pre><span></span><code><span class="o">[</span>core<span class="o">]</span>
-    <span class="nv">repositoryformatversion</span> <span class="o">=</span> <span class="m">0</span>
-    <span class="nv">filemode</span> <span class="o">=</span> <span class="nb">true</span>
-    <span class="nv">bare</span> <span class="o">=</span> <span class="nb">false</span>
-    <span class="nv">logallrefupdates</span> <span class="o">=</span> <span class="nb">true</span>
-<span class="o">[</span>remote <span class="s2">&quot;origin&quot;</span><span class="o">]</span>
-    <span class="nv">url</span> <span class="o">=</span> git@github.com:pierrepo/DensiPara.git
-    <span class="nv">fetch</span> <span class="o">=</span> +refs/heads/*:refs/remotes/origin/*
-    <span class="nv">push</span> <span class="o">=</span> refs/heads/master:refs/heads/master
-    <span class="nv">push</span> <span class="o">=</span> refs/heads/gh-pages:refs/heads/gh-pages
-<span class="o">[</span>branch <span class="s2">&quot;master&quot;</span><span class="o">]</span>
-    <span class="nv">remote</span> <span class="o">=</span> origin
-    <span class="nv">merge</span> <span class="o">=</span> refs/heads/master
-<span class="o">[</span>branch <span class="s2">&quot;gh-pages&quot;</span><span class="o">]</span>
-    <span class="nv">remote</span> <span class="o">=</span> origin
-    <span class="nv">merge</span> <span class="o">=</span> refs/heads/gh-pages
+<span class="w">    </span><span class="nv">repositoryformatversion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span>
+<span class="w">    </span><span class="nv">filemode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span>
+<span class="w">    </span><span class="nv">bare</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span>
+<span class="w">    </span><span class="nv">logallrefupdates</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span>
+<span class="o">[</span>remote<span class="w"> </span><span class="s2">&quot;origin&quot;</span><span class="o">]</span>
+<span class="w">    </span><span class="nv">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>git@github.com:pierrepo/DensiPara.git
+<span class="w">    </span><span class="nv">fetch</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>+refs/heads/*:refs/remotes/origin/*
+<span class="w">    </span><span class="nv">push</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>refs/heads/master:refs/heads/master
+<span class="w">    </span><span class="nv">push</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>refs/heads/gh-pages:refs/heads/gh-pages
+<span class="o">[</span>branch<span class="w"> </span><span class="s2">&quot;master&quot;</span><span class="o">]</span>
+<span class="w">    </span><span class="nv">remote</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>origin
+<span class="w">    </span><span class="nv">merge</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>refs/heads/master
+<span class="o">[</span>branch<span class="w"> </span><span class="s2">&quot;gh-pages&quot;</span><span class="o">]</span>
+<span class="w">    </span><span class="nv">remote</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>origin
+<span class="w">    </span><span class="nv">merge</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>refs/heads/gh-pages
 </code></pre></div>
-
 
 <p>Dès lors, dès que je réalise un commit dans la branche <code>master</code>, celui-ci est automatiquement reporté dans la branche <code>gh-pages</code>. Et dès que je fais un <code>push</code>, ce sont les deux branches <code>master</code> et <code>gh-pages</code> qui sont envoyées sur GitHub.</p>
 <p>PS : il est parfaitement possible de rendre la branche <code>gh-pages</code> la branche par défaut sur GitHub, mais je souhaitais conserver <code>master</code> comme branche principale par homogénéité avec mes autres projets.</p>

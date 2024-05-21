@@ -94,12 +94,11 @@ Plouf            </a>
                 <h2><a href="/clean-gromacs-backups/">Clean Gromacs backup files</a></h2>
                 <div class="summary"><p>Note to self.<br>
 Add the following lines to <code>.bashrc</code> file to clean Gromacs backups :</p>
-<div class="highlight"><pre><span></span><code><span class="err"># clean Gromacs backups in the current directory</span>
-<span class="err">alias cleangromacsbackups=&quot;rm -f \#*\#&quot;</span>
-<span class="err"># clean Gromacs backups recursively (for the fearless warriors)</span>
-<span class="err">alias cleangromacsbackups_rec=&quot;find ./ -name \#*\# | xargs -r rm&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="gh">#</span> clean Gromacs backups in the current directory
+alias cleangromacsbackups=&quot;rm -f \#*\#&quot;
+<span class="gh">#</span> clean Gromacs backups recursively (for the fearless warriors)
+alias cleangromacsbackups_rec=&quot;find ./ -name \#*\# | xargs -r rm&quot;
 </code></pre></div>
-
 
 <p>Be careful with the second command...</p>
                     <a class="btn btn-default btn-xs" href="/clean-gromacs-backups/">more ...</a>

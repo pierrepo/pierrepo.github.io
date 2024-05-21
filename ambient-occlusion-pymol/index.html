@@ -141,26 +141,25 @@ albeit results are not strictly equivalent. <!--more-->Here is an
 example taken from the <a href="http://www.pymolwiki.org/index.php/Gallery" title="PyMOL wiki">PyMOL
 wiki</a> that
 produced the picture above.</p>
-<div class="highlight"><pre><span></span><code>fetch 1BTA
-set_color oxygen, <span class="o">[</span><span class="m">1</span>.0,0.4,0.4<span class="o">]</span>
-set_color nitrogen, <span class="o">[</span><span class="m">0</span>.5,0.5,1.0<span class="o">]</span>
-remove solvent
-as spheres
+<div class="highlight"><pre><span></span><code>fetch<span class="w"> </span>1BTA
+set_color<span class="w"> </span>oxygen,<span class="w"> </span><span class="o">[</span><span class="m">1</span>.0,0.4,0.4<span class="o">]</span>
+set_color<span class="w"> </span>nitrogen,<span class="w"> </span><span class="o">[</span><span class="m">0</span>.5,0.5,1.0<span class="o">]</span>
+remove<span class="w"> </span>solvent
+as<span class="w"> </span>spheres
 util.cbaw
-<span class="nb">bg</span> white
-<span class="nb">set</span> light_count,10
-<span class="nb">set</span> spec_count,1
-<span class="nb">set</span> shininess, <span class="m">10</span>
-<span class="nb">set</span> specular, <span class="m">0</span>.25
-<span class="nb">set</span> ambient,0
-<span class="nb">set</span> direct,0
-<span class="nb">set</span> reflect,1.5
-<span class="nb">set</span> ray_shadow_decay_factor, <span class="m">0</span>.1
-<span class="nb">set</span> ray_shadow_decay_range, <span class="m">2</span>
-<span class="nb">unset</span> depth_cue
-ray <span class="m">1200</span>, <span class="m">1200</span>
+<span class="nb">bg</span><span class="w"> </span>white
+<span class="nb">set</span><span class="w"> </span>light_count,10
+<span class="nb">set</span><span class="w"> </span>spec_count,1
+<span class="nb">set</span><span class="w"> </span>shininess,<span class="w"> </span><span class="m">10</span>
+<span class="nb">set</span><span class="w"> </span>specular,<span class="w"> </span><span class="m">0</span>.25
+<span class="nb">set</span><span class="w"> </span>ambient,0
+<span class="nb">set</span><span class="w"> </span>direct,0
+<span class="nb">set</span><span class="w"> </span>reflect,1.5
+<span class="nb">set</span><span class="w"> </span>ray_shadow_decay_factor,<span class="w"> </span><span class="m">0</span>.1
+<span class="nb">set</span><span class="w"> </span>ray_shadow_decay_range,<span class="w"> </span><span class="m">2</span>
+<span class="nb">unset</span><span class="w"> </span>depth_cue
+ray<span class="w"> </span><span class="m">1200</span>,<span class="w"> </span><span class="m">1200</span>
 </code></pre></div>
-
 
 <p><img alt="1BTA with ambient occlusion in PyMOL" src="/images/1BTA_500.png" title="1BTA"></p>
             </div>

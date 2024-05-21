@@ -109,9 +109,8 @@ different from the sequence obtained from the …</p>
                 <div class="summary"><p>With the Unix commands find and xargs you have the ability to find any
 files on your hard drive while being able to manipulate them
 individually. Here are few examples:</p>
-<div class="highlight"><pre><span></span><code>find ./ -type f -name <span class="s2">&quot;*.php&quot;</span>  <span class="p">|</span> xargs -r rename <span class="s2">&quot;s/php/html/&quot;</span>
+<div class="highlight"><pre><span></span><code>find<span class="w"> </span>./<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-name<span class="w"> </span><span class="s2">&quot;*.php&quot;</span><span class="w">  </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>-r<span class="w"> </span>rename<span class="w"> </span><span class="s2">&quot;s/php/html/&quot;</span>
 </code></pre></div>
-
 
 <p>Find all files (<code>-type f</code>) with extension .php <code>-name …</code></p>
                     <a class="btn btn-default btn-xs" href="/find-xargs-powerful-combo/">more ...</a>
@@ -122,35 +121,35 @@ individually. Here are few examples:</p>
                 <h2><a href="/reduce-pdf-size/">Reduce PDF size</a></h2>
                 <div class="summary"><p>Here is a bash script that reduces the size of a PDF file provided as an
 argument.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="ch">#! /bin/bash</span>
-<span class="c1"># PP 29/08 …</span></code></pre></div></td></tr></table>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="ch">#! /bin/bash</span>
+<span class="c1"># PP 29/08 …</span></code></pre></div></td></tr></table></div>
                     <a class="btn btn-default btn-xs" href="/reduce-pdf-size/">more ...</a>
                 </div>
             </article>
